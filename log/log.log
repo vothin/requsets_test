@@ -55,3 +55,23 @@
 [32m 2019-10-31 16:52:52,676 goods.py[line:32] INFO: 测试接口为：http://dev.buyer.wdklian.com/goods/354[0m
 [32m 2019-10-31 16:52:52,701 select_goods.py[line:27] INFO: 要查询的商品：345[0m
 [32m 2019-10-31 16:52:52,701 goods.py[line:40] INFO: 测试接口为：http://api.buyer.wdklian.com/goods/345[0m
+[32m 2019-10-31 17:45:03,928 goods.py[line:32] INFO: 测试接口为：http://dev.buyer.wdklian.com/goods/345[0m
+[32m 2019-10-31 17:45:04,112 goods.py[line:40] INFO: 测试接口为：http://api.buyer.wdklian.com/goods/345[0m
+[32m 2019-10-31 17:52:20,722 goods.py[line:35] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345[0m
+[32m 2019-10-31 17:52:30,758 goods.py[line:35] INFO: Test interface:http://api.buyer.wdklian.com/goods/345[0m
+[32m 2019-10-31 17:52:48,023 select_goods.py[line:21] INFO: 要查询的商品：354[0m
+[32m 2019-10-31 17:52:48,024 goods.py[line:35] INFO: Test interface:http://dev.buyer.wdklian.com/goods/354[0m
+[32m 2019-10-31 17:52:48,194 select_goods.py[line:27] INFO: 要查询的商品：345[0m
+[32m 2019-10-31 17:52:48,195 goods.py[line:35] INFO: Test interface:http://api.buyer.wdklian.com/goods/345[0m
+[32m 2019-10-31 17:54:07,069 goods.py[line:46] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345/area/2[0m
+[32m 2019-10-31 17:54:18,711 goods.py[line:46] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345/area/9[0m
+[32m 2019-10-31 17:54:24,699 goods.py[line:46] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345/area/123129[0m
+[32m 2019-10-31 18:00:02,656 goods.py[line:42] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345[0m
+[32m 2019-10-31 18:02:13,138 goods.py[line:65] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345/skus[0m
+[32m 2019-10-31 18:07:33,399 goods.py[line:76] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345/visit[0m
+[32m 2019-10-31 18:08:20,569 goods.py[line:76] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-10-31 18:08:32,498 goods.py[line:43] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1[0m
+[32m 2019-10-31 18:08:42,362 goods.py[line:65] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345/skus[0m
+[32m 2019-10-31 18:08:48,899 goods.py[line:54] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345/area/123129[0m
+[32m 2019-10-31 18:09:08,825 goods.py[line:76] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-10-31 18:09:11,926 goods.py[line:76] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
