@@ -81,7 +81,7 @@ if __name__ == '__main__':
     g = Goods()
     # result = g.goods(1)
     # result = g.goods_area(345, 123129)
-    # result = g.goods_skus(345)
+    # result = g.goods_skus(345, prod=True)
     result = g.goods_visit(1)
     print(result.text)
 

@@ -75,3 +75,16 @@
 [32m 2019-10-31 18:08:48,899 goods.py[line:54] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345/area/123129[0m
 [32m 2019-10-31 18:09:08,825 goods.py[line:76] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
 [32m 2019-10-31 18:09:11,926 goods.py[line:76] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-10-31 18:12:24,816 goods.py[line:76] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-10-31 18:12:32,704 goods.py[line:65] INFO: Test interface:http://dev.buyer.wdklian.com/goods/345/skus[0m
+[32m 2019-10-31 18:19:21,168 goods.py[line:65] INFO: Test interface:http://api.buyer.wdklian.com/goods/345/skus[0m
+[32m 2019-10-31 18:19:34,714 goods.py[line:76] INFO: Test interface:http://api.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-10-31 18:19:44,364 goods.py[line:76] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
+[31m 2019-10-31 18:26:57,844 config.py[line:33] ERROR: No option 'goods_categories' in section: 'Goods'[0m
+[31m 2019-10-31 18:27:20,244 config.py[line:33] ERROR: No option 'goods_categories' in section: 'Goods'[0m
+[31m 2019-10-31 18:27:56,076 config.py[line:33] ERROR: No option 'goods_categories' in section: 'Goods'[0m
+[32m 2019-10-31 18:30:02,737 goods.py[line:76] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
+[31m 2019-10-31 18:30:15,715 config.py[line:33] ERROR: No option 'goods_categories' in section: 'Goods'[0m
+[32m 2019-10-31 18:30:40,618 goods_categories.py[line:40] INFO: Test interface:http://dev.buyer.wdklian.com/goods/categories/0/children[0m
+[32m 2019-10-31 18:32:13,124 goods_categories.py[line:40] INFO: Test interface:http://dev.buyer.wdklian.com/goods/categories/9/children[0m
+[32m 2019-10-31 18:32:20,938 goods_categories.py[line:40] INFO: Test interface:http://dev.buyer.wdklian.com/goods/categories/2/children[0m
