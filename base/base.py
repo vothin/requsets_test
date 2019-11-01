@@ -11,13 +11,22 @@
 # ********************************************************
 
 import time, random, hashlib
+from common.config import Config
 
 class Base():
 
-    def url_prod(self, url, prod=False):
+    # 初始化读取配置文件url.ini
+    def __init__(self):
+        self.c = Config()
+        self.prefix1 = self.c.get_value('URL', 'dev_url')
+        self.prefix2 = self.c.get_value('URL', 'url')
+        self.suffix = ''
+        self.url = ''
+
+    # url拼接
+    def url_joint(self, prod=False):
         if prod:
-            url= url
-            # url += "?uid=" + self.uid +"&timestamp=" + self.timestamp +"&nonce="+ self.nonce + "&sign=" + self.sign
+            self.url =  self.prefix2 + self.suffix
         else:
-            url = url
-        return url
+            self.url = self.prefix1 + self.suffix
+        return self.url

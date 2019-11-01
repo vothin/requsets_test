@@ -17,23 +17,6 @@ from common.config import Config
 
 class Goods(Requests_Test):
 
-    # 初始化读取配置文件url.ini
-    def __init__(self):
-        self.c = Config()
-        self.prefix1 = self.c.get_value('URL', 'dev_url')
-        self.prefix2 = self.c.get_value('URL', 'url')
-        self.suffix = ''
-
-    # url拼接
-    def url_joint(self, prod=False):
-        if prod:
-            url =  self.prefix2 + self.suffix
-        else:
-            url = self.prefix1 + self.suffix
-        return url
-
-
-
     # 查询商品
     def goods(self, goods_id, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods')
@@ -83,5 +66,7 @@ if __name__ == '__main__':
     # result = g.goods_area(345, 123129)
     # result = g.goods_skus(345, prod=True)
     result = g.goods_visit(1)
+    result2 = g.goods_visit(1, prod=True)
     print(result.text)
+    print(result2.text)
 

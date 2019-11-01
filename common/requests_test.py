@@ -13,19 +13,17 @@
 import requests
 from base.base import Base
 from common.recordlog import logs
+from common.config import Config
 
 class Requests_Test(Base):
 
-    def get_requests(self, url, prod=False):
-        self.url_prod(url, prod)
-        # r = requests.get(url, headers=self.headers)
+    # get请求
+    def get_requests(self, url):
         r = requests.get(url)
         return r
 
-
-    def post_requests(self, url, postdata, prod=False):
-        self.url_prod(url, prod)
-        # r = requests.post(url, data=postdata, headers=self.headers)
+    # post请求
+    def post_requests(self, url, postdata):
         r = requests.post(url, data=postdata)
         return r
 
@@ -33,6 +31,6 @@ class Requests_Test(Base):
 
 if __name__ == '__main__':
     r = Requests_Test()
-    r.get_requests('http://dev.buyer.wdklian.com/goods/345')
+    # r.get_requests('http://dev.buyer.wdklian.com/goods/345')
 
 
