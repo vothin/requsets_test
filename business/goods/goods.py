@@ -15,7 +15,7 @@ from common.requests_test import Requests_Test
 from common.recordlog import logs
 from common.config import Config
 
-class URL_Goods(Requests_Test):
+class Goods(Requests_Test):
 
     # 查询商品
     def url_goods(self, goods_id, prod=False):
@@ -61,7 +61,7 @@ class URL_Goods(Requests_Test):
 
 
 if __name__ == '__main__':
-    g = URL_Goods()
+    g = Goods()
     # result = g.url_goods(1)
     # result = g.url_goods_area(345, 123129)
     # result = g.url_goods_skus(345, prod=True)

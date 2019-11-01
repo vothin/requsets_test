@@ -12,7 +12,7 @@
 from common.requests_test import Requests_Test
 from common.recordlog import logs
 
-class URL_Goods_Search(Requests_Test):
+class Goods_Search(Requests_Test):
 
     # 查询商品列表
     def url_goods_search(self, prod=False):
@@ -25,6 +25,6 @@ class URL_Goods_Search(Requests_Test):
 
 
 if __name__ == '__main__':
-    g = URL_Goods_Search()
+    g = Goods_Search()
     result = g.url_goods_search()
     print(result)

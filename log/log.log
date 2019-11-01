@@ -105,3 +105,15 @@
 [32m 2019-11-01 09:48:47,034 goods.py[line:59] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
 [32m 2019-11-01 09:48:47,064 goods.py[line:59] INFO: Test interface:http://api.buyer.wdklian.com/goods/1/visit[0m
 [32m 2019-11-01 10:01:09,126 goods_search.py[line:23] INFO: Test interface:http://dev.buyer.wdklian.com/goods/categories/{}/children[0m
+[32m 2019-11-01 10:51:10,873 goods_categories.py[line:24] INFO: Test interface:http://dev.buyer.wdklian.com/goods/categories/2/children[0m
+[32m 2019-11-01 11:00:16,708 passport_login_noCaptcha.py[line:23] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678/password123456[0m
+[32m 2019-11-01 11:00:33,599 passport_login_noCaptcha.py[line:23] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678/password123456[0m
+[32m 2019-11-01 11:00:45,704 passport_login_noCaptcha.py[line:23] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678/password=123456[0m
+[32m 2019-11-01 11:01:02,034 passport_login_noCaptcha.py[line:23] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=123456[0m
+[32m 2019-11-01 11:18:41,206 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 11:25:10,066 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 11:57:58,558 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 11:58:32,531 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 11:58:53,657 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 11:59:32,008 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 12:11:40,414 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m

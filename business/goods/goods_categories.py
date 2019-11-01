@@ -13,7 +13,7 @@ from common.requests_test import Requests_Test
 from common.recordlog import logs
 from common.config import Config
 
-class URL_Goods_Categories(Requests_Test):
+class Goods_Categories(Requests_Test):
 
     # 首页等商品分类数据
     def url_goods_categories(self, parent_id, prod=False):
@@ -26,6 +26,6 @@ class URL_Goods_Categories(Requests_Test):
 
 
 if __name__ == '__main__':
-    g = URL_Goods_Categories()
+    g = Goods_Categories()
     result = g.url_goods_categories(2)
     print(result.text)

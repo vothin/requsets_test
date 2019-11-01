@@ -18,13 +18,15 @@ from common.config import Config
 class Requests_Test(Base):
 
     # get请求
-    def get_requests(self, url):
-        r = requests.get(url)
+    def get_requests(self, url, headers=None):
+        self.headers = headers
+        r = requests.get(url, self.headers)
         return r
 
     # post请求
-    def post_requests(self, url, postdata):
-        r = requests.post(url, data=postdata)
+    def post_requests(self, url, postdata, headers=None):
+        self.headers = headers
+        r = requests.post(url, self.headers, data=postdata)
         return r
 
 

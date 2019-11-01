@@ -22,6 +22,9 @@ class Base():
         self.prefix2 = self.c.get_value('URL', 'url')
         self.suffix = ''
         self.url = ''
+        self.token = ''
+        self.uid = ''
+        self.headers = None
 
     # url拼接
     def url_joint(self, prod=False):
