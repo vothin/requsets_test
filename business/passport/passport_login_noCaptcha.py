@@ -12,7 +12,7 @@
 
 from common.requests_test import Requests_Test
 from common.recordlog import logs
-from common.password_md5 import pwd_md5
+from common.get_md5 import change_md5
 
 class Passport_LoginNo(Requests_Test):
 
@@ -20,7 +20,7 @@ class Passport_LoginNo(Requests_Test):
     def url_passport_loginno(self, username, password, prod=False):
         self.suffix = self.c.get_value('passport', 'passport_login_noCaptcha')
 
-        password = pwd_md5(password)
+        password = change_md5(password)
 
         self.url = self.url_joint(prod) + '?username=' + username + '&password=' + password
 

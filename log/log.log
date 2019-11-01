@@ -117,3 +117,53 @@
 [32m 2019-11-01 11:58:53,657 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-01 11:59:32,008 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-01 12:11:40,414 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 15:21:58,133 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=1341245678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 15:22:21,458 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=1341245678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 15:36:23,703 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 15:36:23,704 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 15:36:23,705 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 15:36:59,951 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 15:36:59,952 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 15:36:59,952 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 15:43:02,211 goods_search.py[line:23] INFO: Test interface:http://dev.buyer.wdklian.com/goods/categories/{}/children[0m
+[32m 2019-11-01 16:04:36,193 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 16:04:36,193 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 16:04:36,194 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 16:04:36,533 goods.py[line:30] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1[0m
+[32m 2019-11-01 16:05:34,192 goods.py[line:60] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-11-01 16:05:34,368 goods.py[line:60] INFO: Test interface:http://api.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-11-01 16:14:32,658 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 16:14:32,658 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 16:14:32,659 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 16:14:32,955 goods.py[line:63] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-11-01 16:14:32,977 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 16:14:32,977 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 16:14:32,979 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 16:14:33,129 goods.py[line:63] INFO: Test interface:http://api.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-11-01 16:16:12,254 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 16:16:12,255 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 16:16:12,255 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 16:16:12,537 goods.py[line:64] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit?uid=2247&timestamp=1572596172254.1235&nonce=456268&sign22474562681572596172254.1235eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5rKh5Zyw5pa5IiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3MjkyNjE3MiwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.LTTOl5nob2PY2RLqTO87DMadBXmY48SltVb4FfT5SklKrsuZOcyeN6-gszXTSIeRsC9LrybDcO2IYsccJx6lYg[0m
+[32m 2019-11-01 16:16:12,556 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 16:16:12,556 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 16:16:12,557 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 16:16:12,682 goods.py[line:64] INFO: Test interface:http://api.buyer.wdklian.com/goods/1/visit?uid=2247&timestamp=1572596172556.683&nonce=213509&sign22472135091572596172556.683eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5rKh5Zyw5pa5IiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3MjkyNjE3MiwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.LTTOl5nob2PY2RLqTO87DMadBXmY48SltVb4FfT5SklKrsuZOcyeN6-gszXTSIeRsC9LrybDcO2IYsccJx6lYg[0m
+[32m 2019-11-01 16:19:51,193 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 16:19:51,194 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 16:21:24,338 goods.py[line:66] INFO: Test interface:http://api.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-11-01 16:21:35,465 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 16:21:35,465 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 16:22:48,303 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 16:22:48,303 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 16:22:48,304 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=1341234578&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 16:24:01,404 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 16:24:01,404 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 16:24:01,405 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=1341234578&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 16:25:48,875 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 16:25:48,875 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 16:25:48,875 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=1341234578&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 16:25:49,164 get_headers.py[line:44] INFO: {'code': '107', 'message': '账号不存在！'}[0m
+[32m 2019-11-01 18:11:21,347 get_headers.py[line:41] INFO: set headers[0m
+[32m 2019-11-01 18:11:21,347 get_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-01 18:11:21,347 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=1341234578&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-01 18:11:21,489 get_headers.py[line:44] INFO: response:{'code': '107', 'message': '账号不存在！'}[0m

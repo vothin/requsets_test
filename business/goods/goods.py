@@ -14,6 +14,7 @@
 from common.requests_test import Requests_Test
 from common.recordlog import logs
 from common.config import Config
+from common.get_headers import Get_Headers
 
 class Goods(Requests_Test):
 
@@ -51,13 +52,19 @@ class Goods(Requests_Test):
 
 
     # 获取商品浏览次数
-    def url_goods_visit(self, goods_id, prod=False):
+    def url_goods_visit(self, goods_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods_visit')
 
-        url = self.url_joint(prod).format(goods_id)
+        if username != None:
+            gh = Get_Headers(username, password)
+            sh = gh.set_headers()
+            self.headers = sh[0]
+            url = self.url_joint(prod).format(goods_id) + sh[1]
 
+        else:
+            url = self.url_joint(prod).format(goods_id)
         logs.info('Test interface:%s' % url)
-        return self.get_requests(url)
+        return self.get_requests(url, headers=self.headers)
 
 
 if __name__ == '__main__':
@@ -65,8 +72,8 @@ if __name__ == '__main__':
     # result = g.url_goods(1)
     # result = g.url_goods_area(345, 123129)
     # result = g.url_goods_skus(345, prod=True)
-    result = g.url_goods_visit(1)
-    result2 = g.url_goods_visit(1, prod=True)
+    result = g.url_goods_visit(1, username='1341234578', password='123456')
+    # result2 = g.url_goods_visit(1, prod=True)
     print(result.text)
-    print(result2.text)
+    # print(result2.text)
 

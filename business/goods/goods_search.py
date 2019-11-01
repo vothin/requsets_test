@@ -15,7 +15,7 @@ from common.recordlog import logs
 class Goods_Search(Requests_Test):
 
     # 查询商品列表
-    def url_goods_search(self, prod=False):
+    def url_goods_search(self, page_no=None, page_size=None, keyword=None, category=None, brand=None, price=None, sort=None, prop=None, seller_id=None, shop_cat_id=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods_categories')
 
         self.url = self.url_joint(prod)
