@@ -104,3 +104,4 @@
 [32m 2019-11-01 09:48:41,959 goods.py[line:59] INFO: Test interface:http://api.buyer.wdklian.com/goods/1/visit[0m
 [32m 2019-11-01 09:48:47,034 goods.py[line:59] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
 [32m 2019-11-01 09:48:47,064 goods.py[line:59] INFO: Test interface:http://api.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-11-01 10:01:09,126 goods_search.py[line:23] INFO: Test interface:http://dev.buyer.wdklian.com/goods/categories/{}/children[0m
