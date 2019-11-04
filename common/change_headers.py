@@ -3,7 +3,7 @@
 '''
     @author: Vothin
     @software: 自动化测试
-    @file: get_headers.py
+    @file: change_headers.py
     @time: 2019/11/1 11:27
     @desc:
 '''
@@ -11,59 +11,64 @@
 
 
 import json, uuid, time, random
-from common.get_md5 import change_md5
+from common.change_md5 import get_md5
 from common.recordlog import logs
 from business.passport.passport_login_noCaptcha import Passport_LoginNo
 
-class Get_Headers():
+class Change_Headers():
 
     def __init__(self, username, password):
-        self.username = username
-        self.password = password
-        self.uuid = uuid.uuid4()
-        self.timestamp = str(time.time() * 1000)
-        self.nonce = str(random.randint(100000, 999999))
-        self.sign = ''
+        self.username = username                            # 登录账号
+        self.password = password                            # 登录密码
+        self.uuid = uuid.uuid4()                            # uuid参数
+        self.timestamp = str(time.time() * 1000)            # timestamp参数
+        self.nonce = str(random.randint(100000, 999999))    # nonce参数
+        self.sign = ''                                      # sign参数
 
     # 获得requests响应正文
     def get_json(self):
-
         logs.info('get response to json')
+
+        # 获取response
         p = Passport_LoginNo()
         response = p.url_passport_loginno(self.username, self.password)
+
+        # json格式阅读
         js = json.loads(response.text)
 
         return js
 
 
     # 输入请求头headers
-    def set_headers(self):
+    def get_headers(self):
         logs.info('set headers')
 
+        # 获得response的json格式
         js = self.get_json()
         logs.info('response:%s' % js)
 
-
+        # 存在token就是登录成功
         if 'access_token' in js:
             sign = str(js['uid']) + self.nonce + self.timestamp + str(js['access_token'])
-            self.sign = change_md5(sign)
+            self.sign = get_md5(sign)
 
             headers = {
                 'Authorization' : js['access_token'],
                 'uuid' : self.uuid
             }
 
-            url = '?uid='+ str(js['uid']) \
+            url_tail = 'uid='+ str(js['uid']) \
                   + "&timestamp=" + self.timestamp \
                   + "&nonce=" + self.nonce \
                   + "&sign" + sign
-            return headers, url
+
+            return headers, url_tail
 
         else:
             logs.error('not found access_token')
 
 
 if __name__ == '__main__':
-    g = Get_Headers('13412345678', '123456')
-    result = g.set_headers()
+    g = Change_Headers('13412345678', '123456')
+    result = g.get_headers()
     print(result)

@@ -18,18 +18,18 @@ class Base():
     # 初始化读取配置文件url.ini
     def __init__(self):
         self.c = Config()
-        self.prefix1 = self.c.get_value('URL', 'dev_url')
-        self.prefix2 = self.c.get_value('URL', 'url')
-        self.suffix = ''
-        self.url = ''
-        self.token = ''
-        self.uid = ''
-        self.headers = None
+        self.prefix1 = self.c.get_value('URL', 'dev_url')   # 测试环境
+        self.prefix2 = self.c.get_value('URL', 'url')       # 正式环境
+        self.suffix = ''                                    # section参数
+        self.url = ''                                       # url地址
+        self.token = ''                                     # token参数
+        self.uid = ''                                       # uid参数
+        self.headers = None                                 # headers参数
 
     # url拼接
     def url_joint(self, prod=False):
         if prod:
-            self.url =  self.prefix2 + self.suffix
+            self.url =  self.prefix2 + self.suffix          # 测试环境url
         else:
-            self.url = self.prefix1 + self.suffix
+            self.url = self.prefix1 + self.suffix           # 正式环境url
         return self.url

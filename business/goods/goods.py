@@ -14,7 +14,8 @@
 from common.requests_test import Requests_Test
 from common.recordlog import logs
 from common.config import Config
-from common.get_headers import Get_Headers
+from common.change_headers import Change_Headers
+from common.change_url import Change_URL
 
 class Goods(Requests_Test):
 
@@ -23,10 +24,10 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods')
 
         if username != None:
-            gh = Get_Headers(username, password)
-            sh = gh.set_headers()
+            gh = Change_Headers(username, password)
+            sh = gh.get_headers()
             self.headers = sh[0]
-            url = self.url_joint(prod).format(goods_id) + sh[1]
+            url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
 
         else:
             url = self.url_joint(prod).format(goods_id)
@@ -41,10 +42,10 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_area')
 
         if username != None:
-            gh = Get_Headers(username, password)
-            sh = gh.set_headers()
+            gh = Change_Headers(username, password)
+            sh = gh.get_headers()
             self.headers = sh[0]
-            url = self.url_joint(prod).format(goods_id, area_id) + sh[1]
+            url = self.url_joint(prod).format(goods_id, area_id) + '?' + sh[1]
 
         else:
             url = self.url_joint(prod).format(goods_id, area_id)
@@ -59,10 +60,10 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_skus')
 
         if username != None:
-            gh = Get_Headers(username, password)
-            sh = gh.set_headers()
+            gh = Change_Headers(username, password)
+            sh = gh.get_headers()
             self.headers = sh[0]
-            url = self.url_joint(prod).format(goods_id) + sh[1]
+            url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
 
         else:
             url = self.url_joint(prod).format(goods_id)
@@ -76,10 +77,10 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_visit')
 
         if username != None:
-            gh = Get_Headers(username, password)
-            sh = gh.set_headers()
+            gh = Change_Headers(username, password)
+            sh = gh.get_headers()
             self.headers = sh[0]
-            url = self.url_joint(prod).format(goods_id) + sh[1]
+            url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
 
         else:
             url = self.url_joint(prod).format(goods_id)
