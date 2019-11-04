@@ -11,6 +11,8 @@
 
 from common.requests_test import Requests_Test
 from common.recordlog import logs
+from common.change_headers import Change_Headers
+from common.change_url import Change_URL
 
 class Goods_Search(Requests_Test):
 

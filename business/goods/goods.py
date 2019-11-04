@@ -13,9 +13,7 @@
 
 from common.requests_test import Requests_Test
 from common.recordlog import logs
-from common.config import Config
 from common.change_headers import Change_Headers
-from common.change_url import Change_URL
 
 class Goods(Requests_Test):
 
@@ -27,13 +25,13 @@ class Goods(Requests_Test):
             gh = Change_Headers(username, password)
             sh = gh.get_headers()
             self.headers = sh[0]
-            url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
+            self.url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
 
         else:
-            url = self.url_joint(prod).format(goods_id)
+            self.url = self.url_joint(prod).format(goods_id)
 
-        logs.info('Test interface:%s' % url)
-        return self.get_requests(url, headers=self.headers)
+        logs.info('Test interface:%s' % self.url)
+        return self.get_requests(self.url, headers=self.headers)
 
 
 
@@ -45,13 +43,13 @@ class Goods(Requests_Test):
             gh = Change_Headers(username, password)
             sh = gh.get_headers()
             self.headers = sh[0]
-            url = self.url_joint(prod).format(goods_id, area_id) + '?' + sh[1]
+            self.url = self.url_joint(prod).format(goods_id, area_id) + '?' + sh[1]
 
         else:
-            url = self.url_joint(prod).format(goods_id, area_id)
+            self.url = self.url_joint(prod).format(goods_id, area_id)
 
-        logs.info('Test interface:%s' % url)
-        return self.get_requests(url, headers=self.headers)
+        logs.info('Test interface:%s' % self.url)
+        return self.get_requests(self.url, headers=self.headers)
 
 
 
@@ -63,13 +61,13 @@ class Goods(Requests_Test):
             gh = Change_Headers(username, password)
             sh = gh.get_headers()
             self.headers = sh[0]
-            url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
+            self.url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
 
         else:
-            url = self.url_joint(prod).format(goods_id)
+            self.url = self.url_joint(prod).format(goods_id)
 
-        logs.info('Test interface:%s' % url)
-        return self.get_requests(url, headers=self.headers)
+        logs.info('Test interface:%s' % self.url)
+        return self.get_requests(self.url, headers=self.headers)
 
 
     # 获取商品浏览次数
@@ -80,13 +78,13 @@ class Goods(Requests_Test):
             gh = Change_Headers(username, password)
             sh = gh.get_headers()
             self.headers = sh[0]
-            url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
+            self.url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
 
         else:
-            url = self.url_joint(prod).format(goods_id)
+            self.url = self.url_joint(prod).format(goods_id)
 
-        logs.info('Test interface:%s' % url)
-        return self.get_requests(url, headers=self.headers)
+        logs.info('Test interface:%s' % self.url)
+        return self.get_requests(self.url, headers=self.headers)
 
 
 if __name__ == '__main__':

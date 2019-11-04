@@ -215,3 +215,6 @@
 [32m 2019-11-04 15:07:32,021 goods_search.py[line:23] INFO: Test interface:http://dev.buyer.wdklian.com/goods/categories/{}/children[0m
 [32m 2019-11-04 17:30:06,094 goods.py[line:87] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
 [32m 2019-11-04 17:39:10,801 goods.py[line:105] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-11-04 17:43:44,656 goods.py[line:88] INFO: Test interface:http://dev.buyer.wdklian.com/goods/{}/visit[0m
+[32m 2019-11-04 17:43:54,343 goods.py[line:88] INFO: Test interface:http://dev.buyer.wdklian.com/goods/1/visit[0m
+[32m 2019-11-04 17:44:36,441 goods_categories.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/goods/categories/2/children[0m
