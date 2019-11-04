@@ -42,14 +42,9 @@ class Get_Headers():
 
         js = self.get_json()
         logs.info('response:%s' % js)
-        print(js['access_token'])           #  !!!!
 
 
-        try:
-            js['access_token']
-        except Exception as e:
-            logs.error('login failure', e)
-        else:
+        if 'access_token' in js:
             sign = str(js['uid']) + self.nonce + self.timestamp + str(js['access_token'])
             self.sign = change_md5(sign)
 
@@ -63,6 +58,9 @@ class Get_Headers():
                   + "&nonce=" + self.nonce \
                   + "&sign" + sign
             return headers, url
+
+        else:
+            logs.error('not found access_token')
 
 
 if __name__ == '__main__':
