@@ -17,13 +17,14 @@ from business.passport.passport_login_noCaptcha import Passport_LoginNo
 
 class Change_Headers():
 
-    def __init__(self, username, password):
+    def __init__(self, username, password, prod=False):
         self.username = username                            # 登录账号
         self.password = password                            # 登录密码
         self.uuid = uuid.uuid4()                            # uuid参数
         self.timestamp = str(time.time() * 1000)            # timestamp参数
         self.nonce = str(random.randint(100000, 999999))    # nonce参数
         self.sign = ''                                      # sign参数
+        self.prod =prod
 
     # 获得requests响应正文
     def get_json(self):
@@ -31,7 +32,7 @@ class Change_Headers():
 
         # 获取response
         p = Passport_LoginNo()
-        response = p.url_passport_loginno(self.username, self.password)
+        response = p.url_passport_loginno(self.username, self.password, self.prod)
 
         # json格式阅读
         js = json.loads(response.text)

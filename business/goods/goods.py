@@ -13,78 +13,60 @@
 
 from common.requests_test import Requests_Test
 from common.recordlog import logs
-from common.change_headers import Change_Headers
+from common.change_urls import Change_Urls
 
 class Goods(Requests_Test):
 
     # 查询商品
     def url_goods(self, goods_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods')
+        self.suffix = self.suffix.format(goods_id)
 
-        if username != None:
-            gh = Change_Headers(username, password)
-            sh = gh.get_headers()
-            self.headers = sh[0]
-            self.url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
+        cu = Change_Urls()
+        # gu = cu.get_urls(suffix=self.suffix, username=username, password=password, prod=prod)
+        gu = cu.get_urls(self.suffix, username, password, prod=prod)
 
-        else:
-            self.url = self.url_joint(prod).format(goods_id)
-
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, headers=self.headers)
+        return self.get_requests(gu[0], gu[1])
 
 
 
     # 查询商品是否有货
     def url_goods_area(self, goods_id, area_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods_area')
+        self.suffix = self.suffix.format(goods_id, area_id)
 
-        if username != None:
-            gh = Change_Headers(username, password)
-            sh = gh.get_headers()
-            self.headers = sh[0]
-            self.url = self.url_joint(prod).format(goods_id, area_id) + '?' + sh[1]
+        cu = Change_Urls()
+        # gu = cu.get_urls(suffix=self.suffix, username=username, password=password, prod=prod)
+        gu = cu.get_urls(self.suffix, username, password, prod=prod)
 
-        else:
-            self.url = self.url_joint(prod).format(goods_id, area_id)
-
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, headers=self.headers)
+        return self.get_requests(gu[0], gu[1])
 
 
 
     # 获取sku信息
     def url_goods_skus(self, goods_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods_skus')
+        self.suffix = self.suffix.format(goods_id)
 
-        if username != None:
-            gh = Change_Headers(username, password)
-            sh = gh.get_headers()
-            self.headers = sh[0]
-            self.url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
+        cu = Change_Urls()
+        # gu = cu.get_urls(suffix=self.suffix, username=username, password=password, prod=prod)
+        gu = cu.get_urls(self.suffix, username, password, prod=prod)
 
-        else:
-            self.url = self.url_joint(prod).format(goods_id)
+        return self.get_requests(gu[0], gu[1])
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, headers=self.headers)
+
 
 
     # 获取商品浏览次数
     def url_goods_visit(self, goods_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods_visit')
+        self.suffix = self.suffix.format(goods_id)
 
-        if username != None:
-            gh = Change_Headers(username, password)
-            sh = gh.get_headers()
-            self.headers = sh[0]
-            self.url = self.url_joint(prod).format(goods_id) + '?' + sh[1]
+        cu = Change_Urls()
+        # gu = cu.get_urls(suffix=self.suffix, username=username, password=password, prod=prod)
+        gu = cu.get_urls(self.suffix, username, password, prod=prod)
 
-        else:
-            self.url = self.url_joint(prod).format(goods_id)
-
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, headers=self.headers)
+        return self.get_requests(gu[0], gu[1])
 
 
 if __name__ == '__main__':
@@ -94,9 +76,9 @@ if __name__ == '__main__':
     # result = g.url_goods_area(345, 123129)
     # result = g.url_goods_area(345, 123129, username='13412345678', password='123456')
     # result = g.url_goods_skus(345, prod=True)
-    # result = g.url_goods_skus(345, username='13412345678', password='123456', prod=True)
+    result = g.url_goods_skus(345, username='13412345678', password='123456', prod=True)
     # result = g.url_goods_visit(1, username='13412345678', password='123456')
-    result = g.url_goods_visit(1)
+    # result = g.url_goods_visit(1)
     # result2 = g.url_goods_visit(1, prod=True)
     print(result.text)
     # print(result2.text)

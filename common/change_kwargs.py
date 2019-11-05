@@ -3,32 +3,32 @@
 '''
     @author: Vothin
     @software: 自动化测试
-    @file: change_url.py
+    @file: change_kwargs.py
     @time: 2019/11/4 11:17
     @desc:
 '''
 # ********************************************************
 
 
-from common.requests_test import Requests_Test
 from common.recordlog import logs
 
 
-class Change_URL(Requests_Test):
+class Change_Kwargs():
 
-    keys_dict = []
-    values_dict  = []
-    url_kwargs = ''
+    def __init__(self, kwargs):
+        self.keys_dict = []
+        self.values_dict  = []
+        self.url_kwargs = ''
+        self.kwargs = kwargs
 
 
     # 将参数字典拆分，拼接成url
-    def get_url_kwargs(self, **kwargs):
-        if kwargs != None:
+    def get_kwargs(self):
+        if self.kwargs != None:
             logs.info('get url_kwargs')
-
             # 或者kwargs的key和value
-            keys = kwargs['data'].keys()
-            values = kwargs['data'].values()
+            keys = self.kwargs.keys()
+            values = self.kwargs.values()
 
             for i in keys:
                 self.keys_dict.append(i)
@@ -36,7 +36,7 @@ class Change_URL(Requests_Test):
             for i in values:
                 self.values_dict.append(i)
 
-            for i in range(len(kwargs['data'])):
+            for i in range(len(self.kwargs)):
                 self.url_kwargs += (self.keys_dict[i] + '=' + self.values_dict[i] + '&')
 
             return self.url_kwargs
@@ -59,4 +59,5 @@ if __name__ == '__main__':
         'youku': 'youku'
     }
 
-    c = Change_URL()
+    c = Change_Kwargs(data)
+    c.get_kwargs()

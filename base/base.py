@@ -26,6 +26,7 @@ class Base():
         self.uid = ''                                       # uid参数
         self.headers = None                                 # headers参数
 
+
     # url拼接
     def url_joint(self, prod=False):
         if prod:

@@ -11,28 +11,23 @@
 
 from common.requests_test import Requests_Test
 from common.recordlog import logs
-from common.change_headers import Change_Headers
+from common.change_urls import Change_Urls
 
 class Goods_Categories(Requests_Test):
 
     # 首页等商品分类数据
     def url_goods_categories(self, parent_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods_categories')
+        self.suffix = self.suffix.format(parent_id)
 
-        if username != None:
-            gh = Change_Headers(username, password)
-            sh = gh.get_headers()
-            self.headers = sh[0]
-            self.url = self.url_joint(prod).format(parent_id) + '?' + sh[1]
+        cu = Change_Urls()
+        # gu = cu.get_urls(suffix=self.suffix, username=username, password=password, prod=prod)
+        gu = cu.get_urls(self.suffix, username, password, prod=prod)
 
-        else:
-            self.url = self.url_joint(prod).format(parent_id)
-
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url)
+        return self.get_requests(gu[0], gu[1])
 
 
 if __name__ == '__main__':
     g = Goods_Categories()
-    result = g.url_goods_categories(2)
+    result = g.url_goods_categories(2, '13412345678', '123456', prod=True)
     print(result.text)
