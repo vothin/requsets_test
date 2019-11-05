@@ -20,6 +20,7 @@ class Base():
         self.c = Config()
         self.prefix1 = self.c.get_value('URL', 'dev_url')   # 测试环境
         self.prefix2 = self.c.get_value('URL', 'url')       # 正式环境
+        self.prefix3 = self.c.get_value('URL', '192_url')
         self.suffix = ''                                    # section参数
         self.url = ''                                       # url地址
         self.token = ''                                     # token参数
@@ -33,4 +34,6 @@ class Base():
             self.url =  self.prefix2 + self.suffix          # 测试环境url
         else:
             self.url = self.prefix1 + self.suffix           # 正式环境url
+            
+        # self.url = self.prefix3 + self.suffix               # 本地环境url
         return self.url

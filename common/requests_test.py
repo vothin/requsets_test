@@ -10,6 +10,7 @@
 '''
 # ********************************************************
 
+import json
 import requests
 from base.base import Base
 from common.recordlog import logs
@@ -26,13 +27,19 @@ class Requests_Test(Base):
     # post请求
     def post_requests(self, url, postdata, headers=None):
         self.headers = headers
-        r = requests.post(url, self.headers, data=postdata)
+        postdata = json.dumps(postdata)
+        r = requests.post(url, data=postdata, headers=self.headers)
         return r
 
 
 
 if __name__ == '__main__':
     r = Requests_Test()
+    data = {'seller_id' : '16'}
+    # data = '16'
     # r.get_requests('http://dev.buyer.wdklian.com/goods/345')
+    result = r.post_requests('http://dev.buyer.wdklian.com/trade/carts/o2o/seller/0', data)
+    print(result)
+    print(result.text)
 
 

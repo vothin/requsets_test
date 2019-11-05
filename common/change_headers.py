@@ -21,7 +21,8 @@ class Change_Headers():
         self.username = username                            # 登录账号
         self.password = password                            # 登录密码
         self.uuid = uuid.uuid4()                            # uuid参数
-        self.timestamp = str(time.time() * 1000)            # timestamp参数
+        self.timestamp = str(int(time.time() * 1000))       # timestamp参数
+
         self.nonce = str(random.randint(100000, 999999))    # nonce参数
         self.sign = ''                                      # sign参数
         self.prod =prod
@@ -55,13 +56,13 @@ class Change_Headers():
 
             headers = {
                 'Authorization' : js['access_token'],
-                'uuid' : self.uuid
+                'uuid' : str(self.uuid)
             }
 
             url_tail = 'uid='+ str(js['uid']) \
                   + "&timestamp=" + self.timestamp \
                   + "&nonce=" + self.nonce \
-                  + "&sign" + sign
+                  + "&sign=" + sign
 
             return headers, url_tail
 
