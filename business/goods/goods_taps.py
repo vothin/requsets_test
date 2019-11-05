@@ -13,7 +13,7 @@ from common.requests_test import Requests_Test
 from common.change_urls import Change_Urls
 
 
-class Goods_Taps(Requests_Test):
+class Goods_Taps(Requests_Test):        # 未完成
 
     # 查询商品销量
     def url_goods_count(self, goods_id, username=None, password=None, prod=False):
