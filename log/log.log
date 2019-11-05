@@ -323,3 +323,24 @@
 [32m 2019-11-05 15:15:51,477 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search/selector?page_on=10&page_size=10[0m
 [32m 2019-11-05 15:17:31,391 change_kwargs.py[line:28] INFO: get url_kwargs[0m
 [32m 2019-11-05 15:17:31,392 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search/selector?page_on=10&page_size=10&category=1[0m
+[32m 2019-11-05 15:28:22,664 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search/selector/16[0m
+[32m 2019-11-05 15:28:50,174 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search/selector/16[0m
+[32m 2019-11-05 15:29:44,275 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/tags/count/16[0m
+[32m 2019-11-05 15:30:08,072 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/tags/count/16[0m
+[32m 2019-11-05 15:31:24,952 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/tags/count[0m
+[32m 2019-11-05 15:31:52,092 change_kwargs.py[line:28] INFO: get url_kwargs[0m
+[32m 2019-11-05 15:32:28,367 change_kwargs.py[line:28] INFO: get url_kwargs[0m
+[32m 2019-11-05 15:32:52,936 change_kwargs.py[line:28] INFO: get url_kwargs[0m
+[32m 2019-11-05 15:32:52,937 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/tags/count?good_id=16[0m
+[32m 2019-11-05 15:35:06,863 change_kwargs.py[line:28] INFO: get url_kwargs[0m
+[32m 2019-11-05 15:35:06,863 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/tags/count?goods_id=16[0m
+[32m 2019-11-05 15:37:05,836 change_kwargs.py[line:28] INFO: get url_kwargs[0m
+[32m 2019-11-05 15:37:05,837 change_headers.py[line:45] INFO: set headers[0m
+[32m 2019-11-05 15:37:05,837 change_headers.py[line:31] INFO: get response to json[0m
+[32m 2019-11-05 15:37:05,838 passport_login_noCaptcha.py[line:27] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-05 15:37:06,156 change_headers.py[line:49] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3MzI2OTQyNywidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.f1sELjtVfRmR3VTvemcUB4kHIAPBiChvEPa1UlWgjegqomXtv37GStUuC4o6CdSZt6r7VQa67sVaE5-7AwITOA', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3MzExMjIyNywidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.2oGD3Y2XmGUyeyw-ya23_-l6XPwEnoxTPciPXEv3x2XlCzI_m80FFeioacOFYp3u9i0g0sVxDJNoi9zUgT4NCg', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'oauth_token': '489d92868c0fe03116ba4cc5db8ca6cf', 'oauth_token_secret': '200fa2bed2bf92e5c96e84cf1a4a6744', 'uid': 107, 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-05 15:37:06,156 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/tags/count?goods_id=16&uid=2247&timestamp=1572939425837.2915&nonce=432590&sign22474325901572939425837.2915eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3MzI2OTQyNywidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.f1sELjtVfRmR3VTvemcUB4kHIAPBiChvEPa1UlWgjegqomXtv37GStUuC4o6CdSZt6r7VQa67sVaE5-7AwITOA[0m
+[32m 2019-11-05 15:41:27,029 change_kwargs.py[line:28] INFO: get url_kwargs[0m
+[32m 2019-11-05 15:41:27,029 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search/searchAllGoods?page_on=10&page_size=10&category=1[0m
+[32m 2019-11-05 15:41:42,457 change_kwargs.py[line:28] INFO: get url_kwargs[0m
+[32m 2019-11-05 15:41:42,458 change_urls.py[line:48] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search/searchAllGoods?page_on=1&page_size=1&category=1[0m

@@ -37,7 +37,7 @@ class Change_Kwargs():
                 self.values_dict.append(i)
 
             for i in range(len(self.kwargs)):
-                self.url_kwargs += (self.keys_dict[i] + '=' + self.values_dict[i] + '&')
+                self.url_kwargs += (self.keys_dict[i] + '=' + str(self.values_dict[i]) + '&')
 
             return self.url_kwargs
 
