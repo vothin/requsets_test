@@ -32,7 +32,7 @@ class Change_Headers():
 
         # 获取response
         p = Passport_LoginNo()
-        response = p.url_passport_loginno(self.username, self.password, self.prod)
+        response = p.get_passport_loginno(self.username, self.password, self.prod)
 
         # json格式阅读
         js = json.loads(response.text)

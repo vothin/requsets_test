@@ -15,7 +15,7 @@ from common.change_urls import Change_Urls
 class Goods_Search(Requests_Test):
 
     # 查询商品列表
-    def url_goods_search(self, username=None, password=None, data=None, prod=False):
+    def get_goods_search(self, username=None, password=None, data=None, prod=False):
         '''
             相关参数有：  page_on     页码
                         page_size   每页数量
@@ -41,7 +41,7 @@ class Goods_Search(Requests_Test):
 
 
     # 查询商品列表
-    def url_goods_searchAllGoods(self, username=None, password=None, data=None, prod=False):
+    def get_goods_searchAllGoods(self, username=None, password=None, data=None, prod=False):
         '''
             相关参数有：  page_on     页码
                         page_size   每页数量
@@ -67,7 +67,7 @@ class Goods_Search(Requests_Test):
 
 
     # # 查询商品选择器
-    def url_goods_selector(self, username=None, password=None, data=None, prod=False):
+    def get_goods_selector(self, username=None, password=None, data=None, prod=False):
         '''
             相关参数有：  page_on     页码
                         page_size   每页数量
@@ -91,7 +91,7 @@ class Goods_Search(Requests_Test):
 
 
 
-    def url_goods_words(self, username=None, password=None, data=None, prod=False):
+    def get_goods_words(self, username=None, password=None, data=None, prod=False):
         '''
             相关参数有：  page_on     页码
                         page_size   每页数量
@@ -123,7 +123,7 @@ if __name__ == '__main__':
     }
 
     g = Goods_Search()
-    # result = g.url_goods_search(data=data)
-    # result = g.url_goods_selector(data=data)
-    result = g.url_goods_searchAllGoods(data=data)
+    # result = g.get_goods_search(data=data)
+    # result = g.get_goods_selector(data=data)
+    result = g.get_goods_searchAllGoods(data=data)
     print(result.text)

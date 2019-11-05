@@ -18,7 +18,7 @@ from common.change_urls import Change_Urls
 class Goods(Requests_Test):
 
     # 查询商品
-    def url_goods(self, goods_id, username=None, password=None, prod=False):
+    def get_goods(self, goods_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods')
         self.suffix = self.suffix.format(goods_id)
 
@@ -31,7 +31,7 @@ class Goods(Requests_Test):
 
 
     # 查询商品是否有货
-    def url_goods_area(self, goods_id, area_id, username=None, password=None, prod=False):
+    def get_goods_area(self, goods_id, area_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods_area')
         self.suffix = self.suffix.format(goods_id, area_id)
 
@@ -44,7 +44,7 @@ class Goods(Requests_Test):
 
 
     # 获取sku信息
-    def url_goods_skus(self, goods_id, username=None, password=None, prod=False):
+    def get_goods_skus(self, goods_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods_skus')
         self.suffix = self.suffix.format(goods_id)
 
@@ -58,7 +58,7 @@ class Goods(Requests_Test):
 
 
     # 获取商品浏览次数
-    def url_goods_visit(self, goods_id, username=None, password=None, prod=False):
+    def get_goods_visit(self, goods_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods_visit')
         self.suffix = self.suffix.format(goods_id)
 
@@ -71,15 +71,15 @@ class Goods(Requests_Test):
 
 if __name__ == '__main__':
     g = Goods()
-    # result = g.url_goods(456)
-    # result = g.url_goods(456, username='13412345678', password='123456')
-    # result = g.url_goods_area(345, 123129)
-    # result = g.url_goods_area(345, 123129, username='13412345678', password='123456')
-    # result = g.url_goods_skus(345, prod=True)
-    result = g.url_goods_skus(345, username='13412345678', password='123456', prod=True)
-    # result = g.url_goods_visit(1, username='13412345678', password='123456')
-    # result = g.url_goods_visit(1)
-    # result2 = g.url_goods_visit(1, prod=True)
+    # result = g.get_goods(456)
+    # result = g.get_goods(456, username='13412345678', password='123456')
+    # result = g.get_goods_area(345, 123129)
+    # result = g.get_goods_area(345, 123129, username='13412345678', password='123456')
+    # result = g.get_goods_skus(345, prod=True)
+    result = g.get_goods_skus(345, username='13412345678', password='123456', prod=True)
+    # result = g.get_goods_visit(1, username='13412345678', password='123456')
+    # result = g.get_goods_visit(1)
+    # result2 = g.get_goods_visit(1, prod=True)
     print(result.text)
     # print(result2.text)
 

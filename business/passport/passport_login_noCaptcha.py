@@ -17,8 +17,8 @@ from common.change_md5 import get_md5
 class Passport_LoginNo(Requests_Test):
 
     # 查询商品列表
-    def url_passport_loginno(self, username, password, prod=False):
-        self.suffix = self.c.get_value('passport', 'passport_login_noCaptcha')
+    def get_passport_loginno(self, username, password, prod=False):
+        self.suffix = self.c.get_value('Passport', 'passport_login_noCaptcha')
 
         password = get_md5(password)
 
@@ -29,5 +29,5 @@ class Passport_LoginNo(Requests_Test):
 
 if __name__ == '__main__':
     p = Passport_LoginNo()
-    result = p.url_passport_loginno('13412345678', '123456')
+    result = p.get_passport_loginno('13412345678', '123456')
     print(result.text)

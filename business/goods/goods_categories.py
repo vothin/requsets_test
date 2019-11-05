@@ -16,7 +16,7 @@ from common.change_urls import Change_Urls
 class Goods_Categories(Requests_Test):
 
     # 首页等商品分类数据
-    def url_goods_categories(self, parent_id, username=None, password=None, prod=False):
+    def get_goods_categories(self, parent_id, username=None, password=None, prod=False):
         self.suffix = self.c.get_value('Goods', 'goods_categories')
         self.suffix = self.suffix.format(parent_id)
 
@@ -29,5 +29,5 @@ class Goods_Categories(Requests_Test):
 
 if __name__ == '__main__':
     g = Goods_Categories()
-    result = g.url_goods_categories(2, '13412345678', '123456', prod=True)
+    result = g.get_goods_categories(2, '13412345678', '123456', prod=True)
     print(result.text)

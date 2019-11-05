@@ -16,7 +16,7 @@ from common.change_urls import Change_Urls
 class Goods_Taps(Requests_Test):        # 未完成
 
     # 查询商品销量
-    def url_goods_count(self, goods_id, username=None, password=None, prod=False):
+    def get_goods_count(self, goods_id, username=None, password=None, prod=False):
 
         self.suffix = self.c.get_value('Goods', 'goods_tags_count')
 
@@ -33,6 +33,6 @@ if __name__ == '__main__':
         'goods_id' : 16
     }
 
-    resutl = g.url_goods_count(data, '13412345678', '123456')
+    resutl = g.get_goods_count(data, '13412345678', '123456')
     print(resutl)
     print(resutl.text)
