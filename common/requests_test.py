@@ -19,17 +19,21 @@ from common.config import Config
 class Requests_Test(Base):
 
     # get请求
-    def get_requests(self, url, headers=None):
+    def get_requests(self, url, headers=None, get_data=None):
         self.headers = headers
-        r = requests.get(url, self.headers)
+        r = requests.get(url, headers=self.headers, params=get_data)
         return r
 
     # post请求
-    def post_requests(self, url, postdata, headers=None):
+    def post_requests(self, url, headers=None, post_data=None):
         self.headers = headers
-        postdata = json.dumps(postdata)
-        r = requests.post(url, data=postdata, headers=self.headers)
+
+        r = requests.post(url, headers=self.headers, data=post_data)
         return r
+
+    def del_requests(self, url, headers=None):
+        self.headers = headers
+        r = requests.delete(url, headers=self.headers)
 
 
 

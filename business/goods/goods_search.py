@@ -10,7 +10,8 @@
 # ********************************************************
 
 from common.requests_test import Requests_Test
-from common.change_urls import Change_Urls
+from common.change_param import Change_Param
+from common.recordlog import logs
 
 class Goods_Search(Requests_Test):
 
@@ -30,13 +31,14 @@ class Goods_Search(Requests_Test):
         '''
 
         self.suffix = self.c.get_value('Goods', 'goods_search')
+        self.url = self.url_joint(prod)
+        logs.info('Test interface:%s' % self.url)
 
-        # 调用Change_Urls类
-        cu = Change_Urls()
-        # gu = cu.get_urls(suffix=self.suffix, username=username, password=password, prod=prod, data=data)
-        gu = cu.get_urls(self.suffix, username, password, data, prod=prod)
+        # 调用Change_Param类
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
 
-        return self.get_requests(gu[0], gu[1])
+        return self.get_requests(self.url, gu[0], gu[1])
 
 
 
@@ -56,13 +58,14 @@ class Goods_Search(Requests_Test):
         '''
 
         self.suffix = self.c.get_value('Goods', 'goods_search_searchAllGoods')
+        self.url = self.url_joint(prod)
+        logs.info('Test interface:%s' % self.url)
 
-        # 调用Change_Urls类
-        cu = Change_Urls()
-        # gu = cu.get_urls(suffix=self.suffix, username=username, password=password, prod=prod, data=data)
-        gu = cu.get_urls(self.suffix, username, password, data, prod=prod)
+        # 调用Change_Param类
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
 
-        return self.get_requests(gu[0], gu[1])
+        return self.get_requests(self.url, gu[0], gu[1])
 
 
 
@@ -82,12 +85,13 @@ class Goods_Search(Requests_Test):
         '''
 
         self.suffix = self.c.get_value('Goods', 'goods_search_selector')
+        self.url = self.url_joint(prod)
+        logs.info('Test interface:%s' % self.url)
 
-        cu = Change_Urls()
-        # gu = cu.get_urls(suffix=self.suffix, username=username, password=password, prod=prod, data=data)
-        gu = cu.get_urls(self.suffix, username, password, data, prod=prod)
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
 
-        return self.get_requests(gu[0], gu[1])
+        return self.get_requests(self.url, gu[0], gu[1])
 
 
 
@@ -106,12 +110,13 @@ class Goods_Search(Requests_Test):
         '''
 
         self.suffix = self.c.get_value('Goods', 'goods_search_words')
+        self.url = self.url_joint(prod)
+        logs.info('Test interface:%s' % self.url)
 
-        cu = Change_Urls()
-        # gu = cu.get_urls(suffix=self.suffix, username=username, password=password, prod=prod, data=data)
-        gu = cu.get_urls(self.suffix, username, password, data, prod=prod)
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
 
-        return self.get_requests(gu[0], gu[1])
+        return self.get_requests(self.url, gu[0], gu[1])
 
 
 
@@ -123,7 +128,7 @@ if __name__ == '__main__':
     }
 
     g = Goods_Search()
-    # result = g.get_goods_search(data=data)
+    result = g.get_goods_search('13412345678', '123456', data=data)
     # result = g.get_goods_selector(data=data)
-    result = g.get_goods_searchAllGoods(data=data)
+    # result = g.get_goods_searchAllGoods(data=data)
     print(result.text)

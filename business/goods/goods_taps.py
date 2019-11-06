@@ -10,7 +10,8 @@
 # ********************************************************
 
 from common.requests_test import Requests_Test
-from common.change_urls import Change_Urls
+from common.change_param import Change_Param
+from common.recordlog import logs
 
 
 class Goods_Taps(Requests_Test):        # 未完成
@@ -20,10 +21,13 @@ class Goods_Taps(Requests_Test):        # 未完成
 
         self.suffix = self.c.get_value('Goods', 'goods_tags_count')
 
-        cu = Change_Urls()
-        gu = cu.get_urls(self.suffix, username, password, data=goods_id, prod=prod)
+        self.url = self.url_joint(prod)
+        logs.info('Test interface:%s' % self.url)
 
-        return self.get_requests(gu[0], gu[1])
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
+
+        return self.get_requests(self.url, gu[0], gu[1])
 
 
 

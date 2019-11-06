@@ -11,7 +11,7 @@
 
 from common.requests_test import Requests_Test
 from common.recordlog import logs
-from common.change_urls import Change_Urls
+from common.change_param import Change_Param
 
 class Goods_Categories(Requests_Test):
 
@@ -20,11 +20,13 @@ class Goods_Categories(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_categories')
         self.suffix = self.suffix.format(parent_id)
 
-        cu = Change_Urls()
-        # gu = cu.get_urls(suffix=self.suffix, username=username, password=password, prod=prod)
-        gu = cu.get_urls(self.suffix, username, password, prod=prod)
+        self.url = self.url_joint(prod)
+        logs.info('Test interface:%s' % self.url)
 
-        return self.get_requests(gu[0], gu[1])
+        cu = Change_Param(username, password)
+        gu = cu.get_params()
+
+        return self.get_requests(self.url, gu[0], gu[1])
 
 
 if __name__ == '__main__':
