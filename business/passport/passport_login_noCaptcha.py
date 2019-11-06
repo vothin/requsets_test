@@ -19,13 +19,17 @@ class Passport_LoginNo(Requests_Test):
     # 无验证登录
     def get_passport_loginno(self, username, password, prod=False):
         self.suffix = self.c.get_value('Passport', 'passport_login_noCaptcha')
+        self.url = self.url_joint(prod)
 
         password = get_md5(str(password))
 
-        self.url = self.url_joint(prod) + '?username=' + str(username) + '&password=' + str(password)
+        up = {
+            'username' : str(username),
+            'password' : str(password)
+        }
 
         logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url)
+        return self.get_requests(self.url, get_data=up)
 
 if __name__ == '__main__':
     p = Passport_LoginNo()

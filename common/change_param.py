@@ -56,37 +56,34 @@ class Change_Param():
 
 
 
+    def get_params_alt(self):
 
+        if self.username:
+            ch = Change_Headers(self.username, self.password)
+            gh = ch.get_headers_alt()
+            self.headers = gh[0]
 
+            if self.data:
+                ck = Change_Data(self.data)
+                self.data = ck.get_data_alt()
 
+                self.data = self.data + gh[1]
 
-        # if data:
-        #     ck = Change_Kwargs(data)
-        #     gk = ck.get_kwargs()
-        #
-        #     # 判断是否需要token
-        #     if username != None:
-        #         ch = Change_Headers(username, password, prod)
-        #         gh = ch.get_headers()
-        #         self.headers = gh[0]
-        #
-        #         self.url = self.url_joint(prod) + '?' + gk + gh[1]
-        #     else:
-        #         self.url = self.url_joint(prod) + '?' + gk[:-1]
-        #
-        # else:
-        #     # 判断是否需要token
-        #     if username != None:
-        #         ch = Change_Headers(username, password, prod)
-        #         gh = ch.get_headers()
-        #         self.headers = gh[0]
-        #
-        #         self.url = self.url_joint(prod) + '?' + gh[1]
-        #     else:
-        #         self.url = self.url_joint(prod)
-        #
-        # logs.info('Test interface:%s' % self.url)
-        # return self.url, self.headers
+                return self.headers, self.data
+
+            else:
+                self.data = gh[1]
+                return self.headers, self.data
+
+        else:
+            if self.data:
+                ck = Change_Data(self.data)
+                self.data = ck.get_data_alt()[:-1]
+
+                return self.headers, self.data
+
+            else:
+                return self.headers, self.data
 
 
 if __name__ == '__main__':

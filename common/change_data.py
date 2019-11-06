@@ -15,7 +15,7 @@ from common.recordlog import logs
 
 class Change_Data():
 
-    def __init__(self, data, tail):
+    def __init__(self, data=None, tail=None):
         self.data = data
         self.tail = tail
 
@@ -33,6 +33,27 @@ class Change_Data():
 
 
 
+    def get_data_alt(self):
+
+        keys_list = []
+        values_list = []
+        url_alt = ''
+
+        for i in self.data.keys():
+            keys_list.append(i)
+
+        for i in self.data.values():
+            values_list.append(i)
+
+        for i in range(len(self.data)):
+            url_alt += '%s=%s&' % (keys_list[i], values_list[i])
+
+        return url_alt
+
+
+
+
+
 if __name__ == '__main__':
 
     t = '6'
@@ -45,4 +66,4 @@ if __name__ == '__main__':
     }
 
     c = Change_Data(data, data)
-    c.get_data()
+    c.get_data_alt()

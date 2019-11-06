@@ -43,7 +43,7 @@ class O2O_Cart(Requests_Test):
         self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password)
         gu = cu.get_params()
 
         logs.info('Test interface:%s' % self.url)
@@ -58,7 +58,7 @@ class O2O_Cart(Requests_Test):
         self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password)
         gu = cu.get_params()
 
         logs.info('Test interface:%s' % self.url)
@@ -131,8 +131,8 @@ if __name__ == '__main__':
     }
 
     c = O2O_Cart()
-    result = c.post_o2o_catrs('13412345678', '123456', data, prod=True)
-    # result = c.get_o2o_carts_all('13412345678', '123456')
+    # result = c.post_o2o_catrs('13412345678', '123456', data, prod=True)
+    result = c.get_o2o_carts_all('13412345678', '123456')
     # result = c.del_o2o_catrs_del('13412345678', '123456')
     # result = c.get_o2o_carts_checked('13412345678', '123456')
     print(result)

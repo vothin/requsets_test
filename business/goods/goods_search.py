@@ -32,12 +32,12 @@ class Goods_Search(Requests_Test):
 
         self.suffix = self.c.get_value('Goods', 'goods_search')
         self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
 
         # 调用Change_Param类
         cu = Change_Param(username, password, data)
         gu = cu.get_params()
 
+        logs.info('Test interface:%s' % self.url)
         return self.get_requests(self.url, gu[0], gu[1])
 
 
@@ -59,12 +59,12 @@ class Goods_Search(Requests_Test):
 
         self.suffix = self.c.get_value('Goods', 'goods_search_searchAllGoods')
         self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
 
         # 调用Change_Param类
         cu = Change_Param(username, password, data)
         gu = cu.get_params()
 
+        logs.info('Test interface:%s' % self.url)
         return self.get_requests(self.url, gu[0], gu[1])
 
 
@@ -87,11 +87,11 @@ class Goods_Search(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_search_selector')
 
         self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
 
         cu = Change_Param(username, password, data)
         gu = cu.get_params()
 
+        logs.info('Test interface:%s' % self.url)
         return self.get_requests(self.url, gu[0], gu[1])
 
 
@@ -112,11 +112,11 @@ class Goods_Search(Requests_Test):
 
         self.suffix = self.c.get_value('Goods', 'goods_search_words')
         self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
 
         cu = Change_Param(username, password, data)
         gu = cu.get_params()
 
+        logs.info('Test interface:%s' % self.url)
         return self.get_requests(self.url, gu[0], gu[1])
 
 

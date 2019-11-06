@@ -20,8 +20,8 @@ class Change_Headers():
     def __init__(self, username, password, prod=False):
         self.username = username                            # 登录账号
         self.password = password                            # 登录密码
-        self.uuid = uuid.uuid4()                            # uuid参数
-        self.timestamp = str(int(time.time() * 1000))       # timestamp参数
+        self.uuid = str(uuid.uuid4()   )                    # uuid参数
+        self.timestamp = str(int(time.time()))       # timestamp参数
 
         self.nonce = str(random.randint(100000, 999999))    # nonce参数
         self.sign = ''                                      # sign参数
@@ -43,7 +43,7 @@ class Change_Headers():
 
     # 输入请求头headers
     def get_headers(self):
-        logs.info('set headers')
+        logs.info('get headers')
 
         # 获得response的json格式
         js = self.get_json()
@@ -56,19 +56,51 @@ class Change_Headers():
 
             headers = {
                 'Authorization' : js['access_token'],
-                'uuid' : str(self.uuid)
+                'uuid' : self.uuid
             }
 
             url_tail = {
-                'uid': str(js['uid']),
+                'uid'       : str(js['uid']),
                 'timestamp' : self.timestamp,
-                'nonce' : self.nonce
+                'nonce'     : self.nonce,
+                'sign'      : self.sign
             }
 
             return headers, url_tail
 
         else:
             logs.error('not found access_token')
+
+
+
+    def get_headers_alt(self):
+        logs.info('get headers_alt')
+
+        # 获得response的json格式
+        js = self.get_json()
+        logs.info('response:%s' % js)
+
+        # 存在token就是登录成功
+        if 'access_token' in js:
+            sign = str(js['uid']) + self.nonce + self.timestamp + str(js['access_token'])
+            self.sign = get_md5(sign)
+
+            headers = {
+                'Authorization' : js['access_token'],
+                'uuid' : self.uuid
+            }
+
+            url_tail = 'uid='   + str(js['uid']) \
+                + '&timestamp=' + self.timestamp \
+                + '&nonce='     + self.nonce \
+                + '&sign='      + self.sign \
+
+
+            return headers, url_tail
+
+        else:
+            logs.error('not found access_token')
+
 
 
 if __name__ == '__main__':
