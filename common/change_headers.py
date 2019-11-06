@@ -20,8 +20,8 @@ class Change_Headers():
     def __init__(self, username, password, prod=False):
         self.username = username                            # 登录账号
         self.password = password                            # 登录密码
-        self.uuid = str(uuid.uuid4())                       # uuid参数
-        self.timestamp = str(int(time.time()))       # timestamp参数
+        self.uuid = uuid.uuid4()                            # uuid参数
+        self.timestamp = str(int(time.time() * 1000))       # timestamp参数
 
         self.nonce = str(random.randint(100000, 999999))    # nonce参数
         self.sign = ''                                      # sign参数
@@ -56,21 +56,20 @@ class Change_Headers():
 
             headers = {
                 'Authorization' : js['access_token'],
-                'uuid' : self.uuid
+                'uuid' : str(self.uuid)
             }
 
-
             url_tail = {
-                'uid'       : str(js['uid']),
+                'uid': str(js['uid']),
                 'timestamp' : self.timestamp,
-                'nonce'     : self.nonce,
-                'sign'      : self.sign
+                'nonce' : self.nonce
             }
 
             return headers, url_tail
 
         else:
             logs.error('not found access_token')
+
 
 if __name__ == '__main__':
     g = Change_Headers('13412345678', '123456')
