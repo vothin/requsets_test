@@ -41,6 +41,8 @@ class Change_Param():
                 gh = ch.get_headers()
                 self.headers = gh[0]
 
+                self.data = gh[1]
+
                 return self.headers, self.data
 
         else:

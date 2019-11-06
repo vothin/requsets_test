@@ -56,7 +56,7 @@ class Change_Headers():
 
             headers = {
                 'Authorization' : js['access_token'],
-                'uuid' : str(self.uuid)
+                'uuid' : self.uuid
             }
 
 
@@ -64,8 +64,7 @@ class Change_Headers():
                 'uid'       : str(js['uid']),
                 'timestamp' : self.timestamp,
                 'nonce'     : self.nonce,
-                'sign'      : self.sign,
-                'uuid'      : self.uuid
+                'sign'      : self.sign
             }
 
             return headers, url_tail

@@ -85,6 +85,7 @@ class Goods_Search(Requests_Test):
         '''
 
         self.suffix = self.c.get_value('Goods', 'goods_search_selector')
+
         self.url = self.url_joint(prod)
         logs.info('Test interface:%s' % self.url)
 

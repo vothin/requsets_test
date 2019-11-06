@@ -24,12 +24,16 @@ class Requests_Test(Base):
         r = requests.get(url, headers=self.headers, params=get_data)
         return r
 
+
+
     # post请求
     def post_requests(self, url, headers=None, post_data=None):
         self.headers = headers
 
         r = requests.post(url, headers=self.headers, data=post_data)
         return r
+
+
 
     def del_requests(self, url, headers=None):
         self.headers = headers
