@@ -20,6 +20,7 @@ class Change_Param():
         self.username = username
         self.password = password
         self.data     = data
+        self.headers  = None
 
     def get_params(self):
         # 判断是否需要token
@@ -53,6 +54,7 @@ class Change_Param():
 
             else:
                 logs.info('Not Parameter')
+                return self.headers, self.data
 
 
 
@@ -94,11 +96,11 @@ if __name__ == '__main__':
     Base.suffix = c.get_value('Goods', 'goods_categories')
     Base.suffix = Base.suffix.format(2)
 
-    cu = Change_Urls()
-    gu = cu.get_urls(Base.suffix)
+    cu = Change_Param()
+    gu = cu.get_params()
     print(gu)
 
-    result = cu.get_requests(gu[0], gu[1])
+    result = cu.get_params()
     print(result)
 
 

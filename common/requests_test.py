@@ -49,7 +49,8 @@ if __name__ == '__main__':
     r = Requests_Test()
     data = {'seller_id' : '16'}
     # data = '16'
-    result = r.get_requests('http://dev.buyer.wdklian.com/trade/carts/o2o/all')
+    # result = r.get_requests('http://dev.buyer.wdklian.com/trade/carts/o2o/all')
+    result = r.get_requests('http://dev.buyer.wdklian.com/goods/345/area/123129')
     # result = r.post_requests('http://dev.buyer.wdklian.com/trade/carts/o2o/seller/0', data)
     print(result)
     print(result.text)
