@@ -18,6 +18,9 @@ from common.config import Config
 
 class Requests_Test(Base):
 
+    def requests_alt(self):
+        return requests
+
     # get请求
     def get_requests(self, url, headers=None, get_data=None):
         self.headers = headers
@@ -35,6 +38,7 @@ class Requests_Test(Base):
 
 
 
+    # delete请求
     def del_requests(self, url, headers=None):
         self.headers = headers
         r = requests.delete(url, headers=self.headers)
