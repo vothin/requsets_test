@@ -33,6 +33,6 @@ class Passport_LoginNo(Requests_Test):
 
 if __name__ == '__main__':
     p = Passport_LoginNo()
-    result = p.get_passport_loginno('13412345678', '123456', prod=True)
+    result = p.get_passport_loginno('13412345678', '123456')
     print(result)
     print(result.text)
