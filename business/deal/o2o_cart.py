@@ -118,9 +118,59 @@ class O2O_Cart(Requests_Test):
 
 
     # 批量设置某商家的商品为选中或不选中
+    def post_o2o_carts_seller(self, seller_id, username=None, password=None, data=None, prod=False):
+        '''
+            相关参数有：  seller_id   卖家id
+                        checked     是否选中,可用值:0,1
+        '''
+        self.suffix = self.c.get_value('Deal', 'o2o_carts_seller')
+        self.suffix = self.suffix.format(seller_id)
+        self.url = self.url_joint(prod)
+
+        # 调用Change_Param类
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
+
+        logs.info('Test interface:%s' % self.url)
+        return self.post_requests(self.url, gu[0], gu[1])
 
 
 
+    # 更新O2O购物车中的多个产品
+    def post_o2o_carts_sku(self, sku_id, username=None, password=None, data=None, prod=False):
+        '''
+            相关参数有：  sku_id      产品id
+                        checked     是否选中,可用值:0,1
+        '''
+        self.suffix = self.c.get_value('Deal', 'o2o_carts_sku')
+        self.suffix = self.suffix.format(sku_id)
+        self.url = self.url_joint(prod)
+
+        # 调用Change_Param类
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
+
+        logs.info('Test interface:%s' % self.url)
+        return self.post_requests(self.url, gu[0], gu[1])
+
+
+
+    # 删除O2O购物车中的一个或多个产品
+    def del_o2o_carts_sku(self, sku_id, username=None, password=None, data=None, prod=False):
+        '''
+            相关参数有：  sku_id      产品id
+                        checked     是否选中,可用值:0,1
+        '''
+        self.suffix = self.c.get_value('Deal', 'o2o_carts_sku_del')
+        self.suffix = self.suffix.format(sku_id)
+        self.url = self.url_joint(prod)
+
+        # 调用Change_Param类
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
+
+        logs.info('Test interface:%s' % self.url)
+        return self.post_requests(self.url, gu[0], gu[1])
 
 
 
@@ -132,11 +182,15 @@ if __name__ == '__main__':
 
     c = O2O_Cart()
     # result = c.post_o2o_catrs('13412345678', '123456', data, prod=True)
+    # result = c.get_o2o_carts_all('13412345678', '123456')
     result = c.get_o2o_carts_all('13412345678', '123456')
     # result = c.del_o2o_catrs_del('13412345678', '123456')
     # result = c.get_o2o_carts_checked('13412345678', '123456')
     print(result)
-    print(result.text)
+    print('响应正文：', result.text)
+    print('响应头：', result.headers)
+    print('响应url：', result.url)
+    print('响应对应请求方式：', result.request)
 
 
 

@@ -20,8 +20,8 @@ class Change_Headers():
     def __init__(self, username, password, prod=False):
         self.username = username                            # 登录账号
         self.password = password                            # 登录密码
-        self.uuid = str(uuid.uuid4()   )                    # uuid参数
-        self.timestamp = str(int(time.time()))       # timestamp参数
+        self.uuid = str(uuid.uuid4())                       # uuid参数
+        self.timestamp = str(int(time.time()))              # timestamp参数
 
         self.nonce = str(random.randint(100000, 999999))    # nonce参数
         self.sign = ''                                      # sign参数
