@@ -158,13 +158,11 @@ class Carts(Requests_Test):
 
 
     # 删除O2O购物车中的一个或多个产品
-    def del_carts_sku(self, sku_id, username=None, password=None, data=None, prod=False):
+    def del_carts_sku(self, username=None, password=None, data=None, prod=False):
         '''
-            相关参数有：  sku_id      产品id
-                        checked     是否选中,可用值:0,1
+            相关参数有：  sku_ids     产品id，多个产品可以用英文逗号：(,) 隔开
         '''
         self.suffix = self.c.get_value('Deal', 'carts_sku_del')
-        self.suffix = self.suffix.format(sku_id)
         self.url = self.url_joint(prod)
 
         # 调用Change_Param类
