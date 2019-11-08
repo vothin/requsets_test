@@ -16,7 +16,7 @@ from common.requests_test import Requests_Test
 
 class Order(Requests_Test):
 
-    # 查询O2O会员订单列表
+
     def get_tarde_order_listo2o(self, username=None, password=None, data=None, prod=False):
 
         '''

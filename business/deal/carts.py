@@ -137,7 +137,7 @@ class Carts(Requests_Test):
 
 
 
-    # 更新O2O购物车中的多个产品
+    # 更新购物车中的多个产品
     def post_carts_sku(self, sku_id, username=None, password=None, data=None, prod=False):
         '''
             相关参数有：  sku_id      产品id
@@ -157,7 +157,7 @@ class Carts(Requests_Test):
 
 
 
-    # 删除O2O购物车中的一个或多个产品
+    # 删除购物车中的一个或多个产品
     def del_carts_sku(self, username=None, password=None, data=None, prod=False):
         '''
             相关参数有：  sku_ids     产品id，多个产品可以用英文逗号：(,) 隔开
