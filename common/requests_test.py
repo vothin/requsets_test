@@ -39,9 +39,9 @@ class Requests_Test(Base):
 
 
     # delete请求
-    def del_requests(self, url, headers=None):
+    def del_requests(self, url, headers=None, del_data=None):
         self.headers = headers
-        r = requests.delete(url, headers=self.headers)
+        r = requests.delete(url, headers=self.headers, data=del_data)
 
 
 
