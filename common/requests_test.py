@@ -42,7 +42,14 @@ class Requests_Test(Base):
     def del_requests(self, url, headers=None, del_data=None):
         self.headers = headers
         r = requests.delete(url, headers=self.headers, data=del_data)
+        return r
 
+
+    # put请求
+    def put_requests(self, url, headers=None, put_data=None):
+        self.headers = headers
+        r = requests.put(url, headers=self.headers, data=put_data)
+        return r
 
 
 if __name__ == '__main__':
