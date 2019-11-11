@@ -23,13 +23,15 @@ class Change_Data():
     def get_data(self):
         logs.info('get url_data')
 
-        # 合并两个字典
-        url_data = {
-            **self.data,
-            **self.tail
-        }
-
-        return url_data
+        if self.tail:
+            # 合并两个字典
+            url_data = {
+                **self.data,
+                **self.tail
+            }
+            return url_data
+        else:
+            return self.data
 
 
 

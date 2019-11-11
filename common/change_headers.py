@@ -26,6 +26,8 @@ class Change_Headers():
         self.nonce = str(random.randint(100000, 999999))    # nonce参数
         self.sign = ''                                      # sign参数
         self.prod = prod
+        self.headers = None
+        self.url_tail = None
 
     # 获得requests响应正文
     def get_json(self):
@@ -54,22 +56,23 @@ class Change_Headers():
             sign = str(js['uid']) + self.nonce + self.timestamp + str(js['access_token'])
             self.sign = get_md5(sign)
 
-            headers = {
+            self.headers = {
                 'Authorization' : js['access_token'],
                 'uuid' : self.uuid
             }
 
-            url_tail = {
+            self.url_tail = {
                 'uid'       : str(js['uid']),
                 'timestamp' : self.timestamp,
                 'nonce'     : self.nonce,
                 'sign'      : self.sign
             }
 
-            return headers, url_tail
+            return self.headers, self.url_tail
 
         else:
             logs.error('not found access_token')
+            return self.headers, self.url_tail
 
 
 
@@ -85,21 +88,22 @@ class Change_Headers():
             sign = str(js['uid']) + self.nonce + self.timestamp + str(js['access_token'])
             self.sign = get_md5(sign)
 
-            headers = {
+            self.headers = {
                 'Authorization' : js['access_token'],
                 'uuid' : self.uuid
             }
 
-            url_tail = 'uid='   + str(js['uid']) \
+            self.url_tail = 'uid='   + str(js['uid']) \
                 + '&timestamp=' + self.timestamp \
                 + '&nonce='     + self.nonce \
                 + '&sign='      + self.sign \
 
 
-            return headers, url_tail
+            return self.headers, self.url_tail
 
         else:
             logs.error('not found access_token')
+            return self.headers, self.url_tail
 
 
 

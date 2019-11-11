@@ -17,13 +17,13 @@ from common.requests_test import Requests_Test
 class Checkout_Param(Requests_Test):
 
     # 获取结算参数
-    def get_checkout_params(self, username=None, password=None, prod=False):
+    def get_checkout_params(self, username=None, password=None, data=None, prod=False):
 
         self.suffix = self.c.get_value('Deal', 'checkout_params')
         self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password)
+        cu = Change_Param(username, password, data)
         gu = cu.get_params()
 
         logs.info('Test interface:%s' % self.url)
