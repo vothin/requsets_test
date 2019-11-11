@@ -17,12 +17,12 @@ from common.recordlog import logs
 class Express_Detail(Requests_Test):
 
     # 查询物流详细
-    def get_checkout_params(self, username=None, password=None, data=None, prod=False):
+    def get_experss(self, username=None, password=None, data=None, prod=False):
         '''
             相关参数有：  id          物流公司id
                         num         快递单号
         '''
-        self.suffix = self.c.get_value('Deal', 'checkout_params')
+        self.suffix = self.c.get_value('Deal', 'experss')
         self.url = self.url_joint(prod)
 
         # 调用Change_Param类
