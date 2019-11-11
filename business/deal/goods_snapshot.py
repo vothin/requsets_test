@@ -3,23 +3,24 @@
 '''
     @author: Vothin
     @software: 自动化测试
-    @file: goods_sales.py
-    @time: 2019/11/11 10:09
+    @file: goods_snapshot.py
+    @time: 2019/11/11 10:34
     @desc:
 '''
 # ********************************************************
 
-from common.recordlog import logs
-from common.change_param import Change_Param
+
 from common.requests_test import Requests_Test
+from common.change_param import Change_Param
+from common.recordlog import logs
 
 
-class Goods_Sales(Requests_Test):
+class Goods_Snapshot(Requests_Test):
 
-    # 查询某商品的销售记录
-    def get_goods_sales(self, goods_id, username=None, password=None, data=None, prod=False):
-        self.suffix = self.c.get_value('Deal', 'goods_sales')
-        self.suffix = self.suffix.format(goods_id)
+    # 查询一个交易快照
+    def get_goods_snapshot(self, id, username=None, password=None, data=None, prod=False):
+        self.suffix = self.c.get_value('Deal', 'goods_snapshots')
+        self.suffix = self.suffix.format(id)
         self.url = self.url_joint(prod)
 
         # 调用Change_Param类
@@ -31,8 +32,8 @@ class Goods_Sales(Requests_Test):
 
 
 if __name__ == '__main__':
-    g = Goods_Sales()
-    result = g.get_goods_sales(353)
+    g = Goods_Snapshot()
+    result = g.get_goods_snapshot('16')
     print(result)
     print('响应正文：', result.text)
     print('响应头：', result.headers)
