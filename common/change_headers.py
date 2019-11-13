@@ -20,8 +20,8 @@ class Change_Headers():
     def __init__(self, username, password, prod=False):
         self.username = username                            # 登录账号
         self.password = password                            # 登录密码
-        self.uuid = str(uuid.uuid4())                       # uuid参数
-        self.timestamp = str(int(time.time()))              # timestamp参数
+        self.uuid = '777'                                   # uuid参数
+        self.timestamp = str(int(time.time()) * 1000)       # timestamp参数
 
         self.nonce = str(random.randint(100000, 999999))    # nonce参数
         self.sign = ''                                      # sign参数
@@ -56,17 +56,21 @@ class Change_Headers():
             sign = str(js['uid']) + self.nonce + self.timestamp + str(js['access_token'])
             self.sign = get_md5(sign)
 
+            # 生成headers
             self.headers = {
-                'Authorization' : js['access_token'],
+                #'Authorization' : js['access_token'],
                 'uuid' : self.uuid
             }
 
-            self.url_tail = {
-                'uid'       : str(js['uid']),
-                'timestamp' : self.timestamp,
-                'nonce'     : self.nonce,
-                'sign'      : self.sign
-            }
+            # 生成url尾部
+            # self.url_tail = {
+            #     'uid'       : str(js['uid']),
+            #     'timestamp' : self.timestamp,
+            #     'nonce'     : self.nonce,
+            #     'sign'      : self.sign
+            # }
+
+            self.url_tail = 'uid=' + str(js['uid']) + '&timestamp=' + self.timestamp + '&nonce=' + self.nonce + '&sign=' + self.sign
 
             return self.headers, self.url_tail
 

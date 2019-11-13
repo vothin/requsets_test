@@ -29,7 +29,7 @@ class Passport_LoginNo(Requests_Test):
         }
 
         logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, get_data=up)
+        return self.get_requests(self.url, headers={'uuid' : '777'}, get_data=up)
 
 if __name__ == '__main__':
     p = Passport_LoginNo()

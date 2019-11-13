@@ -22,12 +22,15 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods')
         self.suffix = self.suffix.format(goods_id)
 
-        self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
-
         cu = Change_Param(username, password)
         gu = cu.get_params()
 
+        if gu[2]:
+            self.url = self.url_joint(prod) + '?' + gu[2]
+        else:
+            self.url = self.url_joint(prod)
+
+        logs.info('Test interface:%s' % self.url)
         return self.get_requests(self.url, gu[0], gu[1])
 
 
@@ -82,8 +85,8 @@ if __name__ == '__main__':
     # result = g.get_goods(456)
     # result = g.get_goods(456, username='13412345678', password='123456')
     # result = g.get_goods_area(345, 123129)
-    result = g.get_goods_area(345, 123129, username='13412345678', password='123456')
-    # result = g.get_goods_skus(345, prod=True)
+    # result = g.get_goods_area(345, 123129, username='13412345678', password='123456')
+    result = g.get_goods_skus(345, prod=True)
     # result = g.get_goods_skus(345)
     # result = g.get_goods_skus(345, username='13412345678', password='123456', prod=True)
     # result = g.get_goods_skus(345, username='13412345678', password='123456', prod=False)

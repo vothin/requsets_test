@@ -19,21 +19,26 @@ class Shop(Requests_Test):
     # H5申请o2o店铺
     def post_o2o_shop_apply(self, username=None, password=None, data=None, prod=False):
         '''
-                   相关参数有：  shop_name            店铺名称
-                               link_name            店铺联系人
-                               link_phone           联系人手机
-                               shop_add             店铺详细地址
-                               bank_name            银行名称
-                               bank_account_name    银行户名
-                               bank_number          银行账号
-                               shop_region          shop_region
-               '''
-        self.suffix = self.c.get_value('Shop', 'shop_o2o_apply')
-        self.url = self.url_joint(prod)
+           相关参数有：  shop_name            店铺名称
+                       link_name            店铺联系人
+                       link_phone           联系人手机
+                       shop_add             店铺详细地址
+                       bank_name            银行名称
+                       bank_account_name    银行户名
+                       bank_number          银行账号
+                       shop_region          shop_region
+        '''
 
         # 调用Change_Param类
         cu = Change_Param(username, password, data)
         gu = cu.get_params()
+
+        # 生成url
+        self.suffix = self.c.get_value('Shop', 'shop_o2o_apply')
+        if gu[2]:
+            self.url = self.url_joint(prod) + '?' + gu[2]
+        else:
+            self.url = self.url_joint(prod)
 
         logs.info('Test interface:%s' % self.url)
         return self.post_requests(self.url, gu[0], gu[1])

@@ -21,40 +21,44 @@ class Change_Param():
         self.password = password
         self.data     = data
         self.headers  = None
+        self.url_tail = None
 
     def get_params(self):
         # 判断是否需要token
         if self.username:
 
-            if self.data:
+            # 判断是否存在data
+            if self.data:           # 存在headers和data
                 ch = Change_Headers(self.username, self.password)
                 gh = ch.get_headers()
                 self.headers = gh[0]
+                self.url_tail = gh[1]
 
-                ck = Change_Data(self.data, gh[1])
-                self.data = ck.get_data()
+                # ck = Change_Data(self.data, gh[1])
+                # self.data = ck.get_data()
+
 
                 logs.info('Test data:%s' % self.data)
-                return self.headers, self.data
+                return self.headers, self.data, self.url_tail
 
             else:
                 ch = Change_Headers(self.username, self.password)
                 gh = ch.get_headers()
                 self.headers = gh[0]
+                self.url_tail = gh[1]
 
-                self.data = gh[1]
 
                 logs.info('Test data:%s' % self.data)
-                return self.headers, self.data
+                return self.headers, self.data, self.url_tail
 
         else:
             if self.data:
                 logs.info('Test data:%s' % self.data)
-                return self.headers, self.data
+                return self.headers, self.data, self.url_tail
 
             else:
                 logs.info('Not Parameter')
-                return self.headers, self.data
+                return self.headers, self.data, self.url_tail
 
 
 

@@ -47,6 +47,9 @@ class Member_Collection_Shop(Requests_Test):
         cu = Change_Param(username, password, data)
         gu = cu.get_params()
 
+        logs.info('Test interface:%s' % self.url)
+        return self.get_requests(self.url, gu[0], gu[1])
+
 
 
     # 删除会员收藏店铺
