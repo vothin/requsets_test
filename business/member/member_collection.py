@@ -66,7 +66,7 @@ class Member_Collection(Requests_Test):
         gu = cu.get_params()
 
         logs.info('Test interface:%s' % self.url)
-        return self.post_requests(self.url, gu[0], gu[1])
+        return self.del_requests(self.url, gu[0], gu[1])
 
 
 
