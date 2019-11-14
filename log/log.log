@@ -1901,3 +1901,22 @@
 [32m 2019-11-14 11:09:57,071 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
 [32m 2019-11-14 11:09:57,071 change_param.py[line:48] INFO: data:None[0m
 [32m 2019-11-14 11:09:57,071 goods_categories.py[line:29] INFO: url:http://api.buyer.wdklian.com/goods/categories/2/children?uid=2247&timestamp=1573700996000&nonce=631027&sign=1e22aa0bcede0ea51c19c71867b3f64b[0m
+[32m 2019-11-14 11:10:36,616 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:10:36,616 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:10:36,906 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:10:36,906 change_param.py[line:38] INFO: data:{'page_no': '1', 'page_size': '10'}[0m
+[32m 2019-11-14 11:11:56,338 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:11:56,338 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:11:56,635 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:11:56,636 change_param.py[line:38] INFO: data:{'page_on': '1', 'page_size': '1', 'category': '1'}[0m
+[32m 2019-11-14 11:11:56,636 goods_search.py[line:40] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search[0m
+[32m 2019-11-14 11:12:03,578 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:12:03,578 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:12:03,726 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:12:03,726 change_param.py[line:38] INFO: data:{'page_on': '1', 'page_size': '10', 'category': '1'}[0m
+[32m 2019-11-14 11:12:03,726 goods_search.py[line:40] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search[0m
+[32m 2019-11-14 11:12:08,534 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:12:08,534 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:12:08,677 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:12:08,678 change_param.py[line:38] INFO: data:{'page_on': '1', 'page_size': '1', 'category': '1'}[0m
+[32m 2019-11-14 11:12:08,678 goods_search.py[line:40] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search[0m

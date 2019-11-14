@@ -96,7 +96,7 @@ if __name__ == '__main__':
     m = Member_Collection()
 
     data = {
-        'page_no' : '10',
+        'page_no' : '1',
         'page_size' : '10'
     }
 

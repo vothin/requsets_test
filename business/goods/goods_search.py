@@ -84,14 +84,14 @@ class Goods_Search(Requests_Test):
                         shop_cat_id 商家分组id，搜索店铺商品的时候使用
         '''
 
-        self.suffix = self.c.get_value('Goods', 'goods_search_selector')
-
-        self.url = self.url_joint(prod)
-
         cu = Change_Param(username, password, data)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
+        # 拼接url
+        self.suffix = self.c.get_value('Goods', 'goods_search_selector')
+        self.url = self.url_joint(prod) + gu[2]
+        logs.info('url:%s' % self.url)
+
         return self.get_requests(self.url, gu[0], gu[1])
 
 
@@ -111,13 +111,14 @@ class Goods_Search(Requests_Test):
                         shop_cat_id 商家分组id，搜索店铺商品的时候使用
         '''
 
-        self.suffix = self.c.get_value('Goods', 'goods_search_words')
-        self.url = self.url_joint(prod)
-
         cu = Change_Param(username, password, data)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
+        # 拼接url
+        self.suffix = self.c.get_value('Goods', 'goods_search_words')
+        self.url = self.url_joint(prod) + gu[2]
+        logs.info('url:%s' % self.url)
+
         return self.get_requests(self.url, gu[0], gu[1])
 
 
