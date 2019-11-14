@@ -21,7 +21,7 @@ class Goods(Requests_Test):
     def get_goods(self, goods_id, username=None, password=None, data=None, prod=False):
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data, prod)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
@@ -38,7 +38,7 @@ class Goods(Requests_Test):
     # 查询商品是否有货
     def get_goods_area(self, goods_id, area_id, username=None, password=None, data=None, prod=False):
         # 调用Change_Param类
-        cu = Change_Param(username, password, data, prod)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
@@ -54,7 +54,7 @@ class Goods(Requests_Test):
     def get_goods_skus(self, goods_id, username=None, password=None, data=None, prod=False):
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data, prod)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
@@ -71,7 +71,7 @@ class Goods(Requests_Test):
     def get_goods_visit(self, goods_id, username=None, password=None, data=None, prod=False):
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data, prod)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url

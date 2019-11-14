@@ -2217,3 +2217,8 @@
 [32m 2019-11-14 16:42:59,957 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-14 16:42:59,957 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-14 16:42:59,957 goods.py[line:64] INFO: test url:http://dev.buyer.wdklian.com/goods/345/skus?uid=2247&timestamp=1573720979000&nonce=162543&sign=3d8c1a6114cf2401184126597311fa92[0m
+[32m 2019-11-14 16:44:54,553 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-14 16:44:54,553 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-14 16:44:54,854 change_urltail.py[line:39] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-14 16:44:54,855 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-14 16:44:54,855 goods_categories.py[line:29] INFO: test url:http://api.buyer.wdklian.com/goods/categories/2/children?uid=2247&timestamp=1573721094000&nonce=573373&sign=454863e780ac5b184c33394358855395[0m

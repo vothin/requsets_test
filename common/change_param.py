@@ -16,10 +16,9 @@ from common.requests_test import Requests_Test
 
 class Change_Param():
 
-    def __init__(self, username=None, password=None, data=None, prod=False):
+    def __init__(self, username=None, password=None, prod=False):
         self.username = username
         self.password = password
-        self.data     = data
         self.headers  = None
         self.url_tail = ''
         self.prod = prod

@@ -19,16 +19,16 @@ class Goods_Categories(Requests_Test):
     def get_goods_categories(self, parent_id, username=None, password=None, data=None, prod=False):
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
         self.suffix = self.c.get_value('Goods', 'goods_categories')
         self.suffix = self.suffix.format(parent_id)
-        self.url = self.url_joint(prod) + gu[2]
-        logs.info('url:%s' % self.url)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
 
-        return self.get_requests(self.url, gu[0], gu[1])
+        return self.get_requests(self.url, gu[0], data)
 
 
 if __name__ == '__main__':
