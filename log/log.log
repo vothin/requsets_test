@@ -1839,3 +1839,60 @@
 [32m 2019-11-14 10:50:44,975 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
 [32m 2019-11-14 10:50:45,275 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
 [32m 2019-11-14 10:50:45,275 change_param.py[line:37] INFO: data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:56:57,344 change_param.py[line:56] INFO: Not Parameter[0m
+[32m 2019-11-14 10:59:12,029 change_param.py[line:56] INFO: Not Parameter[0m
+[32m 2019-11-14 10:59:18,727 change_param.py[line:56] INFO: Not Parameter[0m
+[32m 2019-11-14 10:59:31,537 change_param.py[line:56] INFO: Not Parameter[0m
+[32m 2019-11-14 10:59:37,662 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:59:37,663 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:59:37,664 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:59:37,958 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:59:37,958 change_param.py[line:37] INFO: data:{'test': 'test'}[0m
+[32m 2019-11-14 11:01:17,771 change_param.py[line:58] INFO: Not Parameter[0m
+[32m 2019-11-14 11:01:52,608 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:01:52,609 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 11:01:52,610 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 11:01:52,901 change_param.py[line:47] INFO: headers:None[0m
+[32m 2019-11-14 11:01:52,901 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:02:14,472 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:02:14,472 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 11:02:14,473 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 11:02:14,807 change_param.py[line:47] INFO: headers:None[0m
+[32m 2019-11-14 11:02:14,808 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:04:04,308 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:04:04,309 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 11:04:04,310 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 11:04:04,613 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:04:04,614 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:05:55,612 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:05:55,612 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 11:05:55,613 passport_login_noCaptcha.py[line:31] INFO: url:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 11:05:55,909 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:05:55,910 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:05:55,910 goods.py[line:64] INFO: url:http://api.buyer.wdklian.com/goods/345/skus?uid=2247&timestamp=1573700755000&nonce=971495&sign=54d726f71df6cf0f4829b586d664c2f9[0m
+[32m 2019-11-14 11:06:07,112 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:06:07,112 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 11:06:07,113 passport_login_noCaptcha.py[line:31] INFO: url:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 11:06:07,262 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:06:07,262 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:06:07,262 goods.py[line:64] INFO: url:http://api.buyer.wdklian.com/goods/345/skus?uid=2247&timestamp=1573700767000&nonce=738018&sign=d1fb5fb6b96251e8635a2e184fdcfdd9[0m
+[32m 2019-11-14 11:06:33,476 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:06:33,477 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 11:06:33,630 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:06:33,631 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:06:33,631 goods.py[line:64] INFO: url:http://dev.buyer.wdklian.com/goods/345/skus?uid=2247&timestamp=1573700793000&nonce=555982&sign=6b55b42491fd5c5536800346d21f2c2e[0m
+[32m 2019-11-14 11:06:34,383 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:06:34,383 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 11:06:34,526 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:06:34,526 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:06:34,526 goods.py[line:64] INFO: url:http://dev.buyer.wdklian.com/goods/345/skus?uid=2247&timestamp=1573700794000&nonce=637206&sign=cb6fcc050b1b0def5dd5b57f081ef6c3[0m
+[32m 2019-11-14 11:07:02,033 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:07:02,033 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:07:02,332 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:07:02,332 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:07:02,332 goods.py[line:64] INFO: url:http://dev.buyer.wdklian.com/goods/345/skus?uid=2247&timestamp=1573700822000&nonce=305316&sign=63d37b44587fd2d542023d362258ddf8[0m
+[32m 2019-11-14 11:09:07,005 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:09:07,005 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:09:07,312 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:09:07,313 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:09:07,313 goods.py[line:81] INFO: url:http://dev.buyer.wdklian.com/goods/345/visit?uid=2247&timestamp=1573700947000&nonce=230416&sign=c0eeaa5a9b5698c826a06c3262aaf54f[0m

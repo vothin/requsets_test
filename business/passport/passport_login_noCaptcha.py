@@ -28,7 +28,6 @@ class Passport_LoginNo(Requests_Test):
             'password' : str(password)
         }
 
-        logs.info('Test interface:%s' % self.url)
         return self.get_requests(self.url, headers, get_data=up)
 
 if __name__ == '__main__':

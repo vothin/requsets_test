@@ -31,7 +31,7 @@ class Change_Headers():
 
     # 获得requests响应正文
     def get_json(self):
-        logs.info('get response to json')
+        logs.info('get login')
 
         # 获取response
         p = Passport_LoginNo()
@@ -58,7 +58,6 @@ class Change_Headers():
             # 生成url拼接部分
             self.url_tail = '?uid=' + str(js['uid']) + '&timestamp=' + self.timestamp + '&nonce=' + self.nonce + '&sign=' + self.sign
 
-            logs.info('headers:%s' % self.headers)
             return self.headers, self.url_tail
 
         else:

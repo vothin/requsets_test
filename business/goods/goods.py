@@ -28,6 +28,7 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods')
         self.suffix = self.suffix.format(goods_id)
         self.url = self.url_joint(prod) + gu[2]
+        logs.info('url:%s' % self.url)
 
         return self.get_requests(self.url, gu[0], gu[1])
 
@@ -44,6 +45,7 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_area')
         self.suffix = self.suffix.format(goods_id, area_id)
         self.url = self.url_joint(prod) + gu[2]
+        logs.info('url:%s' % self.url)
 
         return self.get_requests(self.url, gu[0], gu[1])
 
@@ -59,6 +61,7 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_skus')
         self.suffix = self.suffix.format(goods_id)
         self.url = self.url_joint(prod) + gu[2]
+        logs.info('url:%s' % self.url)
 
         return self.get_requests(self.url, gu[0], gu[1])
 
@@ -75,6 +78,7 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_visit')
         self.suffix = self.suffix.format(goods_id)
         self.url = self.url_joint(prod) + gu[2]
+        logs.info('url:%s' % self.url)
 
         return self.get_requests(self.url, gu[0], gu[1])
 
@@ -86,13 +90,14 @@ if __name__ == '__main__':
     # result = g.get_goods(456, username='13412345678', password='123456')
     # result = g.get_goods_area(345, 123129)
     # result = g.get_goods_area(345, 123129, username='13412345678', password='123456')
-    result = g.get_goods_skus(345, prod=True)
+    # result = g.get_goods_skus(345, prod=True)
     # result = g.get_goods_skus(345)
-    # result = g.get_goods_skus(345, username='13412345678', password='123456', prod=True)
+    # result = g.get_goods_skus(345, '13412345678', '123456', prod=True)
     # result = g.get_goods_skus(345, username='13412345678', password='123456', prod=False)
-    # result = g.get_goods_visit(345, username='13412345678', password='123456')
+    result = g.get_goods_visit(345, username='13412345678', password='123456')
     # result = g.get_goods_visit(1)
     # result2 = g.get_goods_visit(1, prod=True)
     print(result.text)
+    # print(result.url)
     # print(result2.text)
 
