@@ -169,7 +169,7 @@ class Carts(Requests_Test):
 
 
     # 删除购物车中的一个或多个产品
-    def del_carts_sku(self, username=None, password=None, data=None, prod=False):
+    def del_carts_sku(self, sku_ids, username=None, password=None, data=None, prod=False):
         '''
             相关参数有：  sku_ids     产品id，多个产品可以用英文逗号：(,) 隔开
         '''
@@ -180,6 +180,7 @@ class Carts(Requests_Test):
 
         # 拼接url
         self.suffix = self.c.get_value('Deal', 'carts_sku_del')
+        self.suffix = self.suffix.format(sku_ids)
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test url:%s' % self.url)
 
@@ -192,7 +193,7 @@ if __name__ == '__main__':
     c = Carts()
 
     data = {
-        'sku_id' : '571',
+        'sku_id' : '600',
         'num' : '1'
     }
 
@@ -205,8 +206,10 @@ if __name__ == '__main__':
     }
 
     data3 = {
-        'num' : '2'
+        'num' : '3'
     }
+
+    a = 591,592
 
     # result = c.post_catrs('13412345678', '123456', data)
     result = c.get_carts_all('13412345678', '123456')
@@ -215,7 +218,10 @@ if __name__ == '__main__':
     # result = c.get_carts_checked('13412345678', '123456', data)
     # result = c.post_carts_checked('13412345678', '123456', data1)
     # result = c.post_carts_seller('20', '13412345678', '123456', data2)
-    # result = c.post_carts_sku('(599,600)', '13412345678', '123456', data3)
+    # result = c.post_carts_sku('572', '13412345678', '123456', data3)
+    # result = c.post_carts_sku('571', '13412345678', '123456', data3)
+    # result = c.del_carts_sku('599,600', '13412345678', '123456')
     print(result)
     print(result.text)
+    print(result.url)
 

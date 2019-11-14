@@ -19,15 +19,16 @@ class Checkout_Param(Requests_Test):
     # 获取结算参数
     def get_checkout_params(self, username=None, password=None, data=None, prod=False):
 
-        self.suffix = self.c.get_value('Deal', 'checkout_params')
-        self.url = self.url_joint(prod)
-
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'checkout_params')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
 
 
 
@@ -36,16 +37,17 @@ class Checkout_Param(Requests_Test):
         '''
             相关参数有：  address_id          收货地址id
         '''
-        self.suffix = self.c.get_value('Deal', 'checkout_params_addressId')
-        self.suffix = self.suffix.format(address_id)
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'checkout_params_addressId')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.post_requests(self.url, gu[0], data)
 
 
 
@@ -54,15 +56,17 @@ class Checkout_Param(Requests_Test):
         '''
             相关参数有：  payment_type          支付类型 在线支付：ONLINE，货到付款：COD,可用值:ONLINE,COD
         '''
-        self.suffix = self.c.get_value('Deal', 'checkout_params_payType')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'checkout_params_payType')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.post_requests(self.url, gu[0], data)
 
 
 
@@ -74,29 +78,34 @@ class Checkout_Param(Requests_Test):
                         tax_no                  发票税号
                         type                    普票类型，0为个人，其他为公司
         '''
-        self.suffix = self.c.get_value('Deal', 'checkout_params_receipt')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'checkout_params_receipt')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.post_requests(self.url, gu[0], data)
+
 
 
 
     # 取消发票
     def del_checkout_params_receipt(self, username=None, password=None, data=None, prod=False):
-        self.suffix = self.c.get_value('Deal', 'checkout_params_receipt_del')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.del_requests(self.url, gu[0])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'checkout_params_receipt_del')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.del_requests(self.url, gu[0], data)
 
 
 
@@ -105,15 +114,17 @@ class Checkout_Param(Requests_Test):
         '''
             相关参数有：  receive_time           送货时间
         '''
-        self.suffix = self.c.get_value('Deal', 'checkout_params_receiveTime')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'checkout_params_receiveTime')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.post_requests(self.url, gu[0], data)
 
 
 
@@ -122,15 +133,24 @@ class Checkout_Param(Requests_Test):
         '''
             相关参数有：  receive_time           送货时间
         '''
-        self.suffix = self.c.get_value('Deal', 'checkout_params_remark')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'checkout_params_remark')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
 
+        return self.post_requests(self.url, gu[0], data)
+
+
+if __name__ == '__main__':
+    c = Checkout_Param()
+
+    result = c.get_checkout_params('15652179020', 'qqqqqq')
+    print(result)
+    print(result.text)
 
 
