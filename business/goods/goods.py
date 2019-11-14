@@ -28,7 +28,7 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods')
         self.suffix = self.suffix.format(goods_id)
         self.url = self.url_joint(prod) + gu[1]
-        logs.info('url:%s' % self.url)
+        logs.info('test url:%s' % self.url)
 
         return self.get_requests(self.url, gu[0], data)
 
@@ -45,7 +45,7 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_area')
         self.suffix = self.suffix.format(goods_id, area_id)
         self.url = self.url_joint(prod) + gu[1]
-        logs.info('url:%s' % self.url)
+        logs.info('test url:%s' % self.url)
 
         return self.get_requests(self.url, gu[0], data)
 
@@ -61,7 +61,7 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_skus')
         self.suffix = self.suffix.format(goods_id)
         self.url = self.url_joint(prod) + gu[1]
-        logs.info('url:%s' % self.url)
+        logs.info('test url:%s' % self.url)
 
         return self.get_requests(self.url, gu[0], data)
 
@@ -78,7 +78,7 @@ class Goods(Requests_Test):
         self.suffix = self.c.get_value('Goods', 'goods_visit')
         self.suffix = self.suffix.format(goods_id)
         self.url = self.url_joint(prod) + gu[1]
-        logs.info('url:%s' % self.url)
+        logs.info('test url:%s' % self.url)
 
         return self.get_requests(self.url, gu[0], data)
 
