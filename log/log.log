@@ -2222,3 +2222,12 @@
 [32m 2019-11-14 16:44:54,854 change_urltail.py[line:39] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-14 16:44:54,855 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-14 16:44:54,855 goods_categories.py[line:29] INFO: test url:http://api.buyer.wdklian.com/goods/categories/2/children?uid=2247&timestamp=1573721094000&nonce=573373&sign=454863e780ac5b184c33394358855395[0m
+[32m 2019-11-14 16:46:43,200 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-14 16:46:43,201 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-14 16:46:43,507 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-14 16:46:43,507 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-14 16:46:43,507 goods_search.py[line:40] INFO: test url:http://dev.buyer.wdklian.com/goods/search?uid=2247&timestamp=1573721203000&nonce=435911&sign=e6e3a8198ae22731f3bf4d99327d7c40[0m
+[32m 2019-11-14 16:46:53,298 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-14 16:46:53,299 goods_search.py[line:98] INFO: test url:http://dev.buyer.wdklian.com/goods/search/selector[0m
+[32m 2019-11-14 16:46:58,792 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-14 16:46:58,793 goods_search.py[line:69] INFO: test url:http://dev.buyer.wdklian.com/goods/search/searchAllGoods[0m
