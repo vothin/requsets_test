@@ -27,7 +27,7 @@ class Change_UrlTail():
         self.sign = ''                                      # sign参数
         self.prod = prod
         self.headers = {'uuid' : self.uuid}
-        self.url_tail = None
+        self.url_tail = ''
 
     # 获得requests响应正文
     def get_json(self):
@@ -35,7 +35,7 @@ class Change_UrlTail():
 
         # 获取response
         p = Passport_LoginNo()
-        response = p.get_passport_loginno(self.username, self.password, self.prod)
+        response = p.get_passport_loginno(self.username, self.password, self.headers, self.prod)
         logs.info('login url:%s' % response.url)
         logs.info(response)
 
