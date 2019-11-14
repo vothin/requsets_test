@@ -1896,3 +1896,8 @@
 [32m 2019-11-14 11:09:07,312 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
 [32m 2019-11-14 11:09:07,313 change_param.py[line:48] INFO: data:None[0m
 [32m 2019-11-14 11:09:07,313 goods.py[line:81] INFO: url:http://dev.buyer.wdklian.com/goods/345/visit?uid=2247&timestamp=1573700947000&nonce=230416&sign=c0eeaa5a9b5698c826a06c3262aaf54f[0m
+[32m 2019-11-14 11:09:56,770 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:09:56,770 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:09:57,071 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:09:57,071 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:09:57,071 goods_categories.py[line:29] INFO: url:http://api.buyer.wdklian.com/goods/categories/2/children?uid=2247&timestamp=1573700996000&nonce=631027&sign=1e22aa0bcede0ea51c19c71867b3f64b[0m
