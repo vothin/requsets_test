@@ -11,7 +11,8 @@
 
 
 from common.recordlog import logs
-from common.change_headers import Change_Headers
+from common.change_urltail import Change_UrlTail
+from common.requests_test import Requests_Test
 
 class Change_Param():
 
@@ -25,41 +26,19 @@ class Change_Param():
 
 
     def get_params(self):
-        # 判断是否需要登录
+
+        # 判断是否登录
         if self.username:
+            ch = Change_UrlTail(self.username, self.password, self.prod)
+            gh = ch.get_urlTail()
+            self.headers = gh[0]
+            self.url_tail = gh[1]
 
-            # 判断是否存在data
-            if self.data:           # 存在headers和data
-                ch = Change_Headers(self.username, self.password, self.prod)
-                gh = ch.get_headers()
-                self.headers = gh[0]
-                self.url_tail = gh[1]
+            return self.headers, self.url_tail
 
-                logs.info('headers:%s' % self.headers)
-                logs.info('data:%s' % self.data)
-                return self.headers, self.data, self.url_tail
-
-            else:                   # 只存在headers
-                ch = Change_Headers(self.username, self.password, self.prod)
-                gh = ch.get_headers()
-                self.headers = gh[0]
-                self.url_tail = gh[1]
-
-                logs.info('headers:%s' % self.headers)
-                logs.info('data:%s' % self.data)
-                return self.headers, self.data, self.url_tail
-
-        else:                       # 只存在data
-            if self.data:
-                logs.info('headers:%s' % self.headers)
-                logs.info('data:%s' % self.data)
-                return self.headers, self.data, self.url_tail
-
-            else:                   # 什么都不存在
-                logs.info('Not Parameter')
-                return self.headers, self.data, self.url_tail
-
-
+        else:
+            logs.info('Not Parameter')
+            return self.headers, self.url_tail
 
 
 if __name__ == '__main__':
@@ -74,9 +53,12 @@ if __name__ == '__main__':
         'test' : 'test'
     }
 
-    cu = Change_Param('13412345678', '123456', data)
+    prod = True
+
+    cu = Change_Param('13412345678', '123456')
     gu = cu.get_params()
-    print(gu)
+
+    # print(gu)
 
 
 

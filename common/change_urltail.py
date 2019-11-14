@@ -15,7 +15,7 @@ from common.change_md5 import get_md5
 from common.recordlog import logs
 from business.passport.passport_login_noCaptcha import Passport_LoginNo
 
-class Change_Headers():
+class Change_UrlTail():
 
     def __init__(self, username, password, prod=False):
         self.username = username                            # 登录账号
@@ -35,7 +35,9 @@ class Change_Headers():
 
         # 获取response
         p = Passport_LoginNo()
-        response = p.get_passport_loginno(self.username, self.password, self.headers, self.prod)
+        response = p.get_passport_loginno(self.username, self.password, self.prod)
+        logs.info('login url:%s' % response.url)
+        logs.info(response)
 
         # json格式阅读
         js = json.loads(response.text)
@@ -44,7 +46,7 @@ class Change_Headers():
 
 
     # 输入请求头headers
-    def get_headers(self):
+    def get_urlTail(self):
         logs.info('get headers')
 
         # 获得response的json格式
@@ -66,7 +68,6 @@ class Change_Headers():
 
 
 if __name__ == '__main__':
-    g = Change_Headers('13412345678', '123456')
-    g = Change_Headers('13412345678', '123456')
-    result = g.get_headers()
+    g = Change_UrlTail('13412345678', '123456')
+    result = g.get_urlTail()
     print(result)

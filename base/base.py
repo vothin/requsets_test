@@ -28,6 +28,32 @@ class Base():
         self.headers = None                                 # headers参数
 
 
+    # # 初始化读取配置文件url.ini
+    # def __init__(self, username=None, password=None):
+    #     self.c = Config()
+    #     self.prefix1 = self.c.get_value('URL', 'dev_url')   # 测试环境
+    #     self.prefix2 = self.c.get_value('URL', 'url')       # 正式环境
+    #     self.prefix3 = self.c.get_value('URL', '192_url')
+    #     self.suffix = ''                                    # section参数
+    #     self.url = ''                                       # url地址
+    #     self.token = ''                                     # token参数
+    #     self.uid = ''                                       # uid参数
+    #     self.headers = None                                 # headers参数
+    #
+    #     self.uuid = '777'                                   # uuid参数
+    #     self.timestamp = str(int(time.time()) * 1000)       # timestamp参数
+    #     self.nonce = str(random.randint(100000, 999999))    # nonce参数
+    #     self.sign = ''                                      # sign参数
+    #     self.headers = {'uuid' : self.uuid}
+    #     self.url_tail = ''
+    #
+    #     self.username = username                            # 登录账号
+    #     self.password = password                            # 登录密码
+    #     # self.data = None                                    # data参数
+    #     # self.prod = False                                   # prod控制器
+
+
+
     # url拼接
     def url_joint(self, prod=False):
         if prod:
