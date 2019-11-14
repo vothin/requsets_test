@@ -1920,3 +1920,128 @@
 [32m 2019-11-14 11:12:08,677 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
 [32m 2019-11-14 11:12:08,678 change_param.py[line:38] INFO: data:{'page_on': '1', 'page_size': '1', 'category': '1'}[0m
 [32m 2019-11-14 11:12:08,678 goods_search.py[line:40] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search[0m
+[32m 2019-11-14 11:12:49,711 goods_taps.py[line:25] INFO: Test interface:http://dev.buyer.wdklian.com/goods/tags/count[0m
+[32m 2019-11-14 11:12:49,711 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:12:49,711 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:12:50,042 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:12:50,042 change_param.py[line:38] INFO: data:{'goods_id': 16}[0m
+[32m 2019-11-14 11:13:16,513 change_param.py[line:53] INFO: headers:None[0m
+[32m 2019-11-14 11:13:16,513 change_param.py[line:54] INFO: data:{'page_on': '1', 'page_size': '1', 'category': '1'}[0m
+[32m 2019-11-14 11:13:16,513 goods_search.py[line:93] INFO: url:http://dev.buyer.wdklian.com/goods/search/selector[0m
+[32m 2019-11-14 11:13:25,391 change_param.py[line:53] INFO: headers:None[0m
+[32m 2019-11-14 11:13:25,391 change_param.py[line:54] INFO: data:{'page_on': '1', 'page_size': '1', 'category': '1'}[0m
+[32m 2019-11-14 11:13:25,391 goods_search.py[line:67] INFO: Test interface:http://dev.buyer.wdklian.com/goods/search/searchAllGoods[0m
+[32m 2019-11-14 11:17:17,892 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:17:17,892 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:17:18,198 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:17:18,198 change_param.py[line:38] INFO: data:{'sku_id': '345', 'num': '1'}[0m
+[32m 2019-11-14 11:17:18,198 carts.py[line:34] INFO: url:http://dev.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573701437000&nonce=347734&sign=38dca1848030341a8fd1e0ed7ae1ac3b[0m
+[32m 2019-11-14 11:20:20,342 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:20:20,343 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:20:20,643 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:20:20,643 change_param.py[line:38] INFO: data:{'sku_id': '356', 'num': '1'}[0m
+[32m 2019-11-14 11:20:20,643 carts.py[line:34] INFO: url:http://dev.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573701620000&nonce=548675&sign=b08cd272e9bcc0768987c2f79779e4df[0m
+[32m 2019-11-14 11:22:42,565 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:22:42,565 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:22:42,758 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:22:42,758 change_param.py[line:38] INFO: data:{'sku_id': '534', 'num': '1'}[0m
+[32m 2019-11-14 11:22:42,758 carts.py[line:34] INFO: url:http://dev.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573701762000&nonce=502389&sign=2703de5124a80628be655c4d8760b9ab[0m
+[32m 2019-11-14 11:23:59,922 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:23:59,923 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:24:00,081 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:24:00,081 change_param.py[line:38] INFO: data:{'sku_id': '534', 'num': '1'}[0m
+[32m 2019-11-14 11:24:00,081 carts.py[line:34] INFO: url:http://dev.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573701839000&nonce=223829&sign=8b08ccf8d3a1c68b4736e90b4625ac22[0m
+[32m 2019-11-14 11:24:54,068 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:24:54,068 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:24:54,212 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:24:54,212 change_param.py[line:38] INFO: data:{'sku_id': '503', 'num': '1'}[0m
+[32m 2019-11-14 11:24:54,212 carts.py[line:34] INFO: url:http://dev.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573701894000&nonce=581378&sign=2a0aded5ddd59520bedf89d13996998c[0m
+[32m 2019-11-14 11:31:02,194 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:31:02,195 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:31:02,355 change_param.py[line:47] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:31:02,355 change_param.py[line:48] INFO: data:None[0m
+[32m 2019-11-14 11:31:02,355 carts.py[line:65] INFO: Test interface:http://dev.buyer.wdklian.com/trade/carts/all[0m
+[32m 2019-11-14 11:34:02,828 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:34:02,828 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:34:02,995 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:34:02,995 change_param.py[line:38] INFO: data:{'sku_id': '503', 'num': '1'}[0m
+[32m 2019-11-14 11:34:02,996 carts.py[line:65] INFO: url:http://dev.buyer.wdklian.com/trade/carts/all?uid=2247&timestamp=1573702442000&nonce=323759&sign=cce826e9bc0efe8e2173c7e7daa16055[0m
+[32m 2019-11-14 11:35:49,329 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:35:49,329 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:35:49,623 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:35:49,623 change_param.py[line:38] INFO: data:{'sku_id': '503', 'num': '1'}[0m
+[32m 2019-11-14 11:35:49,623 carts.py[line:34] INFO: url:http://dev.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573702549000&nonce=702155&sign=9d9928e6552ba60080c99cff2961f211[0m
+[32m 2019-11-14 11:36:29,442 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:36:29,442 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:36:29,734 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:36:29,735 change_param.py[line:38] INFO: data:{'sku_id': '528', 'num': '1'}[0m
+[32m 2019-11-14 11:36:29,735 carts.py[line:34] INFO: url:http://api.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573702589000&nonce=513113&sign=7e4015de779996d0195007b9f116e924[0m
+[32m 2019-11-14 11:37:31,209 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:37:31,209 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:37:47,505 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:37:47,505 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:38:17,976 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:38:17,977 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:38:18,280 change_param.py[line:37] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:38:18,281 change_param.py[line:38] INFO: data:{'sku_id': '528', 'num': '1'}[0m
+[32m 2019-11-14 11:38:18,281 carts.py[line:65] INFO: url:http://api.buyer.wdklian.com/trade/carts/all?uid=2247&timestamp=1573702697000&nonce=915599&sign=f7fbd88b5438eb84af5bb239d1bb3c64[0m
+[32m 2019-11-14 11:40:57,640 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:40:57,640 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:40:57,963 change_param.py[line:38] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:40:57,963 change_param.py[line:39] INFO: data:{'sku_id': '528', 'num': '1'}[0m
+[32m 2019-11-14 11:40:57,963 carts.py[line:65] INFO: url:http://api.buyer.wdklian.com/trade/carts/all?uid=2247&timestamp=1573702857000&nonce=886381&sign=77e96d476dc8c4e02e65dd9fbc285103[0m
+[32m 2019-11-14 11:51:53,143 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:51:53,143 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:51:53,462 change_param.py[line:48] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:51:53,462 change_param.py[line:49] INFO: data:None[0m
+[32m 2019-11-14 11:51:53,462 carts.py[line:65] INFO: url:http://api.buyer.wdklian.com/trade/carts/all?uid=2247&timestamp=1573703513000&nonce=520732&sign=7fc52b96ca7e632c348b5ad094a9f648[0m
+[32m 2019-11-14 11:52:39,686 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:52:39,686 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:52:40,019 change_param.py[line:38] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:52:40,019 change_param.py[line:39] INFO: data:{'sku_id': '528', 'num': '1'}[0m
+[32m 2019-11-14 11:52:40,020 carts.py[line:34] INFO: url:http://api.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573703559000&nonce=925417&sign=e1120a79959ba25c34562275da933ce5[0m
+[32m 2019-11-14 11:54:52,899 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:54:52,899 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:54:53,194 change_param.py[line:48] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:54:53,194 change_param.py[line:49] INFO: data:None[0m
+[32m 2019-11-14 11:54:53,194 carts.py[line:49] INFO: url:http://dev.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573703692000&nonce=951131&sign=73137e5724778c958b2ae19709b9b508[0m
+[32m 2019-11-14 11:54:58,552 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:54:58,552 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:54:58,867 change_param.py[line:48] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:54:58,867 change_param.py[line:49] INFO: data:None[0m
+[32m 2019-11-14 11:54:58,867 carts.py[line:65] INFO: url:http://api.buyer.wdklian.com/trade/carts/all?uid=2247&timestamp=1573703698000&nonce=519833&sign=097e57203eac831ec0279e907857ce90[0m
+[32m 2019-11-14 11:58:25,464 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:58:25,464 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:58:25,617 change_param.py[line:38] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:58:25,617 change_param.py[line:39] INFO: data:{'sku_id': '571', 'num': '1'}[0m
+[32m 2019-11-14 11:58:25,617 carts.py[line:34] INFO: url:http://dev.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573703905000&nonce=501151&sign=233c54366ad4070b9c3d7b1adf460787[0m
+[32m 2019-11-14 11:58:31,524 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:58:31,524 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:58:31,669 change_param.py[line:48] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:58:31,669 change_param.py[line:49] INFO: data:None[0m
+[32m 2019-11-14 11:58:31,669 carts.py[line:65] INFO: url:http://dev.buyer.wdklian.com/trade/carts/all?uid=2247&timestamp=1573703911000&nonce=689614&sign=991d6afac12ed36efa7bb790493692f3[0m
+[32m 2019-11-14 11:58:38,604 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:58:38,604 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:58:38,904 change_param.py[line:48] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:58:38,904 change_param.py[line:49] INFO: data:None[0m
+[32m 2019-11-14 11:58:38,904 carts.py[line:49] INFO: url:http://dev.buyer.wdklian.com/trade/carts?uid=2247&timestamp=1573703918000&nonce=843202&sign=bc5f379e9847ef278c8674e732f37c38[0m
+[32m 2019-11-14 11:58:43,412 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:58:43,412 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:58:43,558 change_param.py[line:48] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:58:43,558 change_param.py[line:49] INFO: data:None[0m
+[32m 2019-11-14 11:58:43,558 carts.py[line:65] INFO: url:http://dev.buyer.wdklian.com/trade/carts/all?uid=2247&timestamp=1573703923000&nonce=706342&sign=9dbaa5b46a516466675cad7ca56367bf[0m
+[32m 2019-11-14 11:59:42,205 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:59:42,205 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:59:42,525 change_param.py[line:48] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:59:42,525 change_param.py[line:49] INFO: data:None[0m
+[32m 2019-11-14 11:59:42,525 carts.py[line:85] INFO: url:http://dev.buyer.wdklian.com/trade/carts/buy?uid=2247&timestamp=1573703982000&nonce=329117&sign=3dfd869062f3119e100c992544b9c26c[0m
+[32m 2019-11-14 11:59:48,592 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 11:59:48,592 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 11:59:48,742 change_param.py[line:38] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 11:59:48,742 change_param.py[line:39] INFO: data:{'sku_id': '571', 'num': '1'}[0m
+[32m 2019-11-14 11:59:48,742 carts.py[line:85] INFO: url:http://dev.buyer.wdklian.com/trade/carts/buy?uid=2247&timestamp=1573703988000&nonce=185172&sign=bb63ebe3148a5548a39ec75b8eb216d6[0m
+[32m 2019-11-14 12:00:14,757 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 12:00:14,758 change_headers.py[line:34] INFO: get login[0m
+[32m 2019-11-14 12:00:15,056 change_param.py[line:38] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 12:00:15,056 change_param.py[line:39] INFO: data:{'sku_id': '571', 'num': '1'}[0m
+[32m 2019-11-14 12:00:15,057 carts.py[line:100] INFO: url:http://dev.buyer.wdklian.com/trade/carts/checked?uid=2247&timestamp=1573704014000&nonce=370608&sign=7387a0ee0e78e17ff332f9b02478c14a[0m

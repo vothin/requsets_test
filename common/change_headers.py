@@ -67,5 +67,6 @@ class Change_Headers():
 
 if __name__ == '__main__':
     g = Change_Headers('13412345678', '123456')
+    g = Change_Headers('13412345678', '123456')
     result = g.get_headers()
     print(result)

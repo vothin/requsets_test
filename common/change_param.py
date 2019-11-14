@@ -15,12 +15,13 @@ from common.change_headers import Change_Headers
 
 class Change_Param():
 
-    def __init__(self, username=None, password=None, data=None):
+    def __init__(self, username=None, password=None, data=None, prod=False):
         self.username = username
         self.password = password
         self.data     = data
         self.headers  = None
         self.url_tail = ''
+        self.prod = prod
 
 
     def get_params(self):
@@ -29,7 +30,7 @@ class Change_Param():
 
             # 判断是否存在data
             if self.data:           # 存在headers和data
-                ch = Change_Headers(self.username, self.password)
+                ch = Change_Headers(self.username, self.password, self.prod)
                 gh = ch.get_headers()
                 self.headers = gh[0]
                 self.url_tail = gh[1]
@@ -39,7 +40,7 @@ class Change_Param():
                 return self.headers, self.data, self.url_tail
 
             else:                   # 只存在headers
-                ch = Change_Headers(self.username, self.password)
+                ch = Change_Headers(self.username, self.password, self.prod)
                 gh = ch.get_headers()
                 self.headers = gh[0]
                 self.url_tail = gh[1]
