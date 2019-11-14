@@ -18,63 +18,63 @@ from common.change_param import Change_Param
 class Goods(Requests_Test):
 
     # 查询商品
-    def get_goods(self, goods_id, username=None, password=None, prod=False):
-        self.suffix = self.c.get_value('Goods', 'goods')
-        self.suffix = self.suffix.format(goods_id)
+    def get_goods(self, goods_id, username=None, password=None, data=None, prod=False):
 
-        cu = Change_Param(username, password)
+        # 调用Change_Param类
+        cu = Change_Param(username, password, data)
         gu = cu.get_params()
 
-        if gu[2]:
-            self.url = self.url_joint(prod) + '?' + gu[2]
-        else:
-            self.url = self.url_joint(prod)
+        # 拼接url
+        self.suffix = self.c.get_value('Goods', 'goods')
+        self.suffix = self.suffix.format(goods_id)
+        self.url = self.url_joint(prod) + gu[2]
 
-        logs.info('Test interface:%s' % self.url)
         return self.get_requests(self.url, gu[0], gu[1])
+
 
 
 
     # 查询商品是否有货
-    def get_goods_area(self, goods_id, area_id, username=None, password=None, prod=False):
+    def get_goods_area(self, goods_id, area_id, username=None, password=None, data=None, prod=False):
+        # 调用Change_Param类
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
+
+        # 拼接url
         self.suffix = self.c.get_value('Goods', 'goods_area')
         self.suffix = self.suffix.format(goods_id, area_id)
-
-        self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
-
-        cu = Change_Param(username, password)
-        gu = cu.get_params()
+        self.url = self.url_joint(prod) + gu[2]
 
         return self.get_requests(self.url, gu[0], gu[1])
 
 
-
     # 获取sku信息
-    def get_goods_skus(self, goods_id, username=None, password=None, prod=False):
+    def get_goods_skus(self, goods_id, username=None, password=None, data=None, prod=False):
+
+        # 调用Change_Param类
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
+
+        # 拼接url
         self.suffix = self.c.get_value('Goods', 'goods_skus')
         self.suffix = self.suffix.format(goods_id)
-
-        self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
-
-        cu = Change_Param(username, password)
-        gu = cu.get_params()
+        self.url = self.url_joint(prod) + gu[2]
 
         return self.get_requests(self.url, gu[0], gu[1])
 
 
 
     # 获取商品浏览次数
-    def get_goods_visit(self, goods_id, username=None, password=None, prod=False):
+    def get_goods_visit(self, goods_id, username=None, password=None, data=None, prod=False):
+
+        # 调用Change_Param类
+        cu = Change_Param(username, password, data)
+        gu = cu.get_params()
+
+        # 拼接url
         self.suffix = self.c.get_value('Goods', 'goods_visit')
         self.suffix = self.suffix.format(goods_id)
-
-        self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
-
-        cu = Change_Param(username, password)
-        gu = cu.get_params()
+        self.url = self.url_joint(prod) + gu[2]
 
         return self.get_requests(self.url, gu[0], gu[1])
 

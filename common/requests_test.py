@@ -32,9 +32,7 @@ class Requests_Test(Base):
     # post请求
     def post_requests(self, url, headers=None, post_data=None):
         self.headers = headers
-        post_data = json.dumps(post_data)
-        logs.info(post_data)
-        r = requests.post(url, headers=self.headers, json=post_data)
+        r = requests.post(url, headers=self.headers, data=post_data)
         return r
 
 
@@ -50,7 +48,7 @@ class Requests_Test(Base):
     def put_requests(self, url, headers=None, put_data=None):
         self.headers = headers
         r = requests.put(url, headers=self.headers, data=put_data)
-        return
+        return r
 
 
 if __name__ == '__main__':

@@ -1643,3 +1643,199 @@
 [32m 2019-11-13 18:30:49,761 change_param.py[line:41] INFO: Test data:{'shop_name': 'python_shop', 'link_name': 'python_name', 'link_phone': 'python_phone', 'shop_add': 'python_add', 'bank_name': 'python_bank', 'bank_account_name': 'python_account', 'bank_number': 'python_number', 'shop_region': '18,1482,48941'}[0m
 [32m 2019-11-13 18:30:49,761 shop.py[line:43] INFO: Test interface:http://dev.buyer.wdklian.com/shops/o2o/apply?uid=4473&timestamp=1573641049000&nonce=966386&sign=252432105055e24d7c472473b61c1bed[0m
 [32m 2019-11-13 18:30:49,762 requests_test.py[line:36] INFO: {"shop_name": "python_shop", "link_name": "python_name", "link_phone": "python_phone", "shop_add": "python_add", "bank_name": "python_bank", "bank_account_name": "python_account", "bank_number": "python_number", "shop_region": "18,1482,48941"}[0m
+[32m 2019-11-14 09:39:53,542 change_headers.py[line:52] INFO: get headers[0m
+[32m 2019-11-14 09:39:53,542 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 09:39:53,544 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 09:39:53,857 change_headers.py[line:56] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNTU5MywidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.US-ziaat4o7zmbHCmbCJciOdv3chuvzmdJgZZk0uUdnhLI9-mdoIlEzgQDB4_bhVc9kfVf5J90uMj9t2IX2kDA', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg2ODM5MywidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.NoSRABHRSOG2jeQ1rs3kG6U0wNp2DW8X66KS86jniYQsBUVY4XgDZTyvBO3wqpkoqilonwuWj4X1eFFFmEsfpw', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 09:46:24,017 change_headers.py[line:50] INFO: get headers[0m
+[32m 2019-11-14 09:46:24,017 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 09:46:24,018 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 09:46:24,311 change_headers.py[line:54] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNTk4NCwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.nEing91tEsVPgoW1B7Z4JUsAZghWrDp0CulGqTngz-x9etEL7jLtOO9_MvutBMhLh-JoJRxMkf6BWZPfsAHPHg', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg2ODc4NCwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.Pj6EBcXkgofChCW3R-XAkqSKvum62nlqLtjNA9Cxqf4pAn6rDbgjEld8g6FUs3JB2DIuaxqN8NJvAwqz_oFjtw', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 09:56:21,963 change_headers.py[line:49] INFO: get headers[0m
+[32m 2019-11-14 09:56:21,963 change_headers.py[line:35] INFO: get response to json[0m
+[32m 2019-11-14 09:56:21,964 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 09:56:22,271 change_headers.py[line:53] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNjU4MiwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.w4GM3rKJVS_MEsSVJQ1JVcyq6BOaB8NzfOoBk3D3iI4QGOjYeVaxS0JmBnllgwyH8j6dEJouY3FNyiJfEKjhUQ', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg2OTM4MiwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.JIcVKzPIS0PE6HfI7ndBCRoG0S9l5vLc6mYhnGX5b9NCBmFT7vtz5ieuxQuw3vKz8wS2DScDVXRlICNTnJ8DEw', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 09:58:15,944 change_param.py[line:61] INFO: Not Parameter[0m
+[32m 2019-11-14 09:58:15,944 change_param.py[line:61] INFO: Not Parameter[0m
+[32m 2019-11-14 10:02:55,699 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:03:15,117 change_headers.py[line:49] INFO: get headers[0m
+[32m 2019-11-14 10:03:15,118 change_headers.py[line:35] INFO: get response to json[0m
+[32m 2019-11-14 10:03:15,119 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:03:15,281 change_headers.py[line:53] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNjk5NSwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.3M3tiwzN2hbN-tNr7ydURJOZG-pgi9AjS5gyoKuygqII8dcovQyeXEqBEtbWw0Emq2VwZdvH98r5c9iUghNCWg', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg2OTc5NSwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.ZQ7U3WThmprn0RFhBdtzFpcyP0HQZIQZIfBAZNN1AmVT1l-iEf69_mBiRxqzQ4oS6EOw4apOe1L-vVlJIALE0Q', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 10:07:02,069 change_param.py[line:57] INFO: Not Parameter[0m
+[32m 2019-11-14 10:07:02,069 change_param.py[line:57] INFO: Not Parameter[0m
+[32m 2019-11-14 10:07:20,918 change_headers.py[line:49] INFO: get headers[0m
+[32m 2019-11-14 10:07:20,918 change_headers.py[line:35] INFO: get response to json[0m
+[32m 2019-11-14 10:07:20,920 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:07:21,257 change_headers.py[line:53] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNzI0MSwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.PnDWyMGIpborVgaGn91sDum3ApTn2GEZx_c_sx87Y_aEvjoMnwPhIWA5gWoaf9eL_G0z5R9J4QjREouasu1-Fw', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg3MDA0MSwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.kJjnh0RRppAp1k9MwfJfyGvWmW1qm3bEGrX5UyVj4dmF2MxKAXk8seEZGNri2gY9svY36__nDnEtKOsT41G5Bw', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 10:07:21,257 change_param.py[line:48] INFO: Test data:None[0m
+[32m 2019-11-14 10:07:21,258 change_headers.py[line:49] INFO: get headers[0m
+[32m 2019-11-14 10:07:21,258 change_headers.py[line:35] INFO: get response to json[0m
+[32m 2019-11-14 10:07:21,259 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:07:21,404 change_headers.py[line:53] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNzI0MSwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.PnDWyMGIpborVgaGn91sDum3ApTn2GEZx_c_sx87Y_aEvjoMnwPhIWA5gWoaf9eL_G0z5R9J4QjREouasu1-Fw', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg3MDA0MSwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.kJjnh0RRppAp1k9MwfJfyGvWmW1qm3bEGrX5UyVj4dmF2MxKAXk8seEZGNri2gY9svY36__nDnEtKOsT41G5Bw', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 10:07:21,405 change_param.py[line:48] INFO: Test data:None[0m
+[32m 2019-11-14 10:07:49,760 change_headers.py[line:49] INFO: get headers[0m
+[32m 2019-11-14 10:07:49,760 change_headers.py[line:35] INFO: get response to json[0m
+[32m 2019-11-14 10:07:49,763 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:07:50,054 change_headers.py[line:53] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNzI3MCwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.3jns3x8-WsmX47ri-oINOCpukgmwCyYTVYLdjSqVdjoHnjMpzj2bVFTO9fR4ZlzpnMWWVP0_N-Kudz8-pZ5Jsw', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg3MDA3MCwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.S8VZGGQhTYAW61sHPRDL2gwnfPHVIdT67V0xbC7uygLAvscvsIIn2sVXRFRQgzfNFVh-ex2PvVao33fd0GJPZg', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 10:07:50,054 change_param.py[line:48] INFO: Test data:None[0m
+[32m 2019-11-14 10:08:47,613 change_headers.py[line:49] INFO: get headers[0m
+[32m 2019-11-14 10:08:47,613 change_headers.py[line:35] INFO: get response to json[0m
+[32m 2019-11-14 10:08:47,614 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:08:47,917 change_headers.py[line:53] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNzMyOCwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.Nb7usGVG-YNMc5i8IFCYscJS-j2XVobJSYbFHxHR0hhXkpGihgj3zW1EiuVnhmUQSh-B9X2vdEgPGyqsEcSU4Q', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg3MDEyOCwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.Jto4eWiMKtRBZM7ge2Kad3vkPF8ydIq--2ZgwDt59eBxxFHba7TftWAsoLp5Hbgo4WSn7F9SD4mJeZOXNiwDsw', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 10:08:47,918 change_param.py[line:38] INFO: Test data:{'test': 'test'}[0m
+[32m 2019-11-14 10:13:42,809 change_headers.py[line:49] INFO: get headers[0m
+[32m 2019-11-14 10:13:42,810 change_headers.py[line:35] INFO: get response to json[0m
+[32m 2019-11-14 10:13:42,811 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:13:43,111 change_headers.py[line:53] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNzYyMywidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.Ba6KeHlvua5MBiTLZlPg6Q7coGcZy5CJLm0KHBhNBY-g_7jNAtYRLjBzG8ggIUKtdwc3PchMiNmQnIrz-IYcdQ', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg3MDQyMywidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.QdI6z2j-4VhIb4hXeDbuWqS0UXfVKNjbU4kCRHN-JOof4DdvBX8X46Vei2gU7hEs7ZHppwbGtxli6bmFLEAgHw', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 10:13:43,111 change_param.py[line:48] INFO: Test data:None[0m
+[32m 2019-11-14 10:13:43,111 member_collection.py[line:33] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods[0m
+[32m 2019-11-14 10:14:31,889 change_headers.py[line:49] INFO: get headers[0m
+[32m 2019-11-14 10:14:31,890 change_headers.py[line:35] INFO: get response to json[0m
+[32m 2019-11-14 10:14:31,891 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:14:32,189 change_headers.py[line:53] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNzY3MiwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.W_sEL1tk-cA9UsgMXHzek6RN-MY-4zQR2sBX94HfeHGGf4YBOJeazDK7ZxZEWt-dMEw1iHjKjJoy21XXz8XtTA', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg3MDQ3MiwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.dQo0einz0WO8QfALUtZjcOq6N3K-g-YRuZkHShzL4GilPcTg3sQKZa0_5ZDvKdiIEnefXGVQL7a22ZTLNA2Scg', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 10:14:32,190 change_param.py[line:48] INFO: Test data:None[0m
+[32m 2019-11-14 10:14:32,190 member_collection.py[line:33] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods[0m
+[32m 2019-11-14 10:16:24,230 change_headers.py[line:49] INFO: get headers[0m
+[32m 2019-11-14 10:16:24,230 change_headers.py[line:35] INFO: get response to json[0m
+[32m 2019-11-14 10:16:24,231 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:16:24,528 change_headers.py[line:53] INFO: response:{'uid': 2247, 'username': 'tsuser01', 'nickname': '开玩笑', 'mobile': '13412345678', 'access_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNzc4NCwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.S31qNALU85WIrl52106MCbEowpdqc3Bv9LCKnmsibmJHUzgCHnC3B38_KZVLKqOXJCjEdzvfAQj6m1jcU1SK4Q', 'access_token_timeout': 330000, 'refresh_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3Mzg3MDU4NCwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.OuWGzbP49W0-KcqXwscAy32nvHfwG8AbzgLRJpP7C3AdCgwk4JQYEKu7x7HkKWbJm9W3NULLQoWIrASDTmVTiA', 'refresh_token_timeout': 172800, 'face': 'http://wdklmall.oss-cn-shenzhen.aliyuncs.com/mallgoods/user_image/090EDEDAC9F0462881C663E2C8D6D431.jpeg', 'sns_json': {'uid': 107, 'oauth_token': 'e774841c4be9d621dddbf7bd859e8845', 'oauth_token_secret': '5b126c078dce67fe946c73a70d6f30c4', 'status': 1}, 'last_login_shopid': 142}[0m
+[32m 2019-11-14 10:16:24,529 change_param.py[line:38] INFO: Test data:{'test': 'test'}[0m
+[32m 2019-11-14 10:16:57,513 change_headers.py[line:49] INFO: get headers[0m
+[32m 2019-11-14 10:16:57,513 change_headers.py[line:35] INFO: get response to json[0m
+[32m 2019-11-14 10:16:57,515 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:16:57,815 change_param.py[line:38] INFO: Test data:{'test': 'test'}[0m
+[32m 2019-11-14 10:17:55,495 change_headers.py[line:47] INFO: get headers[0m
+[32m 2019-11-14 10:17:55,496 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:17:55,796 change_headers.py[line:62] INFO: headers:{'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyNzg3NSwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.cJXysqDJHlBeBBpglwn3EGwDbKFxuTVnDWCRDjn1SQEYK6qeJmDWMB5-21GKyeyA801861MPT1x3b9QtzWs7sQ', 'uuid': 'df59ecac-9558-4171-a847-98161c855749'}[0m
+[32m 2019-11-14 10:17:55,796 change_param.py[line:38] INFO: Test data:{'test': 'test'}[0m
+[32m 2019-11-14 10:21:50,449 change_headers.py[line:47] INFO: get headers[0m
+[32m 2019-11-14 10:21:50,450 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:21:50,750 change_headers.py[line:62] INFO: headers:{'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyODExMCwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.snbU6xt1D18xyNxxZjcei1N9VCvGqjhmB8MGM3CWJ9Vgus7F0FO7XZ9jf08S6ZL-_tGXjzJC95YkpvckkB1qIA', 'uuid': '777'}[0m
+[32m 2019-11-14 10:22:22,971 change_headers.py[line:47] INFO: get headers[0m
+[32m 2019-11-14 10:22:22,971 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:22:23,276 change_headers.py[line:62] INFO: headers:{'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyODE0MywidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.3GtUfQoPjaU63tjd56_GCmtQzc1pFnoXwg61DIdVRqWQDo-DTpny0XnzeKw0yFysT-NXg6yQi1jFQJZ5uQHoeQ', 'uuid': '777'}[0m
+[32m 2019-11-14 10:22:23,277 change_param.py[line:38] INFO: Test data:{'test': 'test'}[0m
+[32m 2019-11-14 10:22:45,255 change_headers.py[line:47] INFO: get headers[0m
+[32m 2019-11-14 10:22:45,256 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:22:45,414 change_headers.py[line:62] INFO: headers:{'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyODE2NSwidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9.ONFNsW9ddcFc2icBWZDSdPQ17RF3F9qqTWhumNhvbW9vHk_tGG5Ne4ScowCIXOg-CA27SMpDs6ioEOzGzRR_Zg', 'uuid': '777'}[0m
+[32m 2019-11-14 10:22:45,414 change_param.py[line:48] INFO: Test data:None[0m
+[32m 2019-11-14 10:22:45,414 member_collection.py[line:33] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods[0m
+[32m 2019-11-14 10:23:42,953 change_headers.py[line:47] INFO: get headers[0m
+[32m 2019-11-14 10:23:42,954 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:23:43,250 change_headers.py[line:62] INFO: headers:{'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJzZWxmT3BlcmF0ZWQiOjAsInN1YiI6IkNMRVJLIiwicm9sZSI6IlNVUEVSX1NFTExFUiIsIm5pY2tOYW1lIjoi5byA546p56yRIiwiZm91bmRlciI6bnVsbCwicm9sZXMiOlsiQlVZRVIiLCJTRUxMRVIiLCJDTEVSSyJdLCJzZWxsZXJOYW1lIjoiVGVzdCBTdG9yZSIsImNsZXJrSWQiOjE2OCwidXVpZCI6bnVsbCwidWlkIjoyMjQ3LCJzZWxsZXJJZCI6MTQyLCJjbGVya05hbWUiOiJ0c3VzZXIwMSIsImV4cCI6MTU3NDAyODIyMywidXNlcm5hbWUiOiJ0c3VzZXIwMSJ9._SB4fWnUlKkO31nDD8WkyJIartbLVDOehOjHQ0wQ0yV6VJOM1zHk7KXpSC3Q2edEmvWWwgmyuAqmkivy_NmEJw', 'uuid': '777'}[0m
+[32m 2019-11-14 10:23:43,251 change_param.py[line:48] INFO: Test data:None[0m
+[32m 2019-11-14 10:32:42,118 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:32:42,118 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:33:48,064 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:33:48,064 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:34:35,334 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:34:35,334 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:34:35,335 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:36:03,820 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:36:03,821 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:36:03,822 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:36:04,113 change_param.py[line:37] INFO: Test data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:36:04,113 member_collection.py[line:33] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods[0m
+[32m 2019-11-14 10:36:25,931 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:36:25,932 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:36:25,933 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:36:26,248 change_param.py[line:37] INFO: Test data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:36:26,248 member_collection.py[line:33] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods[0m
+[32m 2019-11-14 10:36:54,785 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:36:54,786 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:36:54,787 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:36:55,080 change_param.py[line:37] INFO: Test data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:36:55,080 member_collection.py[line:33] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods[0m
+[32m 2019-11-14 10:37:16,267 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:37:16,268 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:37:16,269 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:37:16,420 change_param.py[line:37] INFO: Test data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:37:16,420 member_collection.py[line:33] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods[0m
+[32m 2019-11-14 10:37:39,648 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:37:39,648 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:37:39,649 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:37:39,944 change_param.py[line:37] INFO: Test data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:37:39,945 member_collection.py[line:33] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods[0m
+[32m 2019-11-14 10:37:48,295 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:37:48,296 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:37:48,297 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:38:32,843 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:38:32,843 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:38:32,845 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:38:37,219 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:38:37,220 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:38:37,221 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:38:37,373 change_param.py[line:37] INFO: Test data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:38:37,373 member_collection.py[line:33] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods[0m
+[32m 2019-11-14 10:40:06,496 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:40:06,496 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:40:06,497 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:40:08,120 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:40:20,583 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:40:20,583 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:40:20,584 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:40:20,941 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:40:20,941 change_param.py[line:37] INFO: Test data:{'test': 'test'}[0m
+[32m 2019-11-14 10:41:41,914 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:41:41,914 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:41:41,915 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:41:42,234 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:41:42,235 change_param.py[line:37] INFO: Test data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:41:42,235 member_collection.py[line:34] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods?uid=2247&timestamp=1573699301000&nonce=423154&sign=d537551a1314fec9af18cb104bb826de[0m
+[32m 2019-11-14 10:43:28,183 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:43:28,183 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:43:28,184 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:43:28,501 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:43:28,501 change_param.py[line:37] INFO: Test data:{'goods_id': '345'}[0m
+[32m 2019-11-14 10:43:28,501 member_collection.py[line:52] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods?uid=2247&timestamp=1573699408000&nonce=560548&sign=db725e655dde3529bd0b24eee9dfd16b[0m
+[32m 2019-11-14 10:43:48,045 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:43:48,046 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:43:48,047 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:43:48,362 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:43:48,362 change_param.py[line:37] INFO: Test data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:43:48,362 member_collection.py[line:34] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods?uid=2247&timestamp=1573699428000&nonce=513071&sign=f4b0022a4f574b4a7269b4221617c9a9[0m
+[32m 2019-11-14 10:45:15,505 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:45:15,505 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:45:15,506 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:45:15,825 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:45:15,826 change_param.py[line:47] INFO: Test data:None[0m
+[32m 2019-11-14 10:45:15,826 member_collection.py[line:89] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods/345?uid=2247&timestamp=1573699515000&nonce=676395&sign=42dd53945600d1788e001d509478358c[0m
+[32m 2019-11-14 10:45:25,525 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:45:25,525 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:45:25,526 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:45:25,693 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:45:25,693 change_param.py[line:37] INFO: Test data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:45:25,694 member_collection.py[line:34] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods?uid=2247&timestamp=1573699525000&nonce=983034&sign=5aaa67be20c55ecdb588fdb167312ebe[0m
+[32m 2019-11-14 10:45:34,076 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:45:34,076 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:45:34,077 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:45:34,235 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:45:34,235 change_param.py[line:37] INFO: Test data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:45:34,235 member_collection.py[line:34] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods?uid=2247&timestamp=1573699534000&nonce=575263&sign=5097de09904f167db0370fb540b80f9a[0m
+[32m 2019-11-14 10:46:11,076 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:46:11,076 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:46:11,077 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:46:11,377 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:46:11,377 change_param.py[line:37] INFO: data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:46:11,377 member_collection.py[line:34] INFO: Test interface:http://dev.buyer.wdklian.com/members/collection/goods?uid=2247&timestamp=1573699571000&nonce=232653&sign=1f1ec5bffd30a7f3393c01613b787354[0m
+[32m 2019-11-14 10:49:07,760 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:49:07,760 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:49:07,761 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:49:08,075 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:49:08,075 change_param.py[line:37] INFO: data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:49:16,548 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:49:16,548 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:49:16,549 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:49:16,698 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:49:16,698 change_param.py[line:37] INFO: data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:50:18,291 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:50:18,292 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:50:18,293 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:50:18,446 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:50:18,446 change_param.py[line:37] INFO: data:{'page_no': '10', 'page_size': '10'}[0m
+[32m 2019-11-14 10:50:44,974 change_headers.py[line:48] INFO: get headers[0m
+[32m 2019-11-14 10:50:44,974 change_headers.py[line:34] INFO: get response to json[0m
+[32m 2019-11-14 10:50:44,975 passport_login_noCaptcha.py[line:31] INFO: Test interface:http://dev.buyer.wdklian.com/passport/login/noCaptcha[0m
+[32m 2019-11-14 10:50:45,275 change_headers.py[line:61] INFO: headers:{'uuid': '777'}[0m
+[32m 2019-11-14 10:50:45,275 change_param.py[line:37] INFO: data:{'page_no': '10', 'page_size': '10'}[0m

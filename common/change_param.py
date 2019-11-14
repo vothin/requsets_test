@@ -12,7 +12,6 @@
 
 from common.recordlog import logs
 from common.change_headers import Change_Headers
-from common.change_data import Change_Data
 
 class Change_Param():
 
@@ -23,8 +22,9 @@ class Change_Param():
         self.headers  = None
         self.url_tail = None
 
+
     def get_params(self):
-        # 判断是否需要token
+        # 判断是否需要登录
         if self.username:
 
             # 判断是否存在data
@@ -34,62 +34,29 @@ class Change_Param():
                 self.headers = gh[0]
                 self.url_tail = gh[1]
 
-                # ck = Change_Data(self.data, gh[1])
-                # self.data = ck.get_data()
-
-
-                logs.info('Test data:%s' % self.data)
+                logs.info('data:%s' % self.data)
                 return self.headers, self.data, self.url_tail
 
-            else:
+            else:                   # 只存在headers
                 ch = Change_Headers(self.username, self.password)
                 gh = ch.get_headers()
                 self.headers = gh[0]
                 self.url_tail = gh[1]
 
 
-                logs.info('Test data:%s' % self.data)
+                logs.info('data:%s' % self.data)
                 return self.headers, self.data, self.url_tail
 
-        else:
+        else:                       # 只存在data
             if self.data:
                 logs.info('Test data:%s' % self.data)
                 return self.headers, self.data, self.url_tail
 
-            else:
+            else:                   # 什么都不存在
                 logs.info('Not Parameter')
                 return self.headers, self.data, self.url_tail
 
 
-
-    def get_params_alt(self):
-
-        if self.username:
-            ch = Change_Headers(self.username, self.password)
-            gh = ch.get_headers_alt()
-            self.headers = gh[0]
-
-            if self.data:
-                ck = Change_Data(self.data)
-                self.data = ck.get_data_alt()
-
-                self.data = self.data + gh[1]
-
-                return self.headers, self.data
-
-            else:
-                self.data = gh[1]
-                return self.headers, self.data
-
-        else:
-            if self.data:
-                ck = Change_Data(self.data)
-                self.data = ck.get_data_alt()[:-1]
-
-                return self.headers, self.data
-
-            else:
-                return self.headers, self.data
 
 
 if __name__ == '__main__':
@@ -100,12 +67,14 @@ if __name__ == '__main__':
     Base.suffix = c.get_value('Goods', 'goods_categories')
     Base.suffix = Base.suffix.format(2)
 
-    cu = Change_Param()
+    data = {
+        'test' : 'test'
+    }
+
+    cu = Change_Param('13412345678', '123456', data)
     gu = cu.get_params()
     print(gu)
 
-    result = cu.get_params()
-    print(result)
 
 
 

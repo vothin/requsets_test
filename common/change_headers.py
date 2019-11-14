@@ -26,7 +26,7 @@ class Change_Headers():
         self.nonce = str(random.randint(100000, 999999))    # nonce参数
         self.sign = ''                                      # sign参数
         self.prod = prod
-        self.headers = None
+        self.headers = {'uuid' : self.uuid}
         self.url_tail = None
 
     # 获得requests响应正文
@@ -35,7 +35,7 @@ class Change_Headers():
 
         # 获取response
         p = Passport_LoginNo()
-        response = p.get_passport_loginno(self.username, self.password, self.prod)
+        response = p.get_passport_loginno(self.username, self.password, self.headers, self.prod)
 
         # json格式阅读
         js = json.loads(response.text)
@@ -49,66 +49,21 @@ class Change_Headers():
 
         # 获得response的json格式
         js = self.get_json()
-        logs.info('response:%s' % js)
 
         # 存在token就是登录成功
         if 'access_token' in js:
             sign = str(js['uid']) + self.nonce + self.timestamp + str(js['access_token'])
             self.sign = get_md5(sign)
 
-            # 生成headers
-            self.headers = {
-                #'Authorization' : js['access_token'],
-                'uuid' : self.uuid
-            }
+            # 生成url拼接部分
+            self.url_tail = '?uid=' + str(js['uid']) + '&timestamp=' + self.timestamp + '&nonce=' + self.nonce + '&sign=' + self.sign
 
-            # 生成url尾部
-            # self.url_tail = {
-            #     'uid'       : str(js['uid']),
-            #     'timestamp' : self.timestamp,
-            #     'nonce'     : self.nonce,
-            #     'sign'      : self.sign
-            # }
-
-            self.url_tail = 'uid=' + str(js['uid']) + '&timestamp=' + self.timestamp + '&nonce=' + self.nonce + '&sign=' + self.sign
-
+            logs.info('headers:%s' % self.headers)
             return self.headers, self.url_tail
 
         else:
             logs.error('not found access_token')
             return self.headers, self.url_tail
-
-
-
-    def get_headers_alt(self):
-        logs.info('get headers_alt')
-
-        # 获得response的json格式
-        js = self.get_json()
-        logs.info('response:%s' % js)
-
-        # 存在token就是登录成功
-        if 'access_token' in js:
-            sign = str(js['uid']) + self.nonce + self.timestamp + str(js['access_token'])
-            self.sign = get_md5(sign)
-
-            self.headers = {
-                'Authorization' : js['access_token'],
-                'uuid' : self.uuid
-            }
-
-            self.url_tail = 'uid='   + str(js['uid']) \
-                + '&timestamp=' + self.timestamp \
-                + '&nonce='     + self.nonce \
-                + '&sign='      + self.sign \
-
-
-            return self.headers, self.url_tail
-
-        else:
-            logs.error('not found access_token')
-            return self.headers, self.url_tail
-
 
 
 if __name__ == '__main__':
