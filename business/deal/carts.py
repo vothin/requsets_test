@@ -146,7 +146,7 @@ class Carts(Requests_Test):
         return self.post_requests(self.url, gu[0], data)
 
 
-    # 更新购物车中的多个产品
+    # 更新购物车中的单个产品
     def post_carts_sku(self, sku_id, username=None, password=None, data=None, prod=False):
         '''
             相关参数有：  sku_id      产品id
