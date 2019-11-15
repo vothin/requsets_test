@@ -2943,3 +2943,26 @@
 [32m 2019-11-15 12:28:38,435 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-15 12:28:38,435 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-15 12:28:38,435 order.py[line:131] INFO: test url:http://dev.buyer.wdklian.com/trade/orders/20190924000002/cancel?uid=2247&timestamp=1573792118000&nonce=806805&sign=ec8ba9ce850f9a0112801012515ee2b4[0m
+[32m 2019-11-15 14:42:18,771 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-15 14:42:18,771 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-15 14:42:19,085 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-15 14:42:19,086 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-15 14:42:19,086 shop.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/shops/getDoctorListByShopId?uid=2247&timestamp=1573800138000&nonce=902726&sign=6de0cc2b207118973161d2e2755100ab[0m
+[32m 2019-11-15 14:46:12,913 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-15 14:46:12,913 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-15 14:46:13,252 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-15 14:46:13,252 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-15 14:46:13,253 shop.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/shops/getDoctorListByShopId?uid=2247&timestamp=1573800372000&nonce=810702&sign=2a9e79d4661796d378317b604e7e4112[0m
+[32m 2019-11-15 14:46:35,583 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-15 14:46:35,583 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-15 14:46:35,874 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=%7B%27shopId%27%3A+%2719%27%7D&password=6adf97f83acf6453d4a6a4b1070f3754[0m
+[32m 2019-11-15 14:46:35,875 change_urltail.py[line:40] INFO: <Response [500]>[0m
+[31m 2019-11-15 14:46:35,875 change_urltail.py[line:66] ERROR: not found access_token[0m
+[32m 2019-11-15 14:46:35,875 shop.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/shops/getDoctorListByShopId[0m
+[32m 2019-11-15 14:47:26,025 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-15 14:47:26,025 shop.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/shops/getDoctorListByShopId[0m
+[32m 2019-11-15 14:48:23,887 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-15 14:48:23,887 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-15 14:48:24,185 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-15 14:48:24,186 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-15 14:48:24,186 shop.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/shops/getDoctorListByShopId?uid=2247&timestamp=1573800503000&nonce=416957&sign=23dd91323fb69b42c194cc83fb98ac9d[0m

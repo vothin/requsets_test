@@ -16,6 +16,27 @@ from common.recordlog import logs
 
 class Shop(Requests_Test):
 
+    # 查询店铺所有医生
+    def get_shop_getDoctorListByShopId(self, username=None, password=None, data=None, prod=False):
+        '''
+            相关参数有：  shopId          店铺id
+        '''
+
+        # 调用Change_Param类
+        cu = Change_Param(username, password, prod)
+        gu = cu.get_params()
+
+        # 拼接url
+        self.suffix = self.c.get_value('Shop', 'shop_getDoctorListByShopId')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
+
+
+
+
+
     # H5申请o2o店铺
     def post_o2o_shop_apply(self, username=None, password=None, data=None, prod=False):
         '''
@@ -55,8 +76,13 @@ if __name__ == '__main__':
         'bank_number' : 'python_number',
         'shop_region' : '18,1482,48941'
     }
+
+    shop_id = {'shopId' : '19'}
+
     s = Shop()
-    result = s.post_o2o_shop_apply('16312345678', '123456', data)
+    # result = s.post_o2o_shop_apply('16312345678', '123456', data)
+    result = s.get_shop_getDoctorListByShopId('13412345678', '123456', shop_id)
+    # result = s.get_shop_getDoctorListByShopId(data=shop_id)
     print(result)
     print(result.text)
     print(result.url)

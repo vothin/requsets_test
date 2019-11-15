@@ -18,22 +18,24 @@ from common.recordlog import logs
 class Trade_promotion(Requests_Test):
 
     # 选择要参与的促销活动
-    def post_tarde_create(self, username=None, password=None, data=None, prod=False):
+    def post_tarde_promotion(self, username=None, password=None, data=None, prod=False):
         '''
             相关参数有：  seller_id           卖家id
                         sku_id              产品id
                         activity_id         活动id
                         promotion_type      活动类型
         '''
-        self.suffix = self.c.get_value('Deal', 'trade_promotion')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.post_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'trade_promotion')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.post_requests(self.url, gu[0], data)
 
 
 
@@ -45,15 +47,19 @@ class Trade_promotion(Requests_Test):
                         sellerId            sellerId
                         skuId               skuId
         '''
-        self.suffix = self.c.get_value('Deal', 'trade_promotion_del')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.del_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'trade_promotion_del')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.del_requests(self.url, gu[0], data)
+
+
 
 
 
@@ -69,16 +75,18 @@ class Trade_promotion(Requests_Test):
                     2、切换优惠券:在1、情况之后，当用户切换优惠券的时候。
                     3、取消已使用的优惠券:用户不想使用优惠券的时候。
         '''
-        self.suffix = self.c.get_value('Deal', 'trade_promotion_o2o_coupon')
-        self.suffix = self.suffix.format(seller_id, mc_id)
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.post_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'trade_promotion_o2o_coupon')
+        self.suffix = self.suffix.format(seller_id, mc_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.post_requests(self.url, gu[0], data)
 
 
 
@@ -94,16 +102,25 @@ class Trade_promotion(Requests_Test):
                     2、切换优惠券:在1、情况之后，当用户切换优惠券的时候。
                     3、取消已使用的优惠券:用户不想使用优惠券的时候。
         '''
-        self.suffix = self.c.get_value('Deal', 'trade_promotion_coupon')
-        self.suffix = self.suffix.format(seller_id, mc_id)
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.post_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'trade_promotion_coupon')
+        self.suffix = self.suffix.format(seller_id, mc_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.post_requests(self.url, gu[0], data)
+
+
+
+if __name__ == '__main__':
+    t = Trade_promotion()
+
+    result = t.post_tarde_promotion()
 
 
 
