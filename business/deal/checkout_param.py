@@ -113,7 +113,7 @@ class Checkout_Param(Requests_Test):
     # 设置送货时间
     def post_checkout_params_receiveTime(self, username=None, password=None, data=None, prod=False):
         '''
-            相关参数有：  receive_time           送货时间
+            相关参数有：  receive_time           送货时间:任意时间、仅工作日、仅休息日
         '''
 
         # 调用Change_Param类
