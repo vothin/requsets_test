@@ -24,12 +24,21 @@ class Trade(Requests_Test):
         '''
             相关参数有：  client          app下单使用，传值APP
         '''
-        self.suffix = self.c.get_value('Deal', 'tarde_create')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.post_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'tarde_create')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.post_requests(self.url, gu[0], data)
+
+
+if __name__ == '__main__':
+    t = Trade()
+    result = t.post_tarde_create('13412345678', '123456')
+    print(result)
+    print(result.text)
