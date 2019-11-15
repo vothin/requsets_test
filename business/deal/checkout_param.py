@@ -44,6 +44,7 @@ class Checkout_Param(Requests_Test):
 
         # 拼接url
         self.suffix = self.c.get_value('Deal', 'checkout_params_addressId')
+        self.suffix = self.suffix.format(address_id)
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test url:%s' % self.url)
 
@@ -149,7 +150,28 @@ class Checkout_Param(Requests_Test):
 if __name__ == '__main__':
     c = Checkout_Param()
 
-    result = c.get_checkout_params('15652179020', 'qqqqqq')
+    address_id = '63380'
+
+    payment_type = {'payment_type' : 'COD'}
+
+    receipt = {
+        'receipt_title' : '123',
+        'receipt_content' : '456',
+        'tax_no' : '789',
+        'type' : '1'
+    }
+
+    time = {'receive_time' : '6:00'}
+
+    remark = {'remark' : '777'}
+
+    # result = c.get_checkout_params('15652179020', 'qqqqqq')
+    # result = c.post_checkout_params_addressId(address_id, '13412345678', '123456')
+    # result = c.post_checkout_params_payType('13412345678', '123456', payment_type)
+    # result = c.post_checkout_params_receipt('13412345678', '123456', receipt)
+    # result = c.post_checkout_params_receiveTime('13412345678', '123456', time)
+    # result = c.post_checkout_params_remark('13412345678', '123456', remark)
+    result = c.del_checkout_params_receipt('13412345678', '123456')
     print(result)
     print(result.text)
 
