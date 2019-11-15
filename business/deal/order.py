@@ -130,7 +130,7 @@ class Order(Requests_Test):
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test url:%s' % self.url)
 
-        return self.get_requests(self.url, gu[0], data)
+        return self.post_requests(self.url, gu[0], data)
 
 
 
@@ -181,7 +181,7 @@ class Order(Requests_Test):
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test url:%s' % self.url)
 
-        return self.get_requests(self.url, gu[0], data)
+        return self.post_requests(self.url, gu[0], data)
 
 
 
@@ -225,10 +225,10 @@ if __name__ == '__main__':
     # result = o.get_tarde_order_listo2o('13412345678', '123456', data)
     # result = o.get_tarde_order_statusNum('13412345678', '123456')
     # result = o.get_tarde_order_sn('20190924000002', '13412345678', '123456')
-    # result = o.post_tarde_order_cancel('20190924000002', '13412345678', '123456', reason)
+    result = o.post_tarde_order_cancel('20190924000002', '13412345678', '123456', reason)
     # result = o.get_tarde_order_flow('20190924000002', '13412345678', '123456')
     # result = o.get_tarde_order_log(order_sn['order_sn'], '13412345678', '123456')
     # result = o.post_tarde_order_rog(order_sn['order_sn'], '13412345678', '123456')
-    result = o.get_tarde_order_list(trade_sn['trade_sn'], '13412345678', '123456')
+    # result = o.get_tarde_order_list(trade_sn['trade_sn'], '13412345678', '123456')
     print(result)
     print(result.text)
