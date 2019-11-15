@@ -18,7 +18,7 @@ from common.requests_test import Requests_Test
 class Member_Address(Requests_Test):
 
     # 添加会员地址
-    def post_member_address(self, username=None, password=None, data=None, prod=False, region=None):
+    def post_member_address(self, username=None, password=None, data=None, prod=None, region=None):
         '''
             相关参数有:   name                        收货人姓名
                         addr                        详细地址
@@ -63,7 +63,7 @@ class Member_Address(Requests_Test):
 
 
     # 查询当前会员的某个地址
-    def get_member_address_id(self, id,  username=None, password=None, data=None, prod=False):
+    def get_member_address_id(self, id,  username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  id          要查询的地址id
         '''
@@ -82,7 +82,7 @@ class Member_Address(Requests_Test):
 
 
     # 修改会员地址
-    def put_member_address_id(self, id,  username=None, password=None, data=None, prod=False, region=None):
+    def put_member_address_id(self, id,  username=None, password=None, data=None, prod=None, region=None):
         '''
             相关参数有:   id                      主键
                         name                    收货人姓名
@@ -131,7 +131,7 @@ class Member_Address(Requests_Test):
 
 
     # 删除会员地址
-    def del_member_address_id(self, id,  username=None, password=None, data=None, prod=False):
+    def del_member_address_id(self, id,  username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   id                      要删除的会员地址id
         '''
@@ -151,7 +151,7 @@ class Member_Address(Requests_Test):
 
 
     # 设置地址为默认
-    def put_member_address_id_default(self, id,  username=None, password=None, data=None, prod=False):
+    def put_member_address_id_default(self, id,  username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   id        主键
         '''
@@ -171,7 +171,7 @@ class Member_Address(Requests_Test):
 
 
     # 查询当前会员地址列表
-    def get_member_addresses(self, username=None, password=None, data=None, prod=False):
+    def get_member_addresses(self, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -195,7 +195,21 @@ if __name__ == '__main__':
         'tel'  : 'dianhua',
         'mobile' : '13412345678',
         'def_addr' : '0',
-        'ship_address_name' : 'bieming'
+        'ship_address_name' : 'bieming',
+
+        'region.provinceId' : '18',
+        'region.province': '湖南',
+
+        'region.cityId': '1482',
+        'region.city': '长沙市',
+
+        'region.countyId' : '48941',
+        'region.county' : '浏阳市',
+
+        'region.townId': '52588',
+        'region.town' : '城区',
+
+        'region.ship_address_name': 'bieming',
     }
 
     region = {
@@ -209,12 +223,12 @@ if __name__ == '__main__':
         'county' : '浏阳市',
 
         'town_id': '52588',
-        'town' : '城区',
+        'town' : '城区'
     }
 
     # result = m.post_member_address('13412345678', '123456', address, region=region)
     # result = m.get_member_address_id('2247', '13412345678', '123456')
-    result = m.put_member_address_id('65346', '13412345678', '123456', address, region=region)
+    result = m.put_member_address_id('65346', '13412345678', '123456', address, prod=3, region=region)
 
     print(result)
     print(result.text)

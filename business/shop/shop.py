@@ -81,7 +81,7 @@ if __name__ == '__main__':
 
     s = Shop()
     # result = s.post_o2o_shop_apply('16312345678', '123456', data)
-    result = s.get_shop_getDoctorListByShopId('13412345678', '123456', shop_id)
+    result = s.get_shop_getDoctorListByShopId('13412345678', '123456', shop_id, prod=2)
     # result = s.get_shop_getDoctorListByShopId(data=shop_id)
     print(result)
     print(result.text)

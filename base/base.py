@@ -56,7 +56,7 @@ class Base():
 
     # url拼接
     def url_joint(self, prod=None):
-        if prod == 1:
+        if prod == None:
             self.url =  self.prefix1 + self.suffix          # 测试环境url
         elif prod == 2:
             self.url = self.prefix2 + self.suffix           # 正式环境url
