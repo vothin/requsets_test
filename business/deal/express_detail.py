@@ -22,15 +22,17 @@ class Express_Detail(Requests_Test):
             相关参数有：  id          物流公司id
                         num         快递单号
         '''
-        self.suffix = self.c.get_value('Deal', 'experss')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'express')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
 
 
 if __name__ == '__main__':
@@ -39,7 +41,7 @@ if __name__ == '__main__':
         'num' : '1'
     }
     e = Express_Detail()
-    result = e.get_checkout_params('13412345678', '123456', data)
+    result = e.get_experss('13412345678', '123456', data)
     print(result)
     print('响应正文：', result.text)
     print('响应头：', result.headers)

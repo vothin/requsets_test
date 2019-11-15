@@ -2567,3 +2567,25 @@
 [32m 2019-11-15 10:06:31,438 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-15 10:06:31,438 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-15 10:06:31,438 checkout_param.py[line:107] INFO: test url:http://dev.buyer.wdklian.com/trade/checkout-params/receipt?uid=2247&timestamp=1573783591000&nonce=859600&sign=ead6dd16ddc3aaf868c1aaa049262805[0m
+[31m 2019-11-15 10:21:53,446 config.py[line:33] ERROR: No option 'experss' in section: 'Deal'[0m
+[31m 2019-11-15 10:22:41,773 config.py[line:33] ERROR: No option 'experss' in section: 'Deal'[0m
+[32m 2019-11-15 10:23:06,026 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-15 10:23:06,026 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-15 10:23:06,366 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-15 10:23:06,366 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-15 10:23:06,367 checkout_param.py[line:107] INFO: test url:http://dev.buyer.wdklian.com/trade/checkout-params/receipt?uid=2247&timestamp=1573784586000&nonce=132200&sign=255f1b4153d31414c267beec820383b7[0m
+[32m 2019-11-15 10:23:31,063 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-15 10:23:31,063 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-15 10:23:31,386 change_urltail.py[line:39] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-15 10:23:31,386 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-15 10:23:31,386 express_detail.py[line:32] INFO: Test interface:http://dev.buyer.wdklian.com/express[0m
+[32m 2019-11-15 10:23:54,256 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-15 10:23:54,256 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-15 10:23:54,426 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-15 10:23:54,426 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-15 10:23:54,426 express_detail.py[line:33] INFO: test url:http://dev.buyer.wdklian.com/express?uid=2247&timestamp=1573784634000&nonce=608475&sign=8f5e1592f75dc663de34df3ea2ca9468[0m
+[32m 2019-11-15 10:24:03,746 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-15 10:24:03,747 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-15 10:24:04,055 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-15 10:24:04,056 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-15 10:24:04,056 express_detail.py[line:33] INFO: test url:http://dev.buyer.wdklian.com/express?uid=2247&timestamp=1573784643000&nonce=830728&sign=fc3456aa2141e928bf2881d43f869341[0m
