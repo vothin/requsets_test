@@ -18,21 +18,29 @@ class Goods_Sales(Requests_Test):
 
     # 查询某商品的销售记录
     def get_goods_sales(self, goods_id, username=None, password=None, data=None, prod=False):
-        self.suffix = self.c.get_value('Deal', 'goods_sales')
-        self.suffix = self.suffix.format(goods_id)
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'goods_sales')
+        self.suffix = self.suffix.format(goods_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
+
 
 
 if __name__ == '__main__':
     g = Goods_Sales()
-    result = g.get_goods_sales(353)
+    data = {
+        'page_no' : '1',
+        'page_size' : '1'
+    }
+
+    result = g.get_goods_sales(470, '13412345678', '123456', data)
     print(result)
     print('响应正文：', result.text)
     print('响应头：', result.headers)
