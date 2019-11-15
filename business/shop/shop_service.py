@@ -18,7 +18,7 @@ from common.recordlog import logs
 class Shop_Service(Requests_Test):
 
     # 添加店铺服务绑定
-    def post_shop_mapping(self, username=None, password=None, data=None, prod=False):
+    def post_shop_mapping(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  id              主键
                         nodeId          结点shopId
@@ -38,7 +38,7 @@ class Shop_Service(Requests_Test):
 
 
     # 删除店铺服务绑定
-    def del_shop_mapping(self, ids, username=None, password=None, data=None, prod=False):
+    def del_shop_mapping(self, ids, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  ids             要删除的店铺服务绑定主键集合
         '''
@@ -56,7 +56,7 @@ class Shop_Service(Requests_Test):
 
 
     # 获取某个机构下的O2O店铺
-    def post_shop_getShopId(self, username=None, password=None, data=None, prod=False):
+    def post_shop_getShopId(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  shopId          shopId
                         page_no         页码
@@ -75,7 +75,7 @@ class Shop_Service(Requests_Test):
 
 
     # 获取某个机构下的O2O店铺--返回全部属性
-    def post_shop_getShopIdAll(self, username=None, password=None, data=None, prod=False):
+    def post_shop_getShopIdAll(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  shopId          shopId
                         page_no         页码

@@ -17,7 +17,7 @@ from common.requests_test import Requests_Test
 class Goods_Sales(Requests_Test):
 
     # 查询某商品的销售记录
-    def get_goods_sales(self, goods_id, username=None, password=None, data=None, prod=False):
+    def get_goods_sales(self, goods_id, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)

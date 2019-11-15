@@ -20,7 +20,7 @@ class Trade(Requests_Test):
 
 
     # 创建交易
-    def post_tarde_create(self, username=None, password=None, data=None, prod=False):
+    def post_tarde_create(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  client          app下单使用，传值APP
         '''

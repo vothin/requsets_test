@@ -16,7 +16,7 @@ from common.requests_test import Requests_Test
 
 class Change_Param():
 
-    def __init__(self, username=None, password=None, prod=False):
+    def __init__(self, username=None, password=None, prod=None):
         self.username = username
         self.password = password
         self.headers  = None

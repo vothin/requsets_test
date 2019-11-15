@@ -18,7 +18,7 @@ from common.recordlog import logs
 class Carts(Requests_Test):
 
     # 向购物车中添加一个产品
-    def post_catrs(self, username=None, password=None, data=None, prod=False):
+    def post_catrs(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  sku_id      产品ID            True
                         num         此产品的购买数量    True
@@ -40,7 +40,7 @@ class Carts(Requests_Test):
 
 
     # 清空购物车
-    def del_catrs_del(self, username=None, password=None, data=None, prod=False):
+    def del_catrs_del(self, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -57,7 +57,7 @@ class Carts(Requests_Test):
 
 
     # 获取购物车页面购物车详情
-    def get_carts_all(self, username=None, password=None, data=None, prod=False):
+    def get_carts_all(self, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -73,7 +73,7 @@ class Carts(Requests_Test):
 
 
     # 立即购买
-    def post_carts_buy(self, username=None, password=None, data=None, prod=False):
+    def post_carts_buy(self, username=None, password=None, data=None, prod=None):
         '''
                     相关参数有：  sku_id      产品ID            True
                                 num         此产品的购买数量    True
@@ -94,7 +94,7 @@ class Carts(Requests_Test):
 
 
     # 获取结算页面购物车详情
-    def get_carts_checked(self, username=None, password=None, data=None, prod=False):
+    def get_carts_checked(self, username=None, password=None, data=None, prod=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
         gu = cu.get_params()
@@ -110,7 +110,7 @@ class Carts(Requests_Test):
 
 
     # 设置全部商为选中或不选中
-    def post_carts_checked(self, username=None, password=None, data=None, prod=False):
+    def post_carts_checked(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  checked     是否选中,可用值:0,1
         '''
@@ -128,7 +128,7 @@ class Carts(Requests_Test):
 
 
     # 批量设置某商家的商品为选中或不选中
-    def post_carts_seller(self, seller_id, username=None, password=None, data=None, prod=False):
+    def post_carts_seller(self, seller_id, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  seller_id   卖家id
                         checked     是否选中,可用值:0,1
@@ -147,7 +147,7 @@ class Carts(Requests_Test):
 
 
     # 更新购物车中的单个产品
-    def post_carts_sku(self, sku_id, username=None, password=None, data=None, prod=False):
+    def post_carts_sku(self, sku_id, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  sku_id      产品id
                         checked     是否选中,可用值:0,1
@@ -169,7 +169,7 @@ class Carts(Requests_Test):
 
 
     # 删除购物车中的一个或多个产品
-    def del_carts_sku(self, sku_ids, username=None, password=None, data=None, prod=False):
+    def del_carts_sku(self, sku_ids, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  sku_ids     产品id，多个产品可以用英文逗号：(,) 隔开
         '''

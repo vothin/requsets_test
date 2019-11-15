@@ -16,7 +16,7 @@ from common.change_param import Change_Param
 class Goods_Categories(Requests_Test):
 
     # 首页等商品分类数据
-    def get_goods_categories(self, parent_id, username=None, password=None, data=None, prod=False):
+    def get_goods_categories(self, parent_id, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)

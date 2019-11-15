@@ -16,7 +16,7 @@ from common.recordlog import logs
 class Goods_Search(Requests_Test):
 
     # 查询商品列表
-    def get_goods_search(self, username=None, password=None, data=None, prod=False):
+    def get_goods_search(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  page_on     页码
                         page_size   每页数量
@@ -45,7 +45,7 @@ class Goods_Search(Requests_Test):
 
 
     # 查询商品列表，返回商品所有属性
-    def get_goods_searchAllGoods(self, username=None, password=None, data=None, prod=False):
+    def get_goods_searchAllGoods(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  page_on     页码
                         page_size   每页数量
@@ -74,7 +74,7 @@ class Goods_Search(Requests_Test):
 
 
     # 查询商品选择器
-    def get_goods_selector(self, username=None, password=None, data=None, prod=False):
+    def get_goods_selector(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  page_on     页码
                         page_size   每页数量
@@ -102,7 +102,7 @@ class Goods_Search(Requests_Test):
 
 
     # 查询商品分词对应数量
-    def get_goods_words(self, username=None, password=None, data=None, prod=False):
+    def get_goods_words(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  page_on     页码
                         page_size   每页数量

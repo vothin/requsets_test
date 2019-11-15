@@ -55,11 +55,11 @@ class Base():
 
 
     # url拼接
-    def url_joint(self, prod=False):
-        if prod:
-            self.url =  self.prefix2 + self.suffix          # 测试环境url
+    def url_joint(self, prod=None):
+        if prod == 1:
+            self.url =  self.prefix1 + self.suffix          # 测试环境url
+        elif prod == 2:
+            self.url = self.prefix2 + self.suffix           # 正式环境url
         else:
-            self.url = self.prefix1 + self.suffix           # 正式环境url
-            
-        # self.url = self.prefix3 + self.suffix               # 本地环境url
+            self.url = self.prefix3 + self.suffix           # 本地环境url
         return self.url

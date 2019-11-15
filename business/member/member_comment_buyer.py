@@ -18,7 +18,7 @@ from common.recordlog import logs
 class Member_Comment_Buyer(Requests_Test):
 
     # 查询我的评论列表
-    def get_member_comments(self, username=None, password=None, data=None, prod=False):
+    def get_member_comments(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   content             评论内容
                         goods_id            商品id

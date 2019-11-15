@@ -17,7 +17,7 @@ from business.passport.passport_login_noCaptcha import Passport_LoginNo
 
 class Change_UrlTail():
 
-    def __init__(self, username, password, prod=False):
+    def __init__(self, username, password, prod=None):
         self.username = username                            # 登录账号
         self.password = password                            # 登录密码
         self.uuid = '777'                                   # uuid参数

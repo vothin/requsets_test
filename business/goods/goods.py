@@ -18,7 +18,7 @@ from common.change_param import Change_Param
 class Goods(Requests_Test):
 
     # 查询商品
-    def get_goods(self, goods_id, username=None, password=None, data=None, prod=False):
+    def get_goods(self, goods_id, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -36,7 +36,7 @@ class Goods(Requests_Test):
 
 
     # 查询商品是否有货
-    def get_goods_area(self, goods_id, area_id, username=None, password=None, data=None, prod=False):
+    def get_goods_area(self, goods_id, area_id, username=None, password=None, data=None, prod=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
         gu = cu.get_params()
@@ -51,7 +51,7 @@ class Goods(Requests_Test):
 
 
     # 获取sku信息
-    def get_goods_skus(self, goods_id, username=None, password=None, data=None, prod=False):
+    def get_goods_skus(self, goods_id, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -68,7 +68,7 @@ class Goods(Requests_Test):
 
 
     # 获取商品浏览次数
-    def get_goods_visit(self, goods_id, username=None, password=None, data=None, prod=False):
+    def get_goods_visit(self, goods_id, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -93,7 +93,7 @@ if __name__ == '__main__':
     # result = g.get_goods_skus(345, prod=True)
     # result = g.get_goods_skus(345)
     # result = g.get_goods_skus(345, '13412345678', '123456', prod=True)
-    result = g.get_goods_skus(345, username='13412345678', password='123456', prod=False)
+    result = g.get_goods_skus(345, username='13412345678', password='123456', prod=None)
     # result = g.get_goods_visit(345, username='13412345678', password='123456')
     # result = g.get_goods_visit(1)
     # result2 = g.get_goods_visit(1, prod=True)

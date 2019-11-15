@@ -18,7 +18,7 @@ from common.recordlog import logs
 class Member_Ask(Requests_Test):
 
     # 查询我的咨询列表
-    def get_member_asks(self, username=None, password=None, data=None, prod=False):
+    def get_member_asks(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   content             评论内容
                         goods_id            商品id
@@ -45,7 +45,7 @@ class Member_Ask(Requests_Test):
 
 
     # 添加咨询
-    def post_member_ask(self, username=None, password=None, data=None, prod=False):
+    def post_member_ask(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   ask_content                 咨询内容
                         goods_id                    咨询商品id
@@ -63,7 +63,7 @@ class Member_Ask(Requests_Test):
 
 
     # 查询某商品的咨询
-    def get_member_asks_goodsId(self, goods_id, username=None, password=None, data=None, prod=False):
+    def get_member_asks_goodsId(self, goods_id, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   page_no             页码
                         page_size           每页显示数量

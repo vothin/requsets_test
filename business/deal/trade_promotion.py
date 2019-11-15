@@ -18,7 +18,7 @@ from common.recordlog import logs
 class Trade_promotion(Requests_Test):
 
     # 选择要参与的促销活动
-    def post_tarde_promotion(self, username=None, password=None, data=None, prod=False):
+    def post_tarde_promotion(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  seller_id           卖家id
                         sku_id              产品id
@@ -40,7 +40,7 @@ class Trade_promotion(Requests_Test):
 
 
     # 取消参与促销
-    def del_tarde_create(self, username=None, password=None, data=None, prod=False):
+    def del_tarde_create(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  seller_id           卖家id
                         sku_id              产品id
@@ -64,7 +64,7 @@ class Trade_promotion(Requests_Test):
 
 
     # 设置O2O优惠券
-    def post_tarde_o2o_coupon(self, seller_id, mc_id, username=None, password=None, data=None, prod=False):
+    def post_tarde_o2o_coupon(self, seller_id, mc_id, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  seller_id           卖家ID
                         mc_id               优惠券ID
@@ -91,7 +91,7 @@ class Trade_promotion(Requests_Test):
 
 
     # 设置优惠券
-    def post_tarde_coupon(self, seller_id, mc_id, username=None, password=None, data=None, prod=False):
+    def post_tarde_coupon(self, seller_id, mc_id, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  seller_id           卖家ID
                         mc_id               优惠券ID

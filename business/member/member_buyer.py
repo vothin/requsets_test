@@ -18,7 +18,7 @@ class Member_Buyer(Requests_Test):
 
 
     # 查询当前会员信息
-    def get_member_buyer(self, username=None, password=None, data=None, prod=False):
+    def get_member_buyer(self, username=None, password=None, data=None, prod=None):
         self.suffix = self.c.get_value('Member', 'members_buyer')
         self.url = self.url_joint(prod)
 
@@ -32,7 +32,7 @@ class Member_Buyer(Requests_Test):
 
 
     # 完善会员细信息
-    def put_member_buyer(self, username=None, password=None, data=None, prod=False):
+    def put_member_buyer(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   nickname            昵称
                         sex                 会员性别,1为男，0为女
@@ -68,7 +68,7 @@ class Member_Buyer(Requests_Test):
 
 
     # SNS完善会员信息
-    def put_member_buyer_editForSNS(self, username=None, password=None, data=None, prod=False):
+    def put_member_buyer_editForSNS(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   mobile              手机号码
                         sex                 会员性别,1为男，0为女
@@ -90,7 +90,7 @@ class Member_Buyer(Requests_Test):
 
 
     # 查询医生信息
-    def get_member_buyer_getDoctor(self, username=None, password=None, data=None, prod=False):
+    def get_member_buyer_getDoctor(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   doctorid            医生id
         '''
@@ -107,7 +107,7 @@ class Member_Buyer(Requests_Test):
 
 
     # 查询医生列表
-    def get_member_buyer_getDoctorList(self, username=None, password=None, data=None, prod=False):
+    def get_member_buyer_getDoctorList(self, username=None, password=None, data=None, prod=None):
         self.suffix = self.c.get_value('Member', 'members_buyer_getDoctorList')
         self.url = self.url_joint(prod)
 
@@ -121,7 +121,7 @@ class Member_Buyer(Requests_Test):
 
 
     # 查询当前会员信息ForSNS
-    def get_member_buyer_getForSNS(self, username=None, password=None, data=None, prod=False):
+    def get_member_buyer_getForSNS(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   uname            会员uname
         '''
@@ -138,7 +138,7 @@ class Member_Buyer(Requests_Test):
 
 
     # 根据手机号查询任意用户信息
-    def get_member_buyer_getMemberByMobile(self, username=None, password=None, data=None, prod=False):
+    def get_member_buyer_getMemberByMobile(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   mobile            用户手机号
         '''
@@ -155,7 +155,7 @@ class Member_Buyer(Requests_Test):
 
 
     # 注销会员登录
-    def post_member_buyer_logout(self, username=None, password=None, data=None, prod=False):
+    def post_member_buyer_logout(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   uid            会员id
         '''
@@ -172,7 +172,7 @@ class Member_Buyer(Requests_Test):
 
 
     # 统计当前会员的一些数据
-    def get_member_buyer_statistics(self, username=None, password=None, data=None, prod=False):
+    def get_member_buyer_statistics(self, username=None, password=None, data=None, prod=None):
         self.suffix = self.c.get_value('Member', 'members_buyer_statistics')
         self.url = self.url_joint(prod)
 

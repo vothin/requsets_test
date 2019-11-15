@@ -17,7 +17,7 @@ from common.recordlog import logs
 class Shop(Requests_Test):
 
     # 查询店铺所有医生
-    def get_shop_getDoctorListByShopId(self, username=None, password=None, data=None, prod=False):
+    def get_shop_getDoctorListByShopId(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  shopId          店铺id
         '''
@@ -38,7 +38,7 @@ class Shop(Requests_Test):
 
 
     # H5申请o2o店铺
-    def post_o2o_shop_apply(self, username=None, password=None, data=None, prod=False):
+    def post_o2o_shop_apply(self, username=None, password=None, data=None, prod=None):
         '''
            相关参数有：  shop_name            店铺名称
                        link_name            店铺联系人

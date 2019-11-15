@@ -18,7 +18,7 @@ from common.requests_test import Requests_Test
 class Member_Collection_Shop(Requests_Test):
 
     # 添加会员收藏店铺
-    def post_member_collection_shop(self, username=None, password=None, data=None, prod=False):
+    def post_member_collection_shop(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   shop_id            店铺id
         '''
@@ -35,7 +35,7 @@ class Member_Collection_Shop(Requests_Test):
 
 
     # 查看会员是否收藏店铺
-    def get_member_collection_shop_id(self, shop_id, username=None, password=None, data=None, prod=False):
+    def get_member_collection_shop_id(self, shop_id, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   shop_id            要检索的收藏店铺id
         '''
@@ -53,7 +53,7 @@ class Member_Collection_Shop(Requests_Test):
 
 
     # 删除会员收藏店铺
-    def del_member_collection_shop_id(self, shop_id, username=None, password=None, data=None, prod=False):
+    def del_member_collection_shop_id(self, shop_id, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   shop_id            要删除的店铺id
         '''
@@ -71,7 +71,7 @@ class Member_Collection_Shop(Requests_Test):
 
 
     # 查询会员收藏店铺列表
-    def get_member_collection_shops(self, username=None, password=None, data=None, prod=False):
+    def get_member_collection_shops(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   page_no             页码
                         page_size           每页显示数量

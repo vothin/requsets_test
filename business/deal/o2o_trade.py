@@ -16,7 +16,7 @@ from common.change_param import Change_Param
 class O2O_Trade(Requests_Test):
 
     # 创建O2O交易
-    def post_o2o_trade_create(self, username=None, password=None, data=None, prod=False):
+    def post_o2o_trade_create(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  client      appO2O下单使用，传值APP
         '''

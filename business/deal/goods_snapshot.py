@@ -18,7 +18,7 @@ from common.recordlog import logs
 class Goods_Snapshot(Requests_Test):
 
     # 查询一个交易快照
-    def get_goods_snapshot(self, id, username=None, password=None, data=None, prod=False):
+    def get_goods_snapshot(self, id, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)

@@ -17,7 +17,7 @@ from common.recordlog import logs
 class Goods_Taps(Requests_Test):        # 未完成
 
     # 查询商品销量
-    def get_goods_count(self, goods_id, username=None, password=None, prod=False):
+    def get_goods_count(self, goods_id, username=None, password=None, prod=None):
 
         self.suffix = self.c.get_value('Goods', 'goods_tags_count')
 

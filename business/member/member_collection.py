@@ -18,7 +18,7 @@ from common.recordlog import logs
 class Member_Collection(Requests_Test):
 
     # 查询会员商品收藏列表
-    def get_member_collection_goods(self, username=None, password=None, data=None, prod=False):
+    def get_member_collection_goods(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   page_no             页码
                         page_size           每页显示数量
@@ -37,7 +37,7 @@ class Member_Collection(Requests_Test):
 
 
     # 添加会员商品收藏
-    def post_member_collection_goods(self, username=None, password=None, data=None, prod=False):
+    def post_member_collection_goods(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   goods_id            商品id
         '''
@@ -53,7 +53,7 @@ class Member_Collection(Requests_Test):
 
 
     # 删除会员商品收藏
-    def del_member_collection_goods(self, goods_id, username=None, password=None, data=None, prod=False):
+    def del_member_collection_goods(self, goods_id, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   goods_id            商品id
         '''
@@ -72,7 +72,7 @@ class Member_Collection(Requests_Test):
 
 
     # 查询会员是否收藏商品
-    def get_member_collection_goods_id(self, id, username=None, password=None, data=None, prod=False):
+    def get_member_collection_goods_id(self, id, username=None, password=None, data=None, prod=None):
         '''
             相关参数有:   id            商品id
         '''

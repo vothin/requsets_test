@@ -17,7 +17,7 @@ from common.requests_test import Requests_Test
 class Checkout_Param(Requests_Test):
 
     # 获取结算参数
-    def get_checkout_params(self, username=None, password=None, data=None, prod=False):
+    def get_checkout_params(self, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -33,7 +33,7 @@ class Checkout_Param(Requests_Test):
 
 
     # 设置收货地址id
-    def post_checkout_params_addressId(self, address_id, username=None, password=None, data=None, prod=False):
+    def post_checkout_params_addressId(self, address_id, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  address_id          收货地址id
         '''
@@ -53,7 +53,7 @@ class Checkout_Param(Requests_Test):
 
 
     # 设置支付类型
-    def post_checkout_params_payType(self, username=None, password=None, data=None, prod=False):
+    def post_checkout_params_payType(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  payment_type          支付类型 在线支付：ONLINE，货到付款：COD,可用值:ONLINE,COD
         '''
@@ -72,7 +72,7 @@ class Checkout_Param(Requests_Test):
 
 
     # 设置发票信息
-    def post_checkout_params_receipt(self, username=None, password=None, data=None, prod=False):
+    def post_checkout_params_receipt(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  receipt_title           发票抬头
                         receipt_content         发票内容
@@ -95,7 +95,7 @@ class Checkout_Param(Requests_Test):
 
 
     # 取消发票
-    def del_checkout_params_receipt(self, username=None, password=None, data=None, prod=False):
+    def del_checkout_params_receipt(self, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -111,7 +111,7 @@ class Checkout_Param(Requests_Test):
 
 
     # 设置送货时间
-    def post_checkout_params_receiveTime(self, username=None, password=None, data=None, prod=False):
+    def post_checkout_params_receiveTime(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  receive_time           送货时间:任意时间、仅工作日、仅休息日
         '''
@@ -130,7 +130,7 @@ class Checkout_Param(Requests_Test):
 
 
     # 设置订单备注
-    def post_checkout_params_remark(self, username=None, password=None, data=None, prod=False):
+    def post_checkout_params_remark(self, username=None, password=None, data=None, prod=None):
         '''
             相关参数有：  receive_time           送货时间
         '''
