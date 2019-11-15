@@ -19,23 +19,23 @@ class Goods_Snapshot(Requests_Test):
 
     # 查询一个交易快照
     def get_goods_snapshot(self, id, username=None, password=None, data=None, prod=False):
-        self.suffix = self.c.get_value('Deal', 'goods_snapshots')
-        self.suffix = self.suffix.format(id)
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Deal', 'goods_snapshots')
+        self.suffix = self.suffix.format(id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
+
 
 
 if __name__ == '__main__':
     g = Goods_Snapshot()
-    result = g.get_goods_snapshot('16')
+    result = g.get_goods_snapshot('491', '13412345678', '123456')
     print(result)
-    print('响应正文：', result.text)
-    print('响应头：', result.headers)
-    print('响应url：', result.url)
-    print('响应对应请求方式：', result.request)
+    print(result.text)
