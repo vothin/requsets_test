@@ -40,9 +40,6 @@ if __name__ == '__main__':
         'page_size' : '1'
     }
 
-    result = g.get_goods_sales(470, '13412345678', '123456', data)
+    result = g.get_goods_sales(337, '13412345678', '123456', data)
     print(result)
-    print('响应正文：', result.text)
-    print('响应头：', result.headers)
-    print('响应url：', result.url)
-    print('响应对应请求方式：', result.request)
+    print(result.text)

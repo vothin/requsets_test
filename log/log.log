@@ -2634,3 +2634,13 @@
 [32m 2019-11-15 10:44:31,284 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-15 10:44:31,284 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-15 10:44:31,284 goods_snapshot.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/trade/snapshots/491?uid=2247&timestamp=1573785870000&nonce=312028&sign=432084d725a8b687ee5f90ed88e85d52[0m
+[32m 2019-11-15 10:45:06,219 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-15 10:45:06,220 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-15 10:45:06,530 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-15 10:45:06,530 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-15 10:45:06,530 goods_sales.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/trade/goods/337/sales?uid=2247&timestamp=1573785906000&nonce=227904&sign=a9c60426c0caf113a369b93c1c1787f4[0m
+[32m 2019-11-15 10:45:20,296 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-15 10:45:20,296 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-15 10:45:20,467 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-15 10:45:20,467 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-15 10:45:20,468 goods_sales.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/trade/goods/337/sales?uid=2247&timestamp=1573785920000&nonce=592189&sign=19a681485b8dc27989b7c2e251e4dee6[0m
