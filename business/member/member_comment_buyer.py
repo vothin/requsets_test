@@ -32,12 +32,23 @@ class Member_Comment_Buyer(Requests_Test):
                         page_size           分页数
                         reply_status        回复状态
         '''
-        self.suffix = self.c.get_value('Member', 'members_comments')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_comments')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
+
+
+
+if __name__ == '__main__':
+    m = Member_Comment_Buyer()
+
+    result = m.get_member_comments('13412345678', '123456')
+    print(result)
+    print(result.text)

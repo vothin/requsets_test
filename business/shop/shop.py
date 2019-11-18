@@ -51,18 +51,16 @@ class Shop(Requests_Test):
         '''
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        # 生成url
+        # 拼接url
         self.suffix = self.c.get_value('Shop', 'shop_o2o_apply')
-        if gu[2]:
-            self.url = self.url_joint(prod) + '?' + gu[2]
-        else:
-            self.url = self.url_joint(prod)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
 
-        logs.info('Test interface:%s' % self.url)
-        return self.post_requests(self.url, gu[0], gu[1])
+        return self.post_requests(self.url, gu[0], data)
+
 
 
 if __name__ == '__main__':
@@ -80,8 +78,8 @@ if __name__ == '__main__':
     shop_id = {'shopId' : '19'}
 
     s = Shop()
-    # result = s.post_o2o_shop_apply('16312345678', '123456', data)
-    result = s.get_shop_getDoctorListByShopId('13412345678', '123456', shop_id, prod=2)
+    result = s.post_o2o_shop_apply('16312345678', '123456', data)
+    # result = s.get_shop_getDoctorListByShopId('13412345678', '123456', shop_id)
     # result = s.get_shop_getDoctorListByShopId(data=shop_id)
     print(result)
     print(result.text)
