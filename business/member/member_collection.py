@@ -25,14 +25,16 @@ class Member_Collection(Requests_Test):
         '''
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
         self.suffix = self.c.get_value('Member', 'members_collection_goods')
-        self.url = self.url_joint(prod) + gu[2]
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
 
-        return self.get_requests(self.url, gu[0], gu[1])
+        return self.get_requests(self.url, gu[0], data)
+
 
 
 
@@ -41,15 +43,17 @@ class Member_Collection(Requests_Test):
         '''
             相关参数有:   goods_id            商品id
         '''
+
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
         self.suffix = self.c.get_value('Member', 'members_collection_goods')
-        self.url = self.url_joint(prod) + gu[2]
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
 
-        return self.get_requests(self.url, gu[0], gu[1])
+        return self.post_requests(self.url, gu[0], data)
 
 
     # 删除会员商品收藏
@@ -59,15 +63,15 @@ class Member_Collection(Requests_Test):
         '''
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
         self.suffix = self.c.get_value('Member', 'members_collection_goods_del')
-        self.suffix = self.suffix.format(goods_id)
-        self.url = self.url_joint(prod) + gu[2]
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
 
-        return self.get_requests(self.url, gu[0], gu[1])
+        return self.del_requests(self.url, gu[0], data)
 
 
 
@@ -77,17 +81,17 @@ class Member_Collection(Requests_Test):
             相关参数有:   id            商品id
         '''
 
-
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
         self.suffix = self.c.get_value('Member', 'members_collection_goods_id')
         self.suffix = self.suffix.format(id)
-        self.url = self.url_joint(prod) + gu[2]
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
 
-        return self.get_requests(self.url, gu[0], gu[1])
+        return self.del_requests(self.url, gu[0], data)
 
 
 
@@ -104,10 +108,10 @@ if __name__ == '__main__':
         'goods_id' : '345'
     }
 
-    result = m.get_member_collection_goods('13412345678', '123456', data)
+    # result = m.get_member_collection_goods('13412345678', '123456', data)
     # result = m.post_member_collection_goods('13412345678', '123456', data2)
     # result = m.del_member_collection_goods('345', '13412345678', '123456')
-    # result = m.get_member_collection_goods_id('345', '13412345678', '123456')
+    result = m.get_member_collection_goods_id('345', '13412345678', '123456')
     print(result)
     print(result.text)
     print(result.url)
