@@ -91,7 +91,7 @@ class Member_Collection(Requests_Test):
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test url:%s' % self.url)
 
-        return self.del_requests(self.url, gu[0], data)
+        return self.get_requests(self.url, gu[0], data)
 
 
 
