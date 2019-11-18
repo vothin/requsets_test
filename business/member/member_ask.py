@@ -32,15 +32,17 @@ class Member_Ask(Requests_Test):
                         page_no             页码
                         page_size           每页显示数量
         '''
-        self.suffix = self.c.get_value('Member', 'members_asks')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_asks')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
 
 
 
@@ -50,16 +52,17 @@ class Member_Ask(Requests_Test):
             相关参数有:   ask_content                 咨询内容
                         goods_id                    咨询商品id
         '''
-        self.suffix = self.c.get_value('Member', 'members_asks')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.post_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_asks')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
 
+        return self.post_requests(self.url, gu[0], data)
 
 
     # 查询某商品的咨询
@@ -68,16 +71,44 @@ class Member_Ask(Requests_Test):
             相关参数有:   page_no             页码
                         page_size           每页显示数量
         '''
-        self.suffix = self.c.get_value('Member', 'members_asks_goodsId')
-        self.suffix = self.suffix.format(goods_id)
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_asks_goodsId')
+        self.suffix = self.suffix.format(goods_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
+
+
+
+if __name__ == '__main__':
+    m = Member_Ask()
+
+    get_data = {
+        'page_no' : '1',
+        'page_size' : '1'
+    }
+
+    post_data = {
+        'ask_content' : 'xixunneirong',
+        'goods_id' : '343'
+    }
+
+
+
+    # reslut = m.get_member_asks('13412345678', '123456')
+    # reslut = m.post_member_ask('13412345678', '123456', data=post_data)
+    reslut = m.get_member_asks_goodsId('343', '13412345678', '123456', get_data)
+
+
+    print(reslut)
+    print(reslut.text)
+
 
 
 
