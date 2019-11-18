@@ -228,8 +228,11 @@ if __name__ == '__main__':
 
     # result = m.post_member_address('13412345678', '123456', address, region=region)
     # result = m.get_member_address_id('2247', '13412345678', '123456')
-    result = m.put_member_address_id('65346', '13412345678', '123456', address, prod=3, region=region)
-
+    # result = m.put_member_address_id('65346', '13412345678', '123456', address, prod=3, region=region)
+    # result = m.put_member_address_id('65346', '13412345678', '123456', address, region=region)
+    # result = m.del_member_address_id('65347', '13412345678', '123456')
+    # result = m.put_member_address_id_default('65346', '13412345678', '123456')
+    result = m.get_member_addresses('13412345678', '123456')
     print(result)
     print(result.text)
     print(result.url)
