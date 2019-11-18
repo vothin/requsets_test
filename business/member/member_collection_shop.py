@@ -32,7 +32,7 @@ class Member_Collection_Shop(Requests_Test):
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test url:%s' % self.url)
 
-        return self.del_requests(self.url, gu[0], data)
+        return self.post_requests(self.url, gu[0], data)
 
 
 
@@ -41,16 +41,18 @@ class Member_Collection_Shop(Requests_Test):
         '''
             相关参数有:   shop_id            要检索的收藏店铺id
         '''
-        self.suffix = self.c.get_value('Member', 'members_collection_shop_id')
-        self.suffix = self.suffix.format(shop_id)
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_collection_shop_id')
+        self.suffix = self.suffix.format(shop_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
 
 
 
@@ -59,16 +61,18 @@ class Member_Collection_Shop(Requests_Test):
         '''
             相关参数有:   shop_id            要删除的店铺id
         '''
-        self.suffix = self.c.get_value('Member', 'members_collection_shop_id')
-        self.suffix = self.suffix.format(shop_id)
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.del_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_collection_shop_id')
+        self.suffix = self.suffix.format(shop_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.del_requests(self.url, gu[0], data)
 
 
 
@@ -78,12 +82,27 @@ class Member_Collection_Shop(Requests_Test):
             相关参数有:   page_no             页码
                         page_size           每页显示数量
         '''
-        self.suffix = self.c.get_value('Member', 'members_collection_shops')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_collection_shops')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
+
+
+
+if __name__ == '__main__':
+    m = Member_Collection_Shop()
+    post_data = {'shop_id' : '19'}
+
+    # result = m.post_member_collection_shop('13412345678', '123456', post_data)
+    # result = m.get_member_collection_shop_id('19', '13412345678', '123456')
+    # result = m.get_member_collection_shops('13412345678', '123456')
+    result = m.del_member_collection_shop_id('19', '13412345678', '123456')
+    print(result)
+    print(result.text)
