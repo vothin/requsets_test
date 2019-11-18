@@ -19,15 +19,17 @@ class Member_Buyer(Requests_Test):
 
     # 查询当前会员信息
     def get_member_buyer(self, username=None, password=None, data=None, prod=None):
-        self.suffix = self.c.get_value('Member', 'members_buyer')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_buyer')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
 
 
 
@@ -55,15 +57,17 @@ class Member_Buyer(Requests_Test):
                         age                 年龄
                         midentity           身份证号
         '''
-        self.suffix = self.c.get_value('Member', 'members_buyer')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.put_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_buyer')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.put_requests(self.url, gu[0], data)
 
 
 
@@ -77,15 +81,17 @@ class Member_Buyer(Requests_Test):
                         nickname            用户昵称
                         intro               个人简介
         '''
-        self.suffix = self.c.get_value('Member', 'members_buyer_editForSNS')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.put_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_buyer_editForSNS')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.put_requests(self.url, gu[0], data)
 
 
 
@@ -94,30 +100,33 @@ class Member_Buyer(Requests_Test):
         '''
             相关参数有:   doctorid            医生id
         '''
-        self.suffix = self.c.get_value('Member', 'members_buyer_getDoctor')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_buyer_getDoctor')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
 
 
 
     # 查询医生列表
     def get_member_buyer_getDoctorList(self, username=None, password=None, data=None, prod=None):
-        self.suffix = self.c.get_value('Member', 'members_buyer_getDoctorList')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_buyer_getDoctorList')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
 
+        return self.get_requests(self.url, gu[0], data)
 
 
     # 查询当前会员信息ForSNS
@@ -125,15 +134,17 @@ class Member_Buyer(Requests_Test):
         '''
             相关参数有:   uname            会员uname
         '''
-        self.suffix = self.c.get_value('Member', 'members_buyer_getForSNS')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_buyer_getForSNS')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
 
 
 
@@ -142,15 +153,18 @@ class Member_Buyer(Requests_Test):
         '''
             相关参数有:   mobile            用户手机号
         '''
-        self.suffix = self.c.get_value('Member', 'members_buyer_getMemberByMobile')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_buyer_getMemberByMobile')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
+
 
 
 
@@ -159,27 +173,66 @@ class Member_Buyer(Requests_Test):
         '''
             相关参数有:   uid            会员id
         '''
-        self.suffix = self.c.get_value('Member', 'members_buyer_logout')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.post_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_buyer_logout')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.post_requests(self.url, gu[0], data)
+
 
 
 
     # 统计当前会员的一些数据
     def get_member_buyer_statistics(self, username=None, password=None, data=None, prod=None):
-        self.suffix = self.c.get_value('Member', 'members_buyer_statistics')
-        self.url = self.url_joint(prod)
 
         # 调用Change_Param类
-        cu = Change_Param(username, password, data)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Member', 'members_buyer_statistics')
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
+
+
+
+if __name__ == '__main__':
+    m = Member_Buyer()
+
+    put_data = {
+        'mobile' : '13412345678',
+        'sex' : '0',
+        'age' : '1',
+        'nickname' : 'nicheng',
+        'intro' : 'gerenjianjie'
+    }
+
+
+    get_data = {'doctorid' : '56'}
+
+
+    forSNS = {'uname' : 'tsuser01'}
+
+    mobile = {'mobile' : '13412345678'}
+
+    post_data = {'uid' : '2247'}
+
+    # result = m.get_member_buyer('13412345678', '123456')
+    # result = m.put_member_buyer_editForSNS('13412345678', '123456', put_data)
+    # result = m.get_member_buyer_getDoctor('13412345678', '123456', get_data)
+    # result = m.get_member_buyer_getDoctorList('13412345678', '123456')
+    # result = m.get_member_buyer_getForSNS('13412345678', '123456', forSNS)
+    # result = m.get_member_buyer_getMemberByMobile('13412345678', '123456', mobile)
+    # result = m.get_member_buyer_statistics('13412345678', '123456')
+    result = m.post_member_buyer_logout('13412345678', '123456')
+    print(result)
+    print(result.text)
 
