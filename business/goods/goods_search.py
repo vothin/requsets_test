@@ -131,12 +131,12 @@ class Goods_Search(Requests_Test):
 if __name__ == '__main__':
     data = {
         'page_on' : '1',
-        'page_size' : '1',
-        'category'  : '1'
+        'page_size' : '10',
+        # 'category'  : '1'
     }
 
     g = Goods_Search()
-    # result = g.get_goods_search('13412345678', '123456', data=data)
+    # result = g.get_goods_search('13412345678', '123456', data=data, prod=2)
     # result = g.get_goods_selector(data=data)
-    result = g.get_goods_searchAllGoods(data=data)
+    result = g.get_goods_searchAllGoods('13412345678', '123456', data=data, prod=6)
     print(result.text)

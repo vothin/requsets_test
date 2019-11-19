@@ -209,8 +209,16 @@ if __name__ == '__main__':
     o = Order()
 
     data = {
-        'page_no' : '1',
-        'page_size' : '1'
+        # 'order_status' : 'REFUND',
+        # 'order_status' : 'WAIT_COMMENT',
+        # 'order_status' : 'COMPLETE',
+        # 'order_status' : 'WAIT_PAY',
+        # 'order_status' : 'WAIT_SHIP',
+        # 'order_status' : 'WAIT_ROG',
+        # 'order_status' : 'CANCELLED',
+        'order_status' : 'ALL',
+        'page_no' : '3',
+        'page_size' : '10'
     }
 
     trade_sn = {'trade_sn' : '20190924000002'}
@@ -219,13 +227,14 @@ if __name__ == '__main__':
 
     reason = {'reason' : '???'}
 
-    # result = o.get_tarde_order('13412345678', '123456', data)
+    result = o.get_tarde_order('13412345678', '123456', data)
+    # result = o.get_tarde_order('15652179020', 'qqqqqq', data)
     # result = o.get_tarde_order_cashier('13412345678', '123456', trade_sn)
     # result = o.get_tarde_order_cashier('13412345678', '123456', order_sn)
     # result = o.get_tarde_order_listo2o('13412345678', '123456', data)
     # result = o.get_tarde_order_statusNum('13412345678', '123456')
     # result = o.get_tarde_order_sn('20190924000002', '13412345678', '123456')
-    result = o.post_tarde_order_cancel('20190924000002', '13412345678', '123456', reason)
+    # result = o.post_tarde_order_cancel('20190924000002', '13412345678', '123456', reason)
     # result = o.get_tarde_order_flow('20190924000002', '13412345678', '123456')
     # result = o.get_tarde_order_log(order_sn['order_sn'], '13412345678', '123456')
     # result = o.post_tarde_order_rog(order_sn['order_sn'], '13412345678', '123456')
