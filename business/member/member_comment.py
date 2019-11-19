@@ -15,7 +15,7 @@ from common.change_param import Change_Param
 from common.recordlog import logs
 
 
-class Member_Comment_Buyer(Requests_Test):
+class Member_Comment(Requests_Test):
 
     # 查询我的评论列表
     def get_member_comments(self, username=None, password=None, data=None, prod=None):
@@ -121,7 +121,7 @@ class Member_Comment_Buyer(Requests_Test):
 
 
 if __name__ == '__main__':
-    m = Member_Comment_Buyer()
+    m = Member_Comment()
 
     # post_data = {
     #     'comments' : [{
