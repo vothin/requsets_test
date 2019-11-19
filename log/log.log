@@ -3668,3 +3668,17 @@
 [32m 2019-11-19 10:09:18,592 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-19 10:09:18,593 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-19 10:09:18,593 member_comment_buyer.py[line:101] INFO: test url:http://dev.buyer.wdklian.com/members/comments/goods/340?uid=2247&timestamp=1574129358000&nonce=747380&sign=e57466671cff69d2f042d4dc95ed8a9e[0m
+[32m 2019-11-19 10:15:23,617 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-19 10:15:23,617 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-19 10:15:23,906 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-19 10:15:23,906 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-19 10:15:23,906 member_connect.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/account-binder/list?uid=2247&timestamp=1574129723000&nonce=971584&sign=ddf929f643b0995ddcfa8f05977789b6[0m
+[32m 2019-11-19 10:17:45,832 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-19 10:17:45,832 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-19 10:17:46,126 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-19 10:17:46,127 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-19 10:17:58,832 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-19 10:17:58,833 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-19 10:17:58,972 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-19 10:17:58,972 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-19 10:17:58,972 member_connect.py[line:47] INFO: test url:http://dev.buyer.wdklian.com/account-binder/login/777?uid=2247&timestamp=1574129878000&nonce=805936&sign=8e4d5da438f153120c845ac3115178fd[0m
