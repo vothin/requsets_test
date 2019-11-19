@@ -30,9 +30,9 @@ class Requests_Test(Base):
 
 
     # post请求
-    def post_requests(self, url, headers=None, post_data=None):
+    def post_requests(self, url, headers=None, post_data=None, json_data=None):
         self.headers = headers
-        r = requests.post(url, headers=self.headers, data=post_data)
+        r = requests.post(url, headers=self.headers, data=post_data, json=json_data)
         return r
 
 
