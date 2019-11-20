@@ -15,7 +15,7 @@ from common.change_param import Change_Param
 from common.requests_test import Requests_Test
 
 
-class Passport_Connect(Requests_Test):
+class Passport_Connect_APP(Requests_Test):
 
     # 检测openid是否绑定
     def get_passport_connect_openid(self, type, username=None, password=None, data=None, prod=None):
@@ -147,7 +147,7 @@ class Passport_Connect(Requests_Test):
 
 
 if __name__ == '__main__':
-    p = Passport_Connect()
+    p = Passport_Connect_APP()
 
     # result = p.get_passport_connect_openid('1', '13412345678', '123456')
     # result = p.get_passport_connect_appParm('QQ', '13412345678', '123456')
