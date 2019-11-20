@@ -4126,3 +4126,17 @@
 [32m 2019-11-20 10:36:53,020 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-20 10:36:53,020 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-20 10:36:53,020 member_receipt.py[line:140] INFO: test url:http://dev.buyer.wdklian.com/members/receipt/20190426000014?uid=2247&timestamp=1574217412000&nonce=483838&sign=1609d4ae6357b8e4750bc62cafced2f7[0m
+[32m 2019-11-20 11:53:42,602 change_param.py[line:39] INFO: Not Parameter[0m
+[31m 2019-11-20 11:53:42,602 config.py[line:33] ERROR: No option 'passport_mobile' in section: 'Member'[0m
+[32m 2019-11-20 11:54:30,947 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-20 11:54:30,947 passport.py[line:34] INFO: test url:http://dev.buyer.wdklian.com/passport/mobile/13412345678[0m
+[32m 2019-11-20 11:56:25,182 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-20 11:56:25,182 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-20 11:56:25,329 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-20 11:56:25,330 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-20 11:56:25,331 passport.py[line:34] INFO: test url:http://dev.buyer.wdklian.com/passport/mobile/13412345678?uid=2247&timestamp=1574222185000&nonce=203847&sign=3274097b9b9e0cd046b77c5945e148c7[0m
+[32m 2019-11-20 12:06:57,926 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-20 12:06:57,926 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-20 12:06:58,238 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-20 12:06:58,239 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-20 12:06:58,239 passport.py[line:95] INFO: test url:http://dev.buyer.wdklian.com/passport/username/tsuser01?uid=2247&timestamp=1574222817000&nonce=400464&sign=e1582e8a5b77fff2e154b0a5d01f2c9e[0m
