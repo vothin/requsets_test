@@ -113,7 +113,7 @@ class Member_Receipt(Requests_Test):
         gu = cu.get_params()
 
         # 拼接url
-        self.suffix = self.c.get_value('Member', 'members_receipt_ordinary')
+        self.suffix = self.c.get_value('Member', 'members_receipt_ordinaryId')
         self.suffix = self.suffix.format(id)
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test url:%s' % self.url)
@@ -153,9 +153,11 @@ if __name__ == '__main__':
         'tax_no' : 'shuihao'
     }
 
-    result = m.get_member_receipt('13412345678', '123456')
+    # result = m.get_member_receipt('13412345678', '123456')
     # result = m.post_member_receipt_ordinary('13412345678', '123456', post_data)
     # result = m.del_member_receipt('31', '13412345678', '123456')
-
+    # result = m.put_member_receipt_default('32', '13412345678', '123456')
+    # result = m.put_member_receipt_ordinary('32', '13412345678', '123456', post_data)
+    result = m.get_member_receipt_orderSn('20190426000014', '13412345678', '123456')
     print(result)
     print(result.text)
