@@ -3,7 +3,7 @@
 '''
     @author: Vothin
     @software: 自动化测试
-    @file: passport_connect.py
+    @file: passport_connect_app.py
     @time: 2019/11/20 12:07
     @desc:
 '''
