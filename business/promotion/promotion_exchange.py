@@ -41,7 +41,7 @@ class Promotion_Exchange(Requests_Test):
         gu = cu.get_params()
 
         # 拼接url
-        self.suffix = self.c.get_value('Promotion', 'get_promotions_exchange_goods')
+        self.suffix = self.c.get_value('Promotion', 'promotions_exchange_goods')
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test url:%s' % self.url)
 
