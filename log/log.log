@@ -4206,3 +4206,16 @@
 [32m 2019-11-20 15:14:43,147 change_urltail.py[line:39] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-20 15:14:43,147 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-20 15:14:43,147 goods_search.py[line:69] INFO: test url:http://api.buyer.wdklian.com/goods/search/searchAllGoods?uid=2247&timestamp=1574234082000&nonce=520177&sign=839574297eb06d2f38a7cfdc9f4bc289[0m
+[32m 2019-11-21 14:37:32,148 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-21 14:37:32,148 change_urltail.py[line:34] INFO: get login[0m
+[31m 2019-11-21 14:37:32,150 config.py[line:33] ERROR: No option 'passport_login_nocaptcha' in section: 'Passport'[0m
+[32m 2019-11-21 14:42:45,531 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-21 14:42:45,531 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-21 14:42:45,848 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-21 14:42:45,848 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-21 14:42:45,849 promotion_coupon.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/promotions/coupons?uid=2247&timestamp=1574318565000&nonce=289709&sign=518a6c95748fa6b24bc54b17114c9e5f[0m
+[32m 2019-11-21 14:43:29,039 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-21 14:43:29,040 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-21 14:43:29,337 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-21 14:43:29,337 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-21 14:43:29,337 promotion_coupon.py[line:46] INFO: test url:http://dev.buyer.wdklian.com/promotions/coupons/all?uid=2247&timestamp=1574318609000&nonce=718822&sign=49771d977366930c2f4ad0d3b3b4703b[0m
