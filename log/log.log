@@ -4233,3 +4233,9 @@
 [32m 2019-11-21 16:37:13,159 promotion_groupbuy.py[line:62] INFO: test url:http://dev.buyer.wdklian.com/promotions/group-buy/goods[0m
 [32m 2019-11-21 16:40:43,958 change_param.py[line:39] INFO: Not Parameter[0m
 [32m 2019-11-21 16:40:43,958 promotions.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/promotions/343[0m
+[32m 2019-11-21 16:44:20,173 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-21 16:44:20,174 promotion_seckill.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/promotions/seckill/goods-list[0m
+[32m 2019-11-21 16:45:05,341 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-21 16:45:05,342 promotion_seckill.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/promotions/seckill/goods-list[0m
+[32m 2019-11-21 16:45:19,160 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-21 16:45:19,160 promotion_seckill.py[line:47] INFO: test url:http://dev.buyer.wdklian.com/promotions/seckill/time-line[0m
