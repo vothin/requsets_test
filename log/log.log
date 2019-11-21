@@ -4231,3 +4231,5 @@
 [32m 2019-11-21 16:36:57,068 promotion_groupbuy.py[line:46] INFO: test url:http://dev.buyer.wdklian.com/promotions/group-buy/cats[0m
 [32m 2019-11-21 16:37:13,159 change_param.py[line:39] INFO: Not Parameter[0m
 [32m 2019-11-21 16:37:13,159 promotion_groupbuy.py[line:62] INFO: test url:http://dev.buyer.wdklian.com/promotions/group-buy/goods[0m
+[32m 2019-11-21 16:40:43,958 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-21 16:40:43,958 promotions.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/promotions/343[0m
