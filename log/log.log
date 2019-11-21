@@ -4225,3 +4225,9 @@
 [32m 2019-11-21 14:53:53,909 promotion_exchange.py[line:46] INFO: test url:http://dev.buyer.wdklian.com/promotions/exchange/goods[0m
 [32m 2019-11-21 15:06:03,439 change_param.py[line:39] INFO: Not Parameter[0m
 [32m 2019-11-21 15:06:03,439 promotion_exchange.py[line:46] INFO: test url:http://dev.buyer.wdklian.com/promotions/exchange/goods[0m
+[32m 2019-11-21 16:36:38,889 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-21 16:36:38,889 promotion_groupbuy.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/promotions/group-buy/active[0m
+[32m 2019-11-21 16:36:57,068 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-21 16:36:57,068 promotion_groupbuy.py[line:46] INFO: test url:http://dev.buyer.wdklian.com/promotions/group-buy/cats[0m
+[32m 2019-11-21 16:37:13,159 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-11-21 16:37:13,159 promotion_groupbuy.py[line:62] INFO: test url:http://dev.buyer.wdklian.com/promotions/group-buy/goods[0m
