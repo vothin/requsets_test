@@ -4260,3 +4260,8 @@
 [32m 2019-11-22 10:17:00,248 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-22 10:17:00,248 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-22 10:17:00,249 shop_seller.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/seller/shops/createHospital?uid=4473&timestamp=1574389019000&nonce=129036&sign=3ac3b2f69155e13376703daf8fba42ba[0m
+[32m 2019-11-22 10:24:27,481 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 10:24:27,481 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 10:24:27,791 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 10:24:27,791 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 10:24:27,792 care_sos_notice.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/care/care_sos_notice/sendCareSosNotice?uid=2247&timestamp=1574389467000&nonce=174265&sign=0165df92d30c1850d51381e80ddd2f4c[0m
