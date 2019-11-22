@@ -4306,3 +4306,76 @@
 [32m 2019-11-22 11:03:22,829 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-22 11:03:22,829 care_doctor_advice.py[line:30] INFO: test headers:{'uuid': '777'}[0m
 [32m 2019-11-22 11:03:22,829 care_doctor_advice.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/care/doctor_advice/page?uid=2247&timestamp=1574391802000&nonce=494237&sign=df3ae0370886de040c009ca188649ca6[0m
+[32m 2019-11-22 11:09:25,164 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:09:25,165 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:09:25,488 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=123456&password=6adf97f83acf6453d4a6a4b1070f3754[0m
+[32m 2019-11-22 11:09:25,488 change_urltail.py[line:40] INFO: <Response [500]>[0m
+[31m 2019-11-22 11:09:25,489 change_urltail.py[line:66] ERROR: not found access_token[0m
+[32m 2019-11-22 11:09:25,489 care_hostpital.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/care/hostpital[0m
+[32m 2019-11-22 11:09:31,395 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:09:31,395 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:09:31,538 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=123456&password=6adf97f83acf6453d4a6a4b1070f3754[0m
+[32m 2019-11-22 11:09:31,538 change_urltail.py[line:40] INFO: <Response [500]>[0m
+[31m 2019-11-22 11:09:31,538 change_urltail.py[line:66] ERROR: not found access_token[0m
+[32m 2019-11-22 11:09:31,539 care_hostpital.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/care/hostpital[0m
+[32m 2019-11-22 11:09:39,996 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:09:39,997 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:09:40,151 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:09:40,151 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:09:40,151 care_hostpital.py[line:29] INFO: test url:http://dev.buyer.wdklian.com/care/hostpital?uid=2247&timestamp=1574392179000&nonce=661304&sign=5a9ba6ed5cdba1ceba1580644ea6b617[0m
+[32m 2019-11-22 11:14:04,868 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:14:04,868 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:14:05,039 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:14:05,040 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:14:05,040 care_hostpital.py[line:29] INFO: test url:http://dev.buyer.wdklian.com/care/hostpital?uid=2247&timestamp=1574392444000&nonce=768966&sign=3622864b8de65ebadd40cf23b7af7183[0m
+[32m 2019-11-22 11:14:43,116 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:14:43,117 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:14:45,191 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:14:45,192 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:14:45,192 care_hostpital.py[line:29] INFO: test url:http://192.168.1.168:7002/care/hostpital?uid=2247&timestamp=1574392483000&nonce=592836&sign=accd46c1cca904e85957ad87c2768378[0m
+[32m 2019-11-22 11:14:53,432 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:14:53,432 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:14:53,626 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:14:53,626 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:14:53,626 care_hostpital.py[line:29] INFO: test url:http://192.168.1.168:7002/care/hostpital?uid=2247&timestamp=1574392493000&nonce=117696&sign=b13e69fc5eafc539230c6c90cc1de1da[0m
+[32m 2019-11-22 11:15:16,173 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:15:16,173 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:15:16,357 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:15:16,357 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:15:16,357 care_hostpital.py[line:29] INFO: test url:http://192.168.1.168:7002/care/hostpital?uid=2247&timestamp=1574392516000&nonce=454696&sign=989bca51f971be718439425ae5fda353[0m
+[32m 2019-11-22 11:16:46,607 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:16:46,607 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:16:46,912 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:16:46,912 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:16:46,912 care_hostpital.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 11:16:46,913 care_hostpital.py[line:30] INFO: test url:http://192.168.1.168:7002/care/hostpital?uid=2247&timestamp=1574392606000&nonce=375448&sign=09d7eb1bcc278d33cefa898de3a558bc[0m
+[32m 2019-11-22 11:22:21,572 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:22:21,572 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:22:24,034 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:22:24,035 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:22:24,035 care_hostpital.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 11:22:24,035 care_hostpital.py[line:30] INFO: test url:http://192.168.1.168:7002/care/hostpital?uid=2247&timestamp=1574392941000&nonce=616456&sign=e44aecf8dbf5fe25f25574a8ca4f0195[0m
+[32m 2019-11-22 11:23:02,142 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:23:02,142 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:23:08,608 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:23:08,608 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:23:08,608 care_hostpital.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 11:23:08,609 care_hostpital.py[line:30] INFO: test url:http://192.168.1.168:7002/care/hostpital?uid=2247&timestamp=1574392982000&nonce=644808&sign=b0ac28a5567e3e4b93f6f1adad1e6032[0m
+[32m 2019-11-22 11:23:35,874 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:23:35,875 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:23:39,092 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:23:39,093 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:23:39,093 care_hostpital.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 11:23:39,093 care_hostpital.py[line:30] INFO: test url:http://192.168.1.168:7002/care/hostpital?uid=2247&timestamp=1574393015000&nonce=794126&sign=e1abe06add275bd9ff1ec399f68e883c[0m
+[32m 2019-11-22 11:45:50,287 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:45:50,287 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:45:52,144 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:45:52,144 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:45:52,144 care_hostpital.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 11:45:52,144 care_hostpital.py[line:30] INFO: test url:http://192.168.1.168:7002/care/hostpital?uid=2247&timestamp=1574394350000&nonce=322792&sign=5805bacd2d506214f24b410580c1ac30[0m
+[32m 2019-11-22 11:45:58,105 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 11:45:58,105 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 11:45:58,551 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 11:45:58,551 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 11:45:58,551 care_hostpital.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 11:45:58,551 care_hostpital.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/care/hostpital?uid=2247&timestamp=1574394358000&nonce=989061&sign=efd506b7f0af3f4c0469161603dc1025[0m
