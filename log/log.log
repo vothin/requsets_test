@@ -4379,3 +4379,33 @@
 [32m 2019-11-22 11:45:58,551 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-22 11:45:58,551 care_hostpital.py[line:29] INFO: test headers:{'uuid': '777'}[0m
 [32m 2019-11-22 11:45:58,551 care_hostpital.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/care/hostpital?uid=2247&timestamp=1574394358000&nonce=989061&sign=efd506b7f0af3f4c0469161603dc1025[0m
+[32m 2019-11-22 12:02:25,967 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 12:02:25,967 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 12:02:26,290 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 12:02:26,290 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 12:02:26,290 care_user_doctor_group.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 12:02:26,291 care_user_doctor_group.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/care/care_user_doctor_group?uid=4473&timestamp=1574395345000&nonce=706587&sign=1acb85ad2c8289ed943ed6358a30f561[0m
+[32m 2019-11-22 12:02:53,020 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 12:02:53,020 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 12:02:53,324 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 12:02:53,324 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 12:02:53,325 care_user_doctor_group.py[line:67] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 12:02:53,325 care_user_doctor_group.py[line:68] INFO: test url:http://dev.buyer.wdklian.com/care/care_user_doctor_group/{}                                                                                                                   ?uid=4473&timestamp=1574395373000&nonce=833104&sign=09ba84415f39b709f80c89b97e19a919[0m
+[32m 2019-11-22 12:03:32,229 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 12:03:32,230 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 12:03:32,530 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 12:03:32,530 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 12:03:32,530 care_user_doctor_group.py[line:67] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 12:03:32,530 care_user_doctor_group.py[line:68] INFO: test url:http://dev.buyer.wdklian.com/care/care_user_doctor_group/146?uid=4473&timestamp=1574395412000&nonce=270095&sign=c11383e3f62845d952b618ad3991c041[0m
+[32m 2019-11-22 12:04:42,493 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 12:04:42,493 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 12:04:42,795 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 12:04:42,795 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 12:04:42,795 care_user_doctor_group.py[line:85] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 12:04:42,795 care_user_doctor_group.py[line:86] INFO: test url:http://dev.buyer.wdklian.com/care/care_user_doctor_group/146?uid=4473&timestamp=1574395482000&nonce=475246&sign=e9966a6cffaaa0a5b8a227e8d208d0c6[0m
+[32m 2019-11-22 12:05:04,610 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 12:05:04,610 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 12:05:04,916 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 12:05:04,916 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 12:05:04,916 care_user_doctor_group.py[line:49] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 12:05:04,916 care_user_doctor_group.py[line:50] INFO: test url:http://dev.buyer.wdklian.com/care/care_user_doctor_group/146?uid=4473&timestamp=1574395504000&nonce=813091&sign=2a0a50555a0481bc6689592d379be934[0m
