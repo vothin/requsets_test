@@ -4239,3 +4239,24 @@
 [32m 2019-11-21 16:45:05,342 promotion_seckill.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/promotions/seckill/goods-list[0m
 [32m 2019-11-21 16:45:19,160 change_param.py[line:39] INFO: Not Parameter[0m
 [32m 2019-11-21 16:45:19,160 promotion_seckill.py[line:47] INFO: test url:http://dev.buyer.wdklian.com/promotions/seckill/time-line[0m
+[32m 2019-11-21 17:24:40,246 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-21 17:24:40,246 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-21 17:24:40,568 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-21 17:24:40,568 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-21 17:24:40,569 shop_seller.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/seller/shops/createHospital?uid=4473&timestamp=1574328280000&nonce=904154&sign=d08f3cc17c4b6616b7cb72736bdd9709[0m
+[32m 2019-11-21 17:25:08,163 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-21 17:25:08,163 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-21 17:25:08,469 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-21 17:25:08,470 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-21 17:25:08,470 shop_seller.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/seller/shops/createHospital?uid=4473&timestamp=1574328308000&nonce=474234&sign=6064f9107b8fd9af8eb46d52e87a1c34[0m
+[32m 2019-11-21 17:31:45,937 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-21 17:31:45,938 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-21 17:31:46,173 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7003/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-21 17:31:46,173 change_urltail.py[line:40] INFO: <Response [403]>[0m
+[31m 2019-11-21 17:31:46,173 change_urltail.py[line:66] ERROR: not found access_token[0m
+[32m 2019-11-21 17:31:46,174 shop_seller.py[line:30] INFO: test url:http://192.168.1.168:7003/seller/shops/createHospital[0m
+[32m 2019-11-22 10:16:59,932 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 10:16:59,932 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 10:17:00,248 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 10:17:00,248 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 10:17:00,249 shop_seller.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/seller/shops/createHospital?uid=4473&timestamp=1574389019000&nonce=129036&sign=3ac3b2f69155e13376703daf8fba42ba[0m

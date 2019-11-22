@@ -21,6 +21,9 @@ class Base():
         self.prefix1 = self.c.get_value('URL', 'dev_url')   # 测试环境
         self.prefix2 = self.c.get_value('URL', 'url')       # 正式环境
         self.prefix3 = self.c.get_value('URL', '192_url')
+        self.prefix4 = self.c.get_value('URL', 'dev_seller_url')
+        self.prefix5 = self.c.get_value('URL', 'seller_url')
+        self.prefix6 = self.c.get_value('URL', '192_seller_url')
         self.suffix = ''                                    # section参数
         self.url = ''                                       # url地址
         self.token = ''                                     # token参数
@@ -28,38 +31,21 @@ class Base():
         self.headers = None                                 # headers参数
 
 
-    # # 初始化读取配置文件url.ini
-    # def __init__(self, username=None, password=None):
-    #     self.c = Config()
-    #     self.prefix1 = self.c.get_value('URL', 'dev_url')   # 测试环境
-    #     self.prefix2 = self.c.get_value('URL', 'url')       # 正式环境
-    #     self.prefix3 = self.c.get_value('URL', '192_url')
-    #     self.suffix = ''                                    # section参数
-    #     self.url = ''                                       # url地址
-    #     self.token = ''                                     # token参数
-    #     self.uid = ''                                       # uid参数
-    #     self.headers = None                                 # headers参数
-    #
-    #     self.uuid = '777'                                   # uuid参数
-    #     self.timestamp = str(int(time.time()) * 1000)       # timestamp参数
-    #     self.nonce = str(random.randint(100000, 999999))    # nonce参数
-    #     self.sign = ''                                      # sign参数
-    #     self.headers = {'uuid' : self.uuid}
-    #     self.url_tail = ''
-    #
-    #     self.username = username                            # 登录账号
-    #     self.password = password                            # 登录密码
-    #     # self.data = None                                    # data参数
-    #     # self.prod = False                                   # prod控制器
-
-
 
     # url拼接
     def url_joint(self, prod=None):
         if prod == None:
-            self.url =  self.prefix1 + self.suffix          # 测试环境url
+            self.url =  self.prefix1 + self.suffix          # 用户端测试环境url
         elif prod == 2:
-            self.url = self.prefix2 + self.suffix           # 正式环境url
-        else:
-            self.url = self.prefix3 + self.suffix           # 本地环境url
+            self.url = self.prefix2 + self.suffix           # 用户端正式环境url
+        elif prod == 3:
+            self.url = self.prefix3 + self.suffix           # 用户端本地环境url
+
+        elif prod == 4:
+            self.url = self.prefix4 + self.suffix           # 医生端测试环境url
+        elif prod == 5:
+            self.url = self.prefix5 + self.suffix           # 医生端正式环境url
+        elif prod == 6:
+            self.url = self.prefix6 + self.suffix           # 医生端本地环境url
+
         return self.url
