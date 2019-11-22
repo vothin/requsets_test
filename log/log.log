@@ -4265,3 +4265,20 @@
 [32m 2019-11-22 10:24:27,791 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-11-22 10:24:27,791 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-22 10:24:27,792 care_sos_notice.py[line:30] INFO: test url:http://dev.buyer.wdklian.com/care/care_sos_notice/sendCareSosNotice?uid=2247&timestamp=1574389467000&nonce=174265&sign=0165df92d30c1850d51381e80ddd2f4c[0m
+[32m 2019-11-22 10:32:57,376 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 10:32:57,377 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 10:32:57,695 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 10:32:57,695 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 10:32:57,696 care_health_advert.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 10:32:57,696 care_health_advert.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/care/health_advert/page?uid=2247&timestamp=1574389977000&nonce=644228&sign=5e350caee10f1e711f15c05d007453b2[0m
+[32m 2019-11-22 10:33:21,503 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 10:33:21,503 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 10:33:21,812 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 10:33:21,812 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 10:33:21,813 care_health_advert.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 10:33:21,813 care_health_advert.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/care/health_advert/page?uid=2247&timestamp=1574390001000&nonce=864115&sign=7bedcc4f0e970666c5bbaf43fdc64aa1[0m
+[32m 2019-11-22 10:37:32,461 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 10:37:32,461 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 10:37:32,773 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 10:37:32,773 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 10:37:32,773 care_health_advert.py[line:48] INFO: test url:http://dev.buyer.wdklian.com/care/health_advert/88?uid=2247&timestamp=1574390252000&nonce=625115&sign=48b5aaefd5ae70e86bc0b15dc4b6b448[0m
