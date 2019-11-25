@@ -4421,3 +4421,181 @@
 [32m 2019-11-22 14:59:35,186 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-22 14:59:35,187 care_user_location_log.py[line:30] INFO: test headers:{'uuid': '777'}[0m
 [32m 2019-11-22 14:59:35,187 care_user_location_log.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/care/care_user_location_log/page?uid=2247&timestamp=1574405974000&nonce=256871&sign=1fc537ffad6c54762f041013847cf30f[0m
+[32m 2019-11-22 16:38:49,136 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 16:38:49,137 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 16:38:49,436 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 16:38:49,437 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 16:38:49,438 care_member_relation.py[line:48] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 16:38:49,439 care_member_relation.py[line:49] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/getRelativeMemberByMobile?uid=2247&timestamp=1574411929000&nonce=170439&sign=bad936bc31d399d521a4abc098e9b420[0m
+[32m 2019-11-22 16:47:22,086 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 16:47:22,086 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 16:47:22,389 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 16:47:22,389 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 16:47:22,390 care_member_relation.py[line:65] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 16:47:22,390 care_member_relation.py[line:66] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/getWaitPassList?uid=2247&timestamp=1574412442000&nonce=285944&sign=5499ac56e3c7020f254330063698aca5[0m
+[32m 2019-11-22 16:51:41,646 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 16:51:41,646 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 16:51:41,949 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 16:51:41,950 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 16:51:41,950 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 16:51:41,950 care_member_relation.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation?uid=2247&timestamp=1574412701000&nonce=188535&sign=63723cdf3b5ccdcb077e46038f739413[0m
+[32m 2019-11-22 16:54:06,957 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 16:54:06,958 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 16:54:07,244 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 16:54:07,244 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 16:54:07,245 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 16:54:07,245 care_member_relation.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation?uid=2247&timestamp=1574412846000&nonce=716796&sign=94612b5fb22dbb27420c13e929033800[0m
+[32m 2019-11-22 17:05:04,764 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:05:04,764 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:05:04,923 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:05:04,923 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:05:04,923 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:05:04,923 care_member_relation.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation?uid=2247&timestamp=1574413504000&nonce=231657&sign=9002871532446bb5641bbad185ca2d63[0m
+[32m 2019-11-22 17:06:08,368 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:06:08,368 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:06:08,657 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:06:08,657 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:06:08,657 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:06:08,657 care_member_relation.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation?uid=2247&timestamp=1574413568000&nonce=676081&sign=5a0443b687e95780edf768d9bfb26c4a[0m
+[32m 2019-11-22 17:07:17,494 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:07:17,494 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:07:24,699 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:07:24,699 change_urltail.py[line:40] INFO: <Response [500]>[0m
+[32m 2019-11-22 17:07:34,888 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:07:34,889 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:09:01,590 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:09:01,591 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:09:04,728 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:09:04,728 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:09:04,729 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:09:04,729 care_member_relation.py[line:32] INFO: test url:http://192.168.1.168:7002/care/care_member_relation?uid=2247&timestamp=1574413741000&nonce=260201&sign=a06505c99d76ab47130ab78977fb363c[0m
+[32m 2019-11-22 17:09:19,578 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:09:19,578 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:09:20,124 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:09:20,124 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:09:20,124 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:09:20,124 care_member_relation.py[line:32] INFO: test url:http://192.168.1.168:7002/care/care_member_relation?uid=2247&timestamp=1574413759000&nonce=405444&sign=7df438466b6a79faa0291e01e938324a[0m
+[32m 2019-11-22 17:09:30,088 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:09:30,088 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:09:30,588 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:09:30,589 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:09:30,590 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:09:30,590 care_member_relation.py[line:32] INFO: test url:http://192.168.1.168:7002/care/care_member_relation?uid=2247&timestamp=1574413770000&nonce=821692&sign=6413e7fe051daf80c32f0595adb14b40[0m
+[32m 2019-11-22 17:11:31,749 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:11:31,750 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:11:32,131 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:11:32,132 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:11:32,132 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:11:32,132 care_member_relation.py[line:32] INFO: test url:http://192.168.1.168:7002/care/care_member_relation?uid=2247&timestamp=1574413891000&nonce=115964&sign=5fbc3639fd76ba9ed7e12c8926c8dbf5[0m
+[32m 2019-11-22 17:12:35,665 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:12:35,665 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:12:53,178 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7002/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:12:53,179 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:12:53,179 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:12:53,179 care_member_relation.py[line:32] INFO: test url:http://192.168.1.168:7002/care/care_member_relation?uid=2247&timestamp=1574413955000&nonce=862610&sign=f0afbed7d7fba976903f7a582bfe2643[0m
+[32m 2019-11-22 17:13:37,073 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:13:37,074 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:13:37,374 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:13:37,374 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:13:37,374 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:13:37,374 care_member_relation.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation?uid=2247&timestamp=1574414017000&nonce=366523&sign=e9d7b3f8aabe0db45ecebf6293b01319[0m
+[32m 2019-11-22 17:13:45,836 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:13:45,836 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:13:46,134 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:13:46,135 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:13:46,135 care_member_relation.py[line:65] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:13:46,135 care_member_relation.py[line:66] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/getWaitPassList?uid=2247&timestamp=1574414025000&nonce=454011&sign=7b55d8575ffae70d003f67afe27e204e[0m
+[32m 2019-11-22 17:14:11,251 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:14:11,251 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:14:11,398 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:14:11,398 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:14:11,398 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:14:11,398 care_member_relation.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation?uid=2247&timestamp=1574414051000&nonce=936105&sign=248d2b2b4793ca326421accd676501f0[0m
+[32m 2019-11-22 17:14:24,420 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:14:24,420 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:14:24,578 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:14:24,579 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:14:24,579 care_member_relation.py[line:65] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:14:24,579 care_member_relation.py[line:66] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/getWaitPassList?uid=2247&timestamp=1574414064000&nonce=936189&sign=6138633f90e2b124c052223df54a54b1[0m
+[32m 2019-11-22 17:14:45,746 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:14:45,746 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:14:46,051 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:14:46,051 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:14:46,051 care_member_relation.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:14:46,051 care_member_relation.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation?uid=2247&timestamp=1574414085000&nonce=993896&sign=b583f69b245e502e60c524a07774c4bb[0m
+[32m 2019-11-22 17:14:52,607 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:14:52,608 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:14:52,766 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:14:52,767 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:14:52,768 care_member_relation.py[line:65] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:14:52,768 care_member_relation.py[line:66] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/getWaitPassList?uid=2247&timestamp=1574414092000&nonce=646821&sign=d0d845c7a67c900df2510ac3803ce2f3[0m
+[32m 2019-11-22 17:17:41,637 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:17:41,637 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:17:41,937 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:17:41,937 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:17:41,937 care_member_relation.py[line:82] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:17:41,937 care_member_relation.py[line:83] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/page?uid=2247&timestamp=1574414261000&nonce=367946&sign=08f1d3c0c0b5fbcaa3638731e109a182[0m
+[32m 2019-11-22 17:20:20,813 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:20:20,813 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:20:21,127 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:20:21,127 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:20:21,127 care_member_relation.py[line:99] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:20:21,127 care_member_relation.py[line:100] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/page1?uid=2247&timestamp=1574414420000&nonce=344995&sign=c09006c64dc5f00c4e0adf9e7282a612[0m
+[32m 2019-11-22 17:23:13,766 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:23:13,766 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:23:14,058 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:23:14,058 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:23:14,058 care_member_relation.py[line:65] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:23:14,058 care_member_relation.py[line:66] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/getWaitPassList?uid=2247&timestamp=1574414593000&nonce=547598&sign=8574a8df10542f588232d4950790bbf2[0m
+[32m 2019-11-22 17:24:36,441 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:24:36,442 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:24:36,736 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:24:36,736 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:24:36,736 care_member_relation.py[line:133] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:24:36,736 care_member_relation.py[line:134] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/setPassed?uid=2247&timestamp=1574414676000&nonce=183862&sign=b17f49a4c3dba1c0315899b0ac90cde2[0m
+[32m 2019-11-22 17:57:43,368 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:57:43,368 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:57:43,680 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:57:43,681 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:57:43,681 care_member_relation.py[line:48] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:57:43,681 care_member_relation.py[line:49] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/getRelativeMemberByMobile?uid=2247&timestamp=1574416663000&nonce=595003&sign=fa1c441594738f1213976003b72c18c8[0m
+[32m 2019-11-22 17:58:19,048 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:58:19,048 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:58:19,361 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:58:19,361 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:58:19,361 care_member_relation.py[line:82] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:58:19,362 care_member_relation.py[line:83] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/page?uid=2247&timestamp=1574416699000&nonce=766905&sign=b01a1218a81a9883690cfb167775d672[0m
+[32m 2019-11-22 17:58:44,557 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:58:44,557 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:58:44,846 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:58:44,846 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:58:44,846 care_member_relation.py[line:151] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:58:44,846 care_member_relation.py[line:152] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/4?uid=2247&timestamp=1574416724000&nonce=810935&sign=ecb4aa08747f09aa963cf95095a44f1f[0m
+[32m 2019-11-22 17:58:50,748 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 17:58:50,748 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 17:58:50,889 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 17:58:50,889 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 17:58:50,889 care_member_relation.py[line:151] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 17:58:50,889 care_member_relation.py[line:152] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/1?uid=2247&timestamp=1574416730000&nonce=491951&sign=b579e8c3c4346d70e5fd262ffbb5054d[0m
+[32m 2019-11-22 18:00:50,214 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-22 18:00:50,214 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-22 18:00:50,515 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-22 18:00:50,515 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-22 18:00:50,515 care_member_relation.py[line:169] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-22 18:00:50,516 care_member_relation.py[line:170] INFO: test url:http://dev.buyer.wdklian.com/care/care_member_relation/4?uid=2247&timestamp=1574416850000&nonce=921935&sign=5e5abf0345c579f655ad6d6ee607c9d0[0m
+[32m 2019-11-25 11:24:10,471 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-25 11:24:10,472 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-25 11:24:10,865 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7003/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-25 11:24:10,866 change_urltail.py[line:40] INFO: <Response [403]>[0m
+[31m 2019-11-25 11:24:10,866 change_urltail.py[line:66] ERROR: not found access_token[0m
+[32m 2019-11-25 11:24:10,866 care_diagnosis_member.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-25 11:24:10,866 care_diagnosis_member.py[line:31] INFO: test url:http://192.168.1.168:7003/care/care_diagnosis_member/getWeekList[0m
+[32m 2019-11-25 11:24:24,588 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-25 11:24:24,588 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-25 11:24:24,687 change_urltail.py[line:39] INFO: login url:http://192.168.1.168:7003/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-25 11:24:24,688 change_urltail.py[line:40] INFO: <Response [403]>[0m
+[31m 2019-11-25 11:24:24,688 change_urltail.py[line:66] ERROR: not found access_token[0m
+[32m 2019-11-25 11:24:24,689 care_diagnosis_member.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-25 11:24:24,689 care_diagnosis_member.py[line:31] INFO: test url:http://192.168.1.168:7003/care/care_diagnosis_member/getWeekList[0m
+[32m 2019-11-25 11:24:52,557 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-25 11:24:52,557 change_urltail.py[line:34] INFO: get login[0m
