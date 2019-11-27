@@ -4922,3 +4922,49 @@
 [32m 2019-11-27 15:12:13,123 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-27 15:12:13,123 care_vital_signs_params.py[line:101] INFO: test headers:{'uuid': '777'}[0m
 [32m 2019-11-27 15:12:13,123 care_vital_signs_params.py[line:102] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_params/24?uid=2247&timestamp=1574838732000&nonce=610607&sign=b95383ac69f41608b36e2560ca176c92[0m
+[32m 2019-11-27 15:17:24,244 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 15:17:24,245 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 15:17:24,564 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 15:17:24,565 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 15:17:24,565 care_vital_signs_group.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 15:17:24,565 care_vital_signs_group.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_group?uid=2247&timestamp=1574839044000&nonce=345093&sign=f244597c31c51a7c07e24ecaf9180303[0m
+[32m 2019-11-27 15:28:55,336 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 15:28:55,336 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 15:28:55,502 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 15:28:55,503 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 15:28:55,503 care_vital_signs_group.py[line:47] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 15:28:55,503 care_vital_signs_group.py[line:48] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_group/page?uid=2247&timestamp=1574839735000&nonce=931769&sign=4f0fbe784576280a773e9cdbebac6a6c[0m
+[32m 2019-11-27 15:32:17,081 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 15:32:17,081 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 15:32:17,374 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 15:32:17,374 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 15:32:17,375 care_vital_signs_group.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 15:32:17,375 care_vital_signs_group.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_group?uid=2247&timestamp=1574839937000&nonce=896480&sign=72316b16c511671adae98faa658870f7[0m
+[32m 2019-11-27 15:32:56,854 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 15:32:56,854 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 15:32:57,152 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 15:32:57,152 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[31m 2019-11-27 15:32:57,152 config.py[line:33] ERROR: No option 'care_care_vital_signs_group_ids' in section: 'Care'[0m
+[32m 2019-11-27 15:33:24,931 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 15:33:24,932 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 15:33:25,224 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 15:33:25,224 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 15:33:25,225 care_vital_signs_group.py[line:65] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 15:33:25,225 care_vital_signs_group.py[line:66] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_group/8?uid=2247&timestamp=1574840004000&nonce=400380&sign=bb30d1a9abb4e7b600a69ff94f04aa51[0m
+[32m 2019-11-27 15:33:30,510 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 15:33:30,510 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 15:33:30,653 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 15:33:30,653 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 15:33:30,653 care_vital_signs_group.py[line:65] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 15:33:30,653 care_vital_signs_group.py[line:66] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_group/9?uid=2247&timestamp=1574840010000&nonce=875442&sign=f5240d1923090f99ab53d62caa045416[0m
+[32m 2019-11-27 15:50:19,095 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 15:50:19,095 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 15:50:19,390 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 15:50:19,391 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[31m 2019-11-27 15:50:19,391 config.py[line:33] ERROR: No option 'care_vital_signs_group_id' in section: 'Care'[0m
+[32m 2019-11-27 15:50:36,243 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 15:50:36,243 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 15:50:36,406 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 15:50:36,406 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 15:50:36,406 care_vital_signs_group.py[line:83] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 15:50:36,406 care_vital_signs_group.py[line:84] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_group/7?uid=2247&timestamp=1574841036000&nonce=359017&sign=7f1ad766631b076518c21cd29144a0ad[0m
