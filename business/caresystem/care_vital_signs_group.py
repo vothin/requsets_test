@@ -59,7 +59,7 @@ class Care_Vital_Signs_Group(Requests_Test):
         gu = cu.get_params()
 
         # 拼接url
-        self.suffix = self.c.get_value('Care', 'care_care_vital_signs_group_ids')
+        self.suffix = self.c.get_value('Care', 'care_vital_signs_group_ids')
         self.suffix = self.suffix.format(ids)
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test headers:%s' % gu[0])

@@ -4968,3 +4968,51 @@
 [32m 2019-11-27 15:50:36,406 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-27 15:50:36,406 care_vital_signs_group.py[line:83] INFO: test headers:{'uuid': '777'}[0m
 [32m 2019-11-27 15:50:36,406 care_vital_signs_group.py[line:84] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_group/7?uid=2247&timestamp=1574841036000&nonce=359017&sign=7f1ad766631b076518c21cd29144a0ad[0m
+[32m 2019-11-27 16:51:29,910 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 16:51:29,910 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 16:51:30,236 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 16:51:30,236 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 16:51:30,236 care_vital_signs_setting.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 16:51:30,236 care_vital_signs_setting.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_setting?uid=2247&timestamp=1574844689000&nonce=948681&sign=6140a21df5898280a08b2baea73da0c6[0m
+[32m 2019-11-27 16:55:17,315 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 16:55:17,315 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 16:55:17,606 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 16:55:17,607 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 16:55:17,607 care_vital_signs_setting.py[line:47] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 16:55:17,607 care_vital_signs_setting.py[line:48] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_setting/getList?uid=2247&timestamp=1574844917000&nonce=719326&sign=7b19a8be2a3484da7feeac061b791842[0m
+[32m 2019-11-27 16:57:03,581 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 16:57:03,581 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 16:57:03,885 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 16:57:03,885 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[31m 2019-11-27 16:57:03,886 config.py[line:33] ERROR: No option 'care_vital_signs_setting_page' in section: 'Care'[0m
+[32m 2019-11-27 16:58:16,617 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 16:58:16,617 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 16:58:16,918 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 16:58:16,918 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 16:58:16,919 care_vital_signs_setting.py[line:64] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 16:58:16,920 care_vital_signs_setting.py[line:65] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_setting/page?uid=2247&timestamp=1574845096000&nonce=985121&sign=cbdca4ed7152b79ab6800d8914167911[0m
+[32m 2019-11-27 17:08:32,401 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 17:08:32,401 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 17:08:32,704 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 17:08:32,704 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 17:08:32,704 care_vital_signs_setting.py[line:82] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 17:08:32,704 care_vital_signs_setting.py[line:83] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_setting/setting/2247?uid=2247&timestamp=1574845712000&nonce=578529&sign=5c08e39ce8bda64c9ecd1782c1f789c7[0m
+[32m 2019-11-27 17:09:11,851 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 17:09:11,851 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 17:09:12,136 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 17:09:12,136 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 17:09:12,137 care_vital_signs_setting.py[line:100] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 17:09:12,137 care_vital_signs_setting.py[line:101] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_setting/211?uid=2247&timestamp=1574845751000&nonce=824716&sign=bb580394fbc53c46aac9f7f5d5219feb[0m
+[32m 2019-11-27 17:10:45,474 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 17:10:45,474 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 17:10:45,764 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=3d9188577cc9bfe9291ac66b5cc872b7[0m
+[32m 2019-11-27 17:10:45,764 change_urltail.py[line:40] INFO: <Response [500]>[0m
+[31m 2019-11-27 17:10:45,764 change_urltail.py[line:66] ERROR: not found access_token[0m
+[32m 2019-11-27 17:10:45,764 care_vital_signs_setting.py[line:118] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 17:10:45,764 care_vital_signs_setting.py[line:119] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_setting/210[0m
+[32m 2019-11-27 17:11:01,222 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 17:11:01,222 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 17:11:01,420 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 17:11:01,420 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 17:11:01,420 care_vital_signs_setting.py[line:118] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 17:11:01,420 care_vital_signs_setting.py[line:119] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_setting/210?uid=2247&timestamp=1574845861000&nonce=685029&sign=eddb1067082a8f5fdf6b571472c3761f[0m
