@@ -5022,3 +5022,29 @@
 [32m 2019-11-27 17:18:08,196 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-27 17:18:08,196 care_user_doctor_message.py[line:47] INFO: test headers:{'uuid': '777'}[0m
 [32m 2019-11-27 17:18:08,196 care_user_doctor_message.py[line:48] INFO: test url:http://dev.buyer.wdklian.com/care/care_user_doctor_message/page?uid=2247&timestamp=1574846287000&nonce=253122&sign=fdbb03400487e74b55692f29c2ddb75d[0m
+[32m 2019-11-27 17:27:34,753 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-27 17:27:34,753 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-27 17:27:35,054 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-27 17:27:35,054 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-27 17:27:35,054 care_user_doctor_mapping.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-27 17:27:35,055 care_user_doctor_mapping.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/care/care_user_doctor_mapping?uid=2247&timestamp=1574846854000&nonce=777682&sign=40d6251f0708fcb99435df6aea573910[0m
+[32m 2019-11-28 09:37:40,056 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-28 09:37:40,057 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-28 09:37:40,305 change_urltail.py[line:39] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=allen&password=200820e3227815ed1756a6b531e7e0d2[0m
+[32m 2019-11-28 09:37:40,305 change_urltail.py[line:40] INFO: <Response [200]>[0m
+[32m 2019-11-28 09:37:40,305 care_user_doctor_mapping.py[line:47] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-28 09:37:40,305 care_user_doctor_mapping.py[line:48] INFO: test url:http://dev.buyer.wdklian.com/care/care_user_doctor_mapping/getWaitBindedList?uid=56&timestamp=1574905060000&nonce=273159&sign=5fda84faca57e58268a4482625ade8bb[0m
+[32m 2019-11-28 09:37:59,072 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-28 09:37:59,073 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-28 09:37:59,105 change_urltail.py[line:39] INFO: login url:http://api.seller.wdklian.com/passport/login/noCaptcha?username=allen&password=200820e3227815ed1756a6b531e7e0d2[0m
+[32m 2019-11-28 09:37:59,105 change_urltail.py[line:40] INFO: <Response [403]>[0m
+[31m 2019-11-28 09:37:59,106 change_urltail.py[line:66] ERROR: not found access_token[0m
+[32m 2019-11-28 09:37:59,106 care_user_doctor_mapping.py[line:47] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-28 09:37:59,106 care_user_doctor_mapping.py[line:48] INFO: test url:http://api.seller.wdklian.com/care/care_user_doctor_mapping/getWaitBindedList[0m
+[32m 2019-11-28 09:38:13,237 change_urltail.py[line:50] INFO: get headers[0m
+[32m 2019-11-28 09:38:13,237 change_urltail.py[line:34] INFO: get login[0m
+[32m 2019-11-28 09:38:13,407 change_urltail.py[line:39] INFO: login url:http://api.seller.wdklian.com/passport/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-11-28 09:38:13,407 change_urltail.py[line:40] INFO: <Response [403]>[0m
+[31m 2019-11-28 09:38:13,408 change_urltail.py[line:66] ERROR: not found access_token[0m
+[32m 2019-11-28 09:38:13,408 care_user_doctor_mapping.py[line:47] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-11-28 09:38:13,408 care_user_doctor_mapping.py[line:48] INFO: test url:http://api.seller.wdklian.com/care/care_user_doctor_mapping/getWaitBindedList[0m
