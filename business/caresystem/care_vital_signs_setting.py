@@ -51,7 +51,7 @@ class Care_Vital_Signs_Setting(Requests_Test):
 
 
 
-    # 查询生命体征类别列表
+    # 查询生命体征警告设置列表(分页)
     def post_care_vital_signs_setting_page(self, username=None, password=None, data=None, prod=None, json=None):
 
         # 调用Change_Param类
@@ -104,7 +104,7 @@ class Care_Vital_Signs_Setting(Requests_Test):
 
 
 
-    # 查询一个生命体征类别
+    # 查询一个生命体征警告设置
     def get_care_vital_signs_setting_id(self, id, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
@@ -132,7 +132,7 @@ if __name__ == '__main__':
         'param_id' : '9',
         'min_value' : '9',
         'max_value' : '19',
-        'member_id' : '2247'
+        'member_id' : '5550'
     }
 
     post_data2 = {
@@ -140,11 +140,11 @@ if __name__ == '__main__':
         'page_size' : '10'
     }
 
-    # result = c.post_care_vital_signs_setting('13412345678', '123456')
+    result = c.post_care_vital_signs_setting('19912345678', '123456', post_data, prod=2)
     # result = c.post_care_vital_signs_setting_getList('13412345678', '123456')
     # result = c.post_care_vital_signs_setting_page('13412345678', '123456', post_data2)
     # result = c.get_care_vital_signs_setting_setting('2247', '13412345678', '123456')
     # result = c.del_care_vital_signs_setting_ids('211', '13412345678', '123456')
-    result = c.get_care_vital_signs_setting_id('210', '13412345678', '123456')
+    # result = c.get_care_vital_signs_setting_id('210', '13412345678', '123456')
     print(result)
     print(result.text)
