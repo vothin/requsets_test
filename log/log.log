@@ -5072,3 +5072,112 @@
 [32m 2019-11-28 14:25:29,667 change_urltail.py[line:40] INFO: <Response [200]>[0m
 [32m 2019-11-28 14:25:29,667 care_vital_signs_group.py[line:83] INFO: test headers:{'uuid': '777'}[0m
 [32m 2019-11-28 14:25:29,667 care_vital_signs_group.py[line:84] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_group/1?uid=2247&timestamp=1574922329000&nonce=839450&sign=345df36b51ba86f3db143b2671edb447[0m
+[32m 2019-12-02 09:50:57,821 change_param.py[line:39] INFO: Not Parameter[0m
+[32m 2019-12-02 09:50:57,821 care_health_advert.py[line:48] INFO: test url:http://dev.buyer.wdklian.com/care/health_advert/88[0m
+[31m 2019-12-10 15:41:36,359 config.py[line:33] ERROR: No option 'captcha_base' in section: 'Passport'[0m
+[32m 2019-12-10 16:11:57,122 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:11:57,123 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:11:57,442 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=85mt&uuid=777[0m
+[32m 2019-12-10 16:11:57,442 change_urltail.py[line:82] INFO: <Response [200]>[0m
+[32m 2019-12-10 16:11:57,443 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 16:11:57,443 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add?uid=4473&timestamp=1575965517000&nonce=266477&sign=7a1c52f1fb8e673fb5981bd6ecf55525[0m
+[32m 2019-12-10 16:14:49,837 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:14:49,837 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:14:50,036 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7000/ncs/login?username=1631234578&password=e10adc3949ba59abbe56e057f20f883e&captcha=2d3t&uuid=777[0m
+[32m 2019-12-10 16:14:50,037 change_urltail.py[line:82] INFO: <Response [404]>[0m
+[31m 2019-12-10 16:14:50,037 change_urltail.py[line:108] ERROR: not found access_token[0m
+[32m 2019-12-10 16:15:15,485 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:15:15,514 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7000/ncs/login?username=1631234578&password=e10adc3949ba59abbe56e057f20f883e&captcha=2d3t&uuid=777[0m
+[32m 2019-12-10 16:15:15,514 change_urltail.py[line:82] INFO: <Response [404]>[0m
+[32m 2019-12-10 16:18:17,674 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:18:17,698 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7000/ncs/login?username=1631234578&password=e10adc3949ba59abbe56e057f20f883e&captcha=nkn5&uuid=777[0m
+[32m 2019-12-10 16:18:17,698 change_urltail.py[line:82] INFO: <Response [404]>[0m
+[32m 2019-12-10 16:19:55,377 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:19:55,478 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=1631234578&password=e10adc3949ba59abbe56e057f20f883e&captcha=nkn5&uuid=777[0m
+[32m 2019-12-10 16:19:55,478 change_urltail.py[line:82] INFO: <Response [500]>[0m
+[32m 2019-12-10 16:20:17,265 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:20:17,674 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=3tqk&uuid=777[0m
+[32m 2019-12-10 16:20:17,674 change_urltail.py[line:82] INFO: <Response [200]>[0m
+[32m 2019-12-10 16:20:41,194 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:20:41,195 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:20:41,833 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=ynze&uuid=777[0m
+[32m 2019-12-10 16:20:41,833 change_urltail.py[line:82] INFO: <Response [200]>[0m
+[32m 2019-12-10 16:20:41,833 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 16:20:41,833 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add?uid=4473&timestamp=1575966041000&nonce=704413&sign=c0b3966ac72eb1c7bdd19929a2f68cc4[0m
+[32m 2019-12-10 16:21:35,152 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:21:35,152 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:21:35,480 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=d4mx&uuid=777[0m
+[32m 2019-12-10 16:21:35,480 change_urltail.py[line:82] INFO: <Response [200]>[0m
+[32m 2019-12-10 16:21:35,480 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 16:21:35,480 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add?uid=4473&timestamp=1575966095000&nonce=662646&sign=3c82b238011cabb45e4918a3e6cedc27[0m
+[32m 2019-12-10 16:22:59,389 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:22:59,389 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:23:25,270 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:23:25,270 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:23:26,061 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=4qx2&uuid=777[0m
+[32m 2019-12-10 16:23:26,061 change_urltail.py[line:82] INFO: <Response [200]>[0m
+[32m 2019-12-10 16:23:26,061 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 16:23:26,062 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add?uid=4473&timestamp=1575966205000&nonce=691093&sign=9b247902621eae04dad333bf052340cb[0m
+[32m 2019-12-10 16:28:15,698 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:28:15,698 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:28:15,767 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=4qx2&uuid=777[0m
+[32m 2019-12-10 16:28:15,767 change_urltail.py[line:82] INFO: <Response [500]>[0m
+[31m 2019-12-10 16:28:15,767 change_urltail.py[line:108] ERROR: not found access_token[0m
+[32m 2019-12-10 16:28:15,767 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 16:28:15,767 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add[0m
+[32m 2019-12-10 16:28:30,002 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:28:30,002 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:28:30,114 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=4qx2&uuid=777[0m
+[32m 2019-12-10 16:28:30,115 change_urltail.py[line:82] INFO: <Response [500]>[0m
+[31m 2019-12-10 16:28:30,115 change_urltail.py[line:108] ERROR: not found access_token[0m
+[32m 2019-12-10 16:28:30,115 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 16:28:30,115 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add[0m
+[32m 2019-12-10 16:28:48,096 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:28:48,096 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:29:07,613 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:29:07,613 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:29:07,884 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=4qx2&uuid=777[0m
+[32m 2019-12-10 16:29:07,884 change_urltail.py[line:82] INFO: <Response [500]>[0m
+[31m 2019-12-10 16:29:07,885 change_urltail.py[line:108] ERROR: not found access_token[0m
+[32m 2019-12-10 16:29:07,885 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 16:29:07,885 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add[0m
+[32m 2019-12-10 16:29:24,257 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:29:24,257 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:29:24,345 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=4qx2&uuid=777[0m
+[32m 2019-12-10 16:29:24,346 change_urltail.py[line:82] INFO: <Response [500]>[0m
+[31m 2019-12-10 16:29:24,346 change_urltail.py[line:108] ERROR: not found access_token[0m
+[32m 2019-12-10 16:29:24,347 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 16:29:24,347 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add[0m
+[32m 2019-12-10 16:29:49,216 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:29:49,217 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:29:49,989 change_urltail.py[line:81] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=be5b&uuid=777[0m
+[32m 2019-12-10 16:29:49,990 change_urltail.py[line:82] INFO: <Response [200]>[0m
+[32m 2019-12-10 16:29:49,991 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 16:29:49,991 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add?uid=4473&timestamp=1575966589000&nonce=462522&sign=bd281c26a417f99859dd03642f12f96f[0m
+[32m 2019-12-10 16:49:58,173 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 16:49:58,173 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 16:49:58,400 change_urltail.py[line:81] INFO: login url:http://api.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=8zp5&uuid=777[0m
+[32m 2019-12-10 16:49:58,400 change_urltail.py[line:82] INFO: <Response [200]>[0m
+[32m 2019-12-10 16:49:58,400 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 16:49:58,400 ncs_device.py[line:29] INFO: test url:http://api.ncs.wdklian.com/ncs/device/ncs_device_info/add?uid=4473&timestamp=1575967798000&nonce=569190&sign=998f9ba7007902d2e68141558d77ef86[0m
+[32m 2019-12-10 17:48:18,433 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-10 17:48:18,433 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-10 17:48:18,822 change_urltail.py[line:81] INFO: login url:http://api.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=qn64&uuid=777[0m
+[32m 2019-12-10 17:48:18,822 change_urltail.py[line:82] INFO: <Response [200]>[0m
+[32m 2019-12-10 17:48:18,822 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-10 17:48:18,822 ncs_device.py[line:29] INFO: test url:http://api.ncs.wdklian.com/ncs/device/ncs_device_info/add?uid=4473&timestamp=1575971298000&nonce=448726&sign=e1fe68dbdaad910224ee26ba2fadaa79[0m
+[32m 2019-12-10 17:52:12,498 captcha_base.py[line:25] INFO: url:[0m
+[32m 2019-12-10 17:52:33,918 captcha_base.py[line:25] INFO: url:http://192.168.1.168:7000/captchas/777/LOGIN[0m
+[32m 2019-12-10 17:52:46,000 captcha_base.py[line:25] INFO: url:[0m
+[32m 2019-12-10 17:53:13,519 captcha_base.py[line:25] INFO: url:[0m
+[32m 2019-12-10 18:09:35,556 captcha_base.py[line:23] INFO: /captchas/777/LOGIN[0m
+[32m 2019-12-10 18:09:35,556 captcha_base.py[line:26] INFO: url:[0m
+[32m 2019-12-10 18:09:55,861 captcha_base.py[line:23] INFO: /captchas/777/LOGIN[0m
+[32m 2019-12-10 18:09:55,862 captcha_base.py[line:24] INFO: 7[0m
+[32m 2019-12-10 18:09:55,862 captcha_base.py[line:27] INFO: url:[0m
+[32m 2019-12-10 18:13:59,901 captcha_base.py[line:23] INFO: /captchas/777/LOGIN[0m
+[32m 2019-12-10 18:13:59,901 captcha_base.py[line:24] INFO: 7[0m
+[32m 2019-12-10 18:13:59,901 captcha_base.py[line:27] INFO: url:http://192.168.1.168:7000/captchas/777/LOGIN[0m
+[32m 2019-12-10 18:15:04,056 captcha_base.py[line:23] INFO: /captchas/777/LOGIN[0m
+[32m 2019-12-10 18:15:04,057 captcha_base.py[line:24] INFO: 7[0m
+[32m 2019-12-10 18:15:04,057 captcha_base.py[line:27] INFO: url:[0m

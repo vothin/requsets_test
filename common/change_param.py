@@ -16,12 +16,13 @@ from common.requests_test import Requests_Test
 
 class Change_Param():
 
-    def __init__(self, username=None, password=None, prod=None):
+    def __init__(self, username=None, password=None, prod=None, captcha=None):
         self.username = username
         self.password = password
         self.headers  = None
         self.url_tail = ''
         self.prod = prod
+        self.captcha = captcha
 
 
     def get_params(self):
@@ -30,6 +31,21 @@ class Change_Param():
         if self.username:
             ch = Change_UrlTail(self.username, self.password, self.prod)
             gh = ch.get_urlTail()
+            self.headers = gh[0]
+            self.url_tail = gh[1]
+
+            return self.headers, self.url_tail
+
+        else:
+            logs.info('Not Parameter')
+            return self.headers, self.url_tail
+
+
+    def get_ncs_device_params(self):
+        # 判断是否登录
+        if self.username:
+            ch = Change_UrlTail(self.username, self.password, self.prod, self.captcha)
+            gh = ch.get_device_cap_urlTail()
             self.headers = gh[0]
             self.url_tail = gh[1]
 
