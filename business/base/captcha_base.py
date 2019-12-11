@@ -19,8 +19,6 @@ class Captcha_Base(Requests_Test):
     def get_captcha_base(self, scene, prod=None):
         self.suffix = self.c.get_value('Base', 'captcha_base')
         self.suffix = self.suffix.format('777', scene)
-        logs.info(self.suffix)
-        logs.info(prod)
         self.url = self.url_joint(prod)
 
         logs.info('url:%s' % self.url )

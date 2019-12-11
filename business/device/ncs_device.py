@@ -17,9 +17,9 @@ from common.requests_test import Requests_Test
 
 class Ncs_Device(Requests_Test):
 
-    def post_nce_device_info_add(self, username=None, password=None, data=None, prod=None, captcha=None):
+    def post_nce_device_info_add(self, username=None, password=None, data=None, prod=None):
         # 调用Change_Param类
-        cu = Change_Param(username, password, prod, captcha)
+        cu = Change_Param(username, password, prod)
         gu = cu.get_ncs_device_params()
 
         # 拼接url
@@ -47,7 +47,7 @@ if __name__ == '__main__':
         'type' : '1'
     }
 
-    result = n.post_nce_device_info_add('16312345678', '123456', data=data, prod=8, captcha=captcha)
+    result = n.post_nce_device_info_add('16312345678', '123456', data=data, prod=10)
 
     print(result)
     print(result.text)
