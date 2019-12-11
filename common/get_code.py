@@ -11,6 +11,7 @@
 
 
 from business.base.captcha_base import Captcha_Base
+from common.recordlog import logs
 from PIL import Image
 import pytesseract
 
@@ -18,18 +19,33 @@ class Get_Code():
 
     def __init__(self, scene, prod=None):
         self.scene = scene
-        self.prod = prod
+        self.pr = prod
+        self.prod = 0
 
     def get_ncs_device_code(self):
+
+        if self.pr == '10':
+            self.prod += 7
+
+        elif self.pr == '11':
+            self.prod += 8
+
+        elif self.pr == '12':
+            self.prod += 9
 
         # 获得验证码
         c = Captcha_Base()
         response = c.get_captcha_base(self.scene, self.prod)
+        logs.info(response)
+        # logs.info(response.text)
 
-        # with open('../image/code/code.png', 'wd') as image:
-        #     image.write(response.text)
+
+        with open('../image/code/code.png', 'wb') as image:
+            image.write(response.content)
 
 
 if __name__ == '__main__':
-    g = Get_Code('LOGIN', '7')
+    g = Get_Code('LOGIN', '10')
     g.get_ncs_device_code()
+
+

@@ -59,16 +59,16 @@ class Base():
             self.url = self.prefix6 + self.suffix           # 医生端本地环境url
 
         elif prod == 7:
-            self.url = self.prefix7 + self.suffix           # base本地环境url
+            self.url = self.prefix7 + self.suffix           # base测试环境url
         elif prod == 8:
-            self.url = self.prefix8 + self.suffix           # 有设备注册本地环境url
+            self.url = self.prefix8 + self.suffix           # base正式环境url
         elif prod == 9:
-            self.url = self.prefix9 + self.suffix           # 有设备注册本地环境url
+            self.url = self.prefix9 + self.suffix           # base本地环境url
 
         elif prod == 10:
-            self.url = self.prefix10 + self.suffix           # base本地环境url
+            self.url = self.prefix10 + self.suffix           # 有设备注册测试环境url
         elif prod == 11:
-            self.url = self.prefix11 + self.suffix           # 有设备注册本地环境url
+            self.url = self.prefix11 + self.suffix           # 有设备注册正式环境url
         elif prod == 12:
             self.url = self.prefix12 + self.suffix           # 有设备注册本地环境url
 
