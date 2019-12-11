@@ -5451,3 +5451,53 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2019-12-11 12:30:42,510 change_requests.py[line:53] INFO: <Response [200]>[0m
 [32m 2019-12-11 12:30:42,510 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
 [32m 2019-12-11 12:30:42,510 ncs_device.py[line:29] INFO: test url:http://dev.ncs.wdklian.com/ncs/device/ncs_device_info/add?uid=4473&timestamp=1576038641000&nonce=357416&sign=e274fd8ad8b0eef5f60949c4a094edc3[0m
+[32m 2019-12-11 14:14:04,853 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-11 14:14:04,853 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:14:04,858 captcha_base.py[line:24] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
+[32m 2019-12-11 14:14:05,062 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:14:05,282 change_code.py[line:48] INFO: code:q5dt[0m
+[32m 2019-12-11 14:14:05,687 change_requests.py[line:52] INFO: login url:http://dev.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=q5dt&uuid=777[0m
+[32m 2019-12-11 14:14:05,687 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:14:05,687 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-11 14:14:05,687 ncs_device.py[line:29] INFO: test url:http://dev.ncs.wdklian.com/ncs/device/ncs_device_info/add?uid=4473&timestamp=1576044844000&nonce=663039&sign=745560f498fb0c198f2936da945252d3[0m
+[32m 2019-12-11 14:14:26,738 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-11 14:14:26,738 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:14:26,743 captcha_base.py[line:24] INFO: url:http://192.168.1.168:7000/captchas/777/LOGIN[0m
+[32m 2019-12-11 14:14:28,104 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:14:28,282 change_code.py[line:48] INFO: code:qn2e[0m
+[32m 2019-12-11 14:14:28,978 change_requests.py[line:52] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=qn2e&uuid=777[0m
+[32m 2019-12-11 14:14:28,978 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:14:28,979 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-11 14:14:28,979 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add?uid=4473&timestamp=1576044866000&nonce=750362&sign=9bfc048996d8cd78af91fe213c1090c0[0m
+[32m 2019-12-11 14:19:26,347 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-11 14:19:26,348 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:19:26,351 captcha_base.py[line:24] INFO: url:http://192.168.1.168:7000/captchas/777/LOGIN[0m
+[32m 2019-12-11 14:19:26,396 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:19:26,588 change_code.py[line:48] INFO: code:548f[0m
+[32m 2019-12-11 14:19:26,848 change_requests.py[line:52] INFO: login url:http://192.168.1.168:7006/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=548f&uuid=777[0m
+[32m 2019-12-11 14:19:26,848 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:19:26,848 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-11 14:19:26,848 ncs_device.py[line:29] INFO: test url:http://192.168.1.168:7006/ncs/device/ncs_device_info/add?uid=4473&timestamp=1576045166000&nonce=880643&sign=6c773dfd89e77ce84c14542fbad1fb8b[0m
+[32m 2019-12-11 14:24:53,952 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-11 14:24:53,952 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:24:54,265 change_requests.py[line:52] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-11 14:24:54,265 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:24:54,266 member_comment.py[line:71] INFO: test url:http://dev.buyer.wdklian.com/members/comments?uid=2247&timestamp=1576045493000&nonce=547514&sign=baf7aba6eeb9c2b3804133c4be494f8e[0m
+[32m 2019-12-11 14:25:01,504 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-11 14:25:01,504 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:25:01,652 change_requests.py[line:52] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-11 14:25:01,652 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:25:01,652 member_comment.py[line:71] INFO: test url:http://dev.buyer.wdklian.com/members/comments?uid=2247&timestamp=1576045501000&nonce=467575&sign=14b9646f0be6187451fe11ddbb95f1e3[0m
+[32m 2019-12-11 14:25:36,612 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-11 14:25:36,612 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:25:36,918 change_requests.py[line:52] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-11 14:25:36,918 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:25:36,918 member_comment.py[line:71] INFO: test url:http://dev.buyer.wdklian.com/members/comments?uid=2247&timestamp=1576045536000&nonce=693881&sign=2ddfad58218d3997928afecf6ad50cab[0m
+[32m 2019-12-11 14:26:58,487 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-11 14:26:58,487 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:26:58,781 change_requests.py[line:52] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-11 14:26:58,781 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:26:58,781 member_comment.py[line:101] INFO: test url:http://dev.buyer.wdklian.com/members/comments/goods/340?uid=2247&timestamp=1576045618000&nonce=595627&sign=fc1452a008f8bb4bd43daee72287b3d6[0m
+[32m 2019-12-11 14:29:06,695 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:29:07,001 change_requests.py[line:52] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-11 14:29:07,001 change_requests.py[line:53] INFO: <Response [200]>[0m

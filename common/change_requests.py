@@ -57,3 +57,7 @@ class Change_Requests():
 
         return js
 
+if __name__ == '__main__':
+    c = Change_Requests('13412345678', '123456')
+    result = c.get_json()
+    print(result)

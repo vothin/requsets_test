@@ -47,7 +47,7 @@ if __name__ == '__main__':
         # 'type' : '1'
     }
 
-    result = n.post_nce_device_info_add('16312345678', '123456', data=data, prod=10)
+    result = n.post_nce_device_info_add('16312345678', '123456', data=data, prod=12)
 
     print(result)
     print(result.text)
