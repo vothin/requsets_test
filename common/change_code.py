@@ -39,10 +39,10 @@ class Change_Code():
         # logs.info(response.text)
 
 
-        with open('../image/code/code.png', 'wb') as image:
+        with open('../../image/code/code.png', 'wb') as image:
             image.write(response.content)
 
-        yanzhengmaImage = Image.open('../image/code/code.png')
+        yanzhengmaImage = Image.open('../../image/code/code.png')
         yanzhengmaCode = pytesseract.image_to_string(yanzhengmaImage).replace(" ", "")
         logs.info('code:%s' % yanzhengmaCode)
 

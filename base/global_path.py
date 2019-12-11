@@ -17,4 +17,5 @@ sys.path.append(BIR)
 
 url_path = os.path.join(BIR, r'config\url.ini')
 log_path = os.path.join(BIR, r'log\log.log')
+image_path = os.path.join(BIR, r'image\code\code.png')
 

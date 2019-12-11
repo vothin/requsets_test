@@ -44,4 +44,3 @@ if __name__ == '__main__':
     result = n.get_ncs_device_login('16312345678', '123456', headers, prod=10)
     print(result)
     print(result.text)
-    print(result.url)
