@@ -18,7 +18,7 @@ class Change_Code():
 
     def __init__(self, scene, prod=None):
         self.scene = scene
-        self.pr = prod
+        self.pr = str(prod)
         self.prod = 0
 
     def get_ncs_device_code(self):
