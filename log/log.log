@@ -5287,3 +5287,8 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2019-12-11 10:31:07,314 captcha_base.py[line:27] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
 [32m 2019-12-11 10:31:07,493 get_code.py[line:39] INFO: <Response [200]>[0m
 [32m 2019-12-11 10:31:07,918 get_code.py[line:48] INFO: 7dbf[0m
+[32m 2019-12-11 10:31:59,043 captcha_base.py[line:23] INFO: /captchas/777/LOGIN[0m
+[32m 2019-12-11 10:31:59,044 captcha_base.py[line:24] INFO: 7[0m
+[32m 2019-12-11 10:31:59,044 captcha_base.py[line:27] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
+[32m 2019-12-11 10:31:59,217 get_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 10:31:59,435 get_code.py[line:48] INFO: code:n6b7[0m

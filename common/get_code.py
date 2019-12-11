@@ -45,6 +45,7 @@ class Get_Code():
 
         yanzhengmaImage = Image.open('../image/code/code.png')
         yanzhengmaCode = pytesseract.image_to_string(yanzhengmaImage).replace(" ", "")
+        logs.info('code:%s' % yanzhengmaCode)
 
         return yanzhengmaCode
 
