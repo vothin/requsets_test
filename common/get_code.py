@@ -43,6 +43,13 @@ class Get_Code():
         with open('../image/code/code.png', 'wb') as image:
             image.write(response.content)
 
+        yanzhengmaImage = Image.open('../image/code/code.png')
+        yanzhengmaCode = pytesseract.image_to_string(yanzhengmaImage).replace(" ", "")
+
+        return yanzhengmaCode
+
+
+
 
 if __name__ == '__main__':
     g = Get_Code('LOGIN', '10')
