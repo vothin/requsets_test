@@ -41,23 +41,9 @@ class Change_Param():
 
 
 if __name__ == '__main__':
-    from common.config import Config
-    from base.base import Base
-    from common.requests_test import Requests_Test
-    c = Config()
-    Base.suffix = c.get_value('Goods', 'goods_categories')
-    Base.suffix = Base.suffix.format(2)
-
-    data = {
-        'test' : 'test'
-    }
-
-    prod = True
-
-    cu = Change_Param('13412345678', '123456')
-    gu = cu.get_params()
-
-    # print(gu)
+    c = Change_Param('13412345678', '123456')
+    result = c.get_params()
+    print(result)
 
 
 

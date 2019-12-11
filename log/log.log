@@ -5501,3 +5501,15 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2019-12-11 14:29:06,695 change_requests.py[line:37] INFO: get login[0m
 [32m 2019-12-11 14:29:07,001 change_requests.py[line:52] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-12-11 14:29:07,001 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:29:35,863 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-11 14:29:35,863 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:29:36,152 change_requests.py[line:52] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-11 14:29:36,153 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:29:47,340 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-11 14:29:47,340 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:29:47,647 change_requests.py[line:52] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-11 14:29:47,648 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 14:30:41,068 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-11 14:30:41,069 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 14:30:41,412 change_requests.py[line:52] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-11 14:30:41,413 change_requests.py[line:53] INFO: <Response [200]>[0m
