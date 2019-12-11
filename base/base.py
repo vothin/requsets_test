@@ -26,9 +26,9 @@ class Base():
         self.prefix5 = self.c.get_value('URL', 'seller_url')
         self.prefix6 = self.c.get_value('URL', '192_seller_url')
 
-        self.prefix7 = self.c.get_value('URL', '192_code_url')
-        self.prefix8 = self.c.get_value('URL', '192_7000_url')
-        self.prefix9 = self.c.get_value('URL', '192_7000_url')
+        self.prefix7 = self.c.get_value('URL', 'dev_code_url')
+        self.prefix8 = self.c.get_value('URL', 'code_url')
+        self.prefix9 = self.c.get_value('URL', '192_code_url')
 
         self.prefix10 = self.c.get_value('URL', 'dev_ncs_device_url')
         self.prefix11 = self.c.get_value('URL', 'ncs_device_url')
