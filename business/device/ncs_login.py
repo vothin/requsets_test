@@ -11,20 +11,24 @@
 
 from common.requests_test import Requests_Test
 from common.change_md5 import get_md5
+from common.change_code import Get_Code
 
 class Ncs_Login(Requests_Test):
 
     # 无验证登录
-    def get_ncs_device_login(self, username, password, captcha, headers, prod=None):
+    def get_ncs_device_login(self, username, password, headers, prod=None):
         self.suffix = self.c.get_value('Device', 'ncs_device_login')
         self.url = self.url_joint(prod)
+
+        g = Get_Code('LOGIN')
+        code = g.get_ncs_device_code()
 
         password = get_md5(str(password))
 
         data = {
             'username' : str(username),
             'password' : str(password),
-            'captcha'  : str(captcha),
+            'captcha'  : str(code),
             'uuid'     : '777'
         }
 
@@ -36,7 +40,7 @@ if __name__ == '__main__':
     headers = {
         'uuid' : '777'
     }
-    result = n.get_ncs_device_login('16312345678', '123456', 'fct8', headers, prod=8)
+    result = n.get_ncs_device_login('16312345678', '123456', headers, prod=10)
     print(result)
     print(result.text)
     print(result.url)

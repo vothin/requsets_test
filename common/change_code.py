@@ -3,7 +3,7 @@
 '''
     @author: Vothin
     @software: 自动化测试
-    @file: get_code.py
+    @file: change_code.py
     @time: 2019/12/10 16:31
     @desc:
 '''
@@ -15,7 +15,7 @@ from common.recordlog import logs
 from PIL import Image
 import pytesseract
 
-class Get_Code():
+class Change_Code():
 
     def __init__(self, scene, prod=None):
         self.scene = scene
