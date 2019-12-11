@@ -20,7 +20,7 @@ class Ncs_Device(Requests_Test):
     def post_nce_device_info_add(self, username=None, password=None, data=None, prod=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
-        gu = cu.get_ncs_device_params()
+        gu = cu.get_params()
 
         # 拼接url
         self.suffix = self.c.get_value('Device', 'ncs_device_info_add')

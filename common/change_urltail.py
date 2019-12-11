@@ -32,62 +32,8 @@ class Change_UrlTail():
         self.url_tail = ''
 
 
-    # 获得requests响应正文
-    def get_json(self):
-        logs.info('get login')
-
-        # 获取response
-        p = Passport_LoginNo()
-        response = p.get_passport_loginno(self.username, self.password, self.headers, self.prod)
-        logs.info('login url:%s' % response.url)
-        logs.info(response)
-
-        # json格式阅读
-        js = json.loads(response.text)
-
-        return js
-
-
     # 输入请求头headers
     def get_urlTail(self):
-        logs.info('get headers')
-
-        # 获得response的json格式
-        js = self.get_json()
-
-        # 存在token就是登录成功
-        if 'access_token' in js:
-            sign = str(js['uid']) + self.nonce + self.timestamp + str(js['access_token'])
-            self.sign = get_md5(sign)
-
-            # 生成url拼接部分
-            self.url_tail = '?uid=' + str(js['uid']) + '&timestamp=' + self.timestamp + '&nonce=' + self.nonce + '&sign=' + self.sign
-
-            return self.headers, self.url_tail
-
-        else:
-            logs.error('not found access_token')
-            return self.headers, self.url_tail
-
-
-
-    # 获得requests响应正文
-    def get_device_cap_json(self):
-        logs.info('get login')
-
-        # 获取response
-        n = Ncs_Login()
-        response = n.get_ncs_device_login(self.username, self.password, self.headers, self.prod)
-        logs.info('login url:%s' % response.url)
-        logs.info(response)
-
-        # json格式阅读
-        js = json.loads(response.text)
-
-        return js
-
-    # 输入请求头headers
-    def get_device_cap_urlTail(self):
         logs.info('get headers')
 
         # 获得response的json格式
@@ -100,8 +46,7 @@ class Change_UrlTail():
             self.sign = get_md5(sign)
 
             # 生成url拼接部分
-            self.url_tail = '?uid=' + str(
-                js['uid']) + '&timestamp=' + self.timestamp + '&nonce=' + self.nonce + '&sign=' + self.sign
+            self.url_tail = '?uid=' + str(js['uid']) + '&timestamp=' + self.timestamp + '&nonce=' + self.nonce + '&sign=' + self.sign
 
             return self.headers, self.url_tail
 
@@ -121,6 +66,6 @@ if __name__ == '__main__':
     # result = g.get_urlTail()
 
     # result = g.get_device_cap_urlTail()
-    result = g.get_device_cap_json()
+    result = g.get_json()
 
     print(result)

@@ -40,21 +40,6 @@ class Change_Param():
             return self.headers, self.url_tail
 
 
-    def get_ncs_device_params(self):
-        # 判断是否登录
-        if self.username:
-            ch = Change_UrlTail(self.username, self.password, self.prod)
-            gh = ch.get_device_cap_urlTail()
-            self.headers = gh[0]
-            self.url_tail = gh[1]
-
-            return self.headers, self.url_tail
-
-        else:
-            logs.info('Not Parameter')
-            return self.headers, self.url_tail
-
-
 if __name__ == '__main__':
     from common.config import Config
     from base.base import Base
