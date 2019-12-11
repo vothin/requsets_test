@@ -22,14 +22,14 @@ class Ncs_Login(Requests_Test):
         self.url = self.url_joint(prod)
 
         c = Change_Code('LOGIN', prod)
-        code = c.get_ncs_device_code()
+        captcha = c.get_ncs_device_code()
 
         password = get_md5(str(password))
 
         data = {
             'username' : str(username),
             'password' : str(password),
-            'captcha'  : str(code),
+            'captcha'  : str(captcha),
             'uuid'     : '777'
         }
 
