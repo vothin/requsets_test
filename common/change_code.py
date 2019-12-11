@@ -4,11 +4,10 @@
     @author: Vothin
     @software: 自动化测试
     @file: change_code.py
-    @time: 2019/12/10 16:31
+    @time: 2019/12/11 10:59
     @desc:
 '''
 # ********************************************************
-
 
 from business.base.captcha_base import Captcha_Base
 from common.recordlog import logs
@@ -53,7 +52,7 @@ class Change_Code():
 
 
 if __name__ == '__main__':
-    g = Get_Code('LOGIN', '10')
+    g = Change_Code('LOGIN', '10')
     g.get_ncs_device_code()
 
 

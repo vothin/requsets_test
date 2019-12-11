@@ -11,7 +11,8 @@
 
 from common.requests_test import Requests_Test
 from common.change_md5 import get_md5
-from common.change_code import Get_Code
+from common.change_code import Change_Code
+
 
 class Ncs_Login(Requests_Test):
 
@@ -20,8 +21,8 @@ class Ncs_Login(Requests_Test):
         self.suffix = self.c.get_value('Device', 'ncs_device_login')
         self.url = self.url_joint(prod)
 
-        g = Get_Code('LOGIN')
-        code = g.get_ncs_device_code()
+        c = Change_Code('LOGIN', prod)
+        code = c.get_ncs_device_code()
 
         password = get_md5(str(password))
 
