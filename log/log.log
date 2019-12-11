@@ -5339,3 +5339,13 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2019-12-11 11:09:49,428 captcha_base.py[line:26] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
 [32m 2019-12-11 11:09:49,600 change_code.py[line:39] INFO: <Response [200]>[0m
 [32m 2019-12-11 11:09:49,794 change_code.py[line:48] INFO: code:d24b[0m
+[32m 2019-12-11 11:17:18,934 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-11 11:17:18,934 change_urltail.py[line:76] INFO: get login[0m
+[32m 2019-12-11 11:19:20,668 change_urltail.py[line:75] INFO: get login[0m
+[32m 2019-12-11 11:19:20,673 captcha_base.py[line:22] INFO: /captchas/777/LOGIN[0m
+[32m 2019-12-11 11:19:20,673 captcha_base.py[line:23] INFO: 7[0m
+[32m 2019-12-11 11:19:20,673 captcha_base.py[line:26] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
+[32m 2019-12-11 11:19:20,854 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:19:21,099 change_code.py[line:48] INFO: code:3eff[0m
+[32m 2019-12-11 11:19:21,503 change_urltail.py[line:80] INFO: login url:http://dev.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=3eff&uuid=777[0m
+[32m 2019-12-11 11:19:21,503 change_urltail.py[line:81] INFO: <Response [200]>[0m

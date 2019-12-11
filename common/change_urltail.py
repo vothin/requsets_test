@@ -18,7 +18,7 @@ from business.device.ncs_login import Ncs_Login
 
 class Change_UrlTail():
 
-    def __init__(self, username, password, prod=None, captcha=None):
+    def __init__(self, username, password, prod=None):
         self.username = username                            # 登录账号
         self.password = password                            # 登录密码
         self.uuid = '777'                                   # uuid参数
@@ -30,7 +30,6 @@ class Change_UrlTail():
         self.headers = {'uuid' : self.uuid}
         self.url_tail = ''
 
-        self.captcha = captcha
 
     # 获得requests响应正文
     def get_json(self):
@@ -77,7 +76,7 @@ class Change_UrlTail():
 
         # 获取response
         n = Ncs_Login()
-        response = n.get_ncs_device_login(self.username, self.password, self.captcha, self.headers, self.prod)
+        response = n.get_ncs_device_login(self.username, self.password, self.headers, self.prod)
         logs.info('login url:%s' % response.url)
         logs.info(response)
 
@@ -114,7 +113,7 @@ if __name__ == '__main__':
     # headers = {'uuid' : '777'}
     captcha = '3tqk'
 
-    g = Change_UrlTail('16312345678', '123456', 8, captcha)
+    g = Change_UrlTail('16312345678', '123456', 10)
 
 
     # result = g.get_urlTail()
