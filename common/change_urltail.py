@@ -13,6 +13,7 @@
 import json, uuid, time, random
 from common.change_md5 import get_md5
 from common.recordlog import logs
+from common.change_requests import Change_Requests
 from business.passport.passport_login_noCaptcha import Passport_LoginNo
 from business.device.ncs_login import Ncs_Login
 
@@ -90,7 +91,8 @@ class Change_UrlTail():
         logs.info('get headers')
 
         # 获得response的json格式
-        js = self.get_device_cap_json()
+        c = Change_Requests(self.username, self.password, self.prod)
+        js = c.get_json()
 
         # 存在token就是登录成功
         if 'access_token' in js:

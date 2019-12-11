@@ -5377,3 +5377,68 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2019-12-11 11:20:44,729 change_urltail.py[line:81] INFO: <Response [200]>[0m
 [32m 2019-12-11 11:20:44,729 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
 [32m 2019-12-11 11:20:44,729 ncs_device.py[line:29] INFO: test url:http://dev.ncs.wdklian.com/ncs/device/ncs_device_info/add?uid=4473&timestamp=1576034444000&nonce=785531&sign=635f2e70bba0ce81afed981ed3184a0f[0m
+[32m 2019-12-11 11:32:31,146 change_urltail.py[line:90] INFO: get headers[0m
+[32m 2019-12-11 11:32:31,146 change_urltail.py[line:75] INFO: get login[0m
+[32m 2019-12-11 11:32:31,151 captcha_base.py[line:24] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
+[32m 2019-12-11 11:32:31,327 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:32:31,621 change_code.py[line:48] INFO: code:b75f[0m
+[32m 2019-12-11 11:32:32,010 change_urltail.py[line:80] INFO: login url:http://dev.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=b75f&uuid=777[0m
+[32m 2019-12-11 11:32:32,010 change_urltail.py[line:81] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:32:32,010 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-11 11:32:32,011 ncs_device.py[line:29] INFO: test url:http://dev.ncs.wdklian.com/ncs/device/ncs_device_info/add?uid=4473&timestamp=1576035151000&nonce=579533&sign=23ad62c8c9380e63a83cae53f2a8cf20[0m
+[32m 2019-12-11 11:32:38,451 change_urltail.py[line:90] INFO: get headers[0m
+[32m 2019-12-11 11:32:38,451 change_urltail.py[line:75] INFO: get login[0m
+[32m 2019-12-11 11:32:38,455 captcha_base.py[line:24] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
+[32m 2019-12-11 11:32:38,480 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:32:38,680 change_code.py[line:48] INFO: code:nmssp[0m
+[32m 2019-12-11 11:32:38,845 change_urltail.py[line:80] INFO: login url:http://dev.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=nmssp&uuid=777[0m
+[32m 2019-12-11 11:32:38,845 change_urltail.py[line:81] INFO: <Response [500]>[0m
+[31m 2019-12-11 11:32:38,845 change_urltail.py[line:107] ERROR: not found access_token[0m
+[32m 2019-12-11 11:32:38,845 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-11 11:32:38,846 ncs_device.py[line:29] INFO: test url:http://dev.ncs.wdklian.com/ncs/device/ncs_device_info/add[0m
+[32m 2019-12-11 11:32:42,096 change_urltail.py[line:90] INFO: get headers[0m
+[32m 2019-12-11 11:32:42,096 change_urltail.py[line:75] INFO: get login[0m
+[32m 2019-12-11 11:32:42,100 captcha_base.py[line:24] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
+[32m 2019-12-11 11:32:42,124 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:32:42,332 change_code.py[line:48] INFO: code:nna[0m
+[32m 2019-12-11 11:32:42,356 change_urltail.py[line:80] INFO: login url:http://dev.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=nna&uuid=777[0m
+[32m 2019-12-11 11:32:42,356 change_urltail.py[line:81] INFO: <Response [500]>[0m
+[31m 2019-12-11 11:32:42,356 change_urltail.py[line:107] ERROR: not found access_token[0m
+[32m 2019-12-11 11:32:42,356 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-11 11:32:42,357 ncs_device.py[line:29] INFO: test url:http://dev.ncs.wdklian.com/ncs/device/ncs_device_info/add[0m
+[32m 2019-12-11 11:32:45,080 change_urltail.py[line:90] INFO: get headers[0m
+[32m 2019-12-11 11:32:45,080 change_urltail.py[line:75] INFO: get login[0m
+[32m 2019-12-11 11:32:45,083 captcha_base.py[line:24] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
+[32m 2019-12-11 11:32:45,111 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:32:45,304 change_code.py[line:48] INFO: code:dbtc[0m
+[32m 2019-12-11 11:32:45,555 change_urltail.py[line:80] INFO: login url:http://dev.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=dbtc&uuid=777[0m
+[32m 2019-12-11 11:32:45,555 change_urltail.py[line:81] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:32:45,556 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-11 11:32:45,556 ncs_device.py[line:29] INFO: test url:http://dev.ncs.wdklian.com/ncs/device/ncs_device_info/add?uid=4473&timestamp=1576035165000&nonce=885622&sign=887611307a168aca94df993edc596ba8[0m
+[32m 2019-12-11 11:35:58,649 change_urltail.py[line:90] INFO: get headers[0m
+[32m 2019-12-11 11:35:58,650 change_urltail.py[line:75] INFO: get login[0m
+[32m 2019-12-11 11:35:58,654 captcha_base.py[line:24] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
+[32m 2019-12-11 11:35:58,834 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:35:59,532 change_code.py[line:48] INFO: code:d5rn[0m
+[32m 2019-12-11 11:35:59,901 change_urltail.py[line:80] INFO: login url:http://dev.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=d5rn&uuid=777[0m
+[32m 2019-12-11 11:35:59,902 change_urltail.py[line:81] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:35:59,902 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-11 11:35:59,902 ncs_device.py[line:29] INFO: test url:http://dev.ncs.wdklian.com/ncs/device/ncs_device_info/add?uid=4473&timestamp=1576035358000&nonce=732457&sign=7d29140a57d023d259f957121d768159[0m
+[32m 2019-12-11 11:58:51,622 change_urltail.py[line:90] INFO: get headers[0m
+[32m 2019-12-11 11:58:51,622 change_urltail.py[line:75] INFO: get login[0m
+[32m 2019-12-11 11:58:51,626 captcha_base.py[line:24] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
+[32m 2019-12-11 11:58:51,813 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:58:52,023 change_code.py[line:48] INFO: code:ckre[0m
+[32m 2019-12-11 11:58:52,409 change_urltail.py[line:80] INFO: login url:http://dev.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=ckre&uuid=777[0m
+[32m 2019-12-11 11:58:52,409 change_urltail.py[line:81] INFO: <Response [200]>[0m
+[32m 2019-12-11 11:58:52,410 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-11 11:58:52,410 ncs_device.py[line:29] INFO: test url:http://dev.ncs.wdklian.com/ncs/device/ncs_device_info/add?uid=4473&timestamp=1576036731000&nonce=283426&sign=6b4da13cf6059ff375265c560f75ecef[0m
+[32m 2019-12-11 12:29:01,713 change_urltail.py[line:91] INFO: get headers[0m
+[32m 2019-12-11 12:29:01,714 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-11 12:29:01,718 captcha_base.py[line:24] INFO: url:http://dev.base.wdklian.com/captchas/777/LOGIN[0m
+[32m 2019-12-11 12:29:01,922 change_code.py[line:39] INFO: <Response [200]>[0m
+[32m 2019-12-11 12:29:02,494 change_code.py[line:48] INFO: code:4628[0m
+[32m 2019-12-11 12:29:02,901 change_requests.py[line:52] INFO: login url:http://dev.ncs.wdklian.com/ncs/login?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e&captcha=4628&uuid=777[0m
+[32m 2019-12-11 12:29:02,901 change_requests.py[line:53] INFO: <Response [200]>[0m
+[32m 2019-12-11 12:29:02,901 ncs_device.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-11 12:29:02,901 ncs_device.py[line:29] INFO: test url:http://dev.ncs.wdklian.com/ncs/device/ncs_device_info/add?uid=4473&timestamp=1576038541000&nonce=164949&sign=cfb7d74fbe4a6dd5d8fd648b4bac18d9[0m
