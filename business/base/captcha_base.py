@@ -11,7 +11,6 @@
 
 
 from common.requests_test import Requests_Test
-from common.change_param import Change_Param
 from common.recordlog import logs
 
 class Captcha_Base(Requests_Test):
