@@ -10,6 +10,7 @@
 # ********************************************************
 
 from business.base.captcha_base import Captcha_Base
+from base.global_path import image_path
 from common.recordlog import logs
 from PIL import Image
 import pytesseract
@@ -39,10 +40,10 @@ class Change_Code():
         # logs.info(response.text)
 
 
-        with open('../../image/code/code.png', 'wb') as image:
+        with open(image_path, 'wb') as image:
             image.write(response.content)
 
-        yanzhengmaImage = Image.open('../../image/code/code.png')
+        yanzhengmaImage = Image.open(image_path)
         yanzhengmaCode = pytesseract.image_to_string(yanzhengmaImage).replace(" ", "")
         logs.info('code:%s' % yanzhengmaCode)
 
