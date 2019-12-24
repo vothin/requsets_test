@@ -6052,3 +6052,34 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2019-12-24 17:30:45,951 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-12-24 17:30:45,951 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2019-12-24 17:30:45,952 rebate_account.py[line:97] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_account/0?uid=4473&timestamp=1577179845000&nonce=462031&sign=98f11e9120d85426ad99cbdd9675451b[0m
+[32m 2019-12-24 17:36:39,043 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 17:36:39,043 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 17:36:39,451 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 17:36:39,451 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 17:36:39,452 rebate_account.py[line:30] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_account?uid=4473&timestamp=1577180199000&nonce=822221&sign=5c83fc0762a1bbe4d9b0a15b4eadc526[0m
+[32m 2019-12-24 17:36:56,007 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 17:36:56,008 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 17:36:56,264 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 17:36:56,264 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 17:36:56,264 rebate_account.py[line:30] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_account?uid=4473&timestamp=1577180216000&nonce=848703&sign=f7e8616eacfc65b9c4011ebbce49a26c[0m
+[32m 2019-12-24 17:41:48,061 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 17:41:48,061 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 17:41:48,435 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=536f868c09cfbc81399401da424e42e6[0m
+[32m 2019-12-24 17:41:48,436 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2019-12-24 17:41:48,436 change_urltail.py[line:54] ERROR: not found access_token[0m
+[32m 2019-12-24 17:41:48,436 rebate_account_record.py[line:30] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_account_record[0m
+[32m 2019-12-24 17:41:58,140 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 17:41:58,140 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 17:41:58,406 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 17:41:58,406 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 17:41:58,407 rebate_account_record.py[line:30] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_account_record?uid=4473&timestamp=1577180518000&nonce=277361&sign=2dc8e8fb87d5d519963032ecb2700c98[0m
+[32m 2019-12-24 17:43:39,765 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 17:43:39,765 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 17:43:40,187 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 17:43:40,188 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 17:43:40,189 rebate_account_record.py[line:46] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_account_record/page?uid=4473&timestamp=1577180619000&nonce=333352&sign=0b0a2fb765e89f9b5eaa58925abb2908[0m
+[32m 2019-12-24 17:45:25,375 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 17:45:25,375 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 17:45:25,800 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 17:45:25,801 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 17:45:25,802 rebate_account_record.py[line:63] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_account_record/1?uid=4473&timestamp=1577180725000&nonce=705318&sign=9f4fc54b026ada7cb239357a409c64dc[0m
