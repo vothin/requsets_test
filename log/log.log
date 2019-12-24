@@ -5873,3 +5873,13 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2019-12-24 11:30:06,284 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-12-24 11:30:06,285 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2019-12-24 11:30:06,285 rebate_bill_member_detail.py[line:79] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member_detail/recent/page?uid=4473&timestamp=1577158205000&nonce=198823&sign=28331dc1fdf324f40ef74ef2459d92d5[0m
+[32m 2019-12-24 11:37:50,784 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 11:37:50,785 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 11:37:51,182 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 11:37:51,182 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 11:37:51,183 rebate_detail_member.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_detail_member/page?uid=4473&timestamp=1577158670000&nonce=627047&sign=217587ebd21f7ba61fa2a03a4fda6a5d[0m
+[32m 2019-12-24 11:38:08,352 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 11:38:08,353 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 11:38:08,600 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 11:38:08,601 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 11:38:08,601 rebate_detail_member.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_detail_member/page?uid=4473&timestamp=1577158688000&nonce=894160&sign=a84b58f93aad3ed3ee174bbc30ab9b52[0m
