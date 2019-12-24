@@ -13,7 +13,9 @@ import json, uuid, time, random
 from common.change_md5 import get_md5
 from common.recordlog import logs
 from business.passport.passport_login_noCaptcha import Passport_LoginNo
+from business.passport.passport_login_seller_noCaptcha import Passport_Login_Seller_NoCaptcha
 from business.device.ncs_login import Ncs_Login
+
 
 class Change_Requests():
 
@@ -42,7 +44,8 @@ class Change_Requests():
             response = p.get_passport_loginno(self.username, self.password, self.headers, self.prod)
 
         elif self.prod == 4 or self.prod == 5 or self.prod == 6:
-            pass
+            p = Passport_Login_Seller_NoCaptcha()
+            response = p.get_passport_login_seller_noCaptcha(self.username, self.password, self.headers, self.prod)
 
         elif self.prod == 10 or self.prod == 11 or self.prod == 12:
             n = Ncs_Login()
