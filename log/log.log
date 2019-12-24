@@ -5744,3 +5744,81 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2019-12-12 16:33:36,625 ncs_device.py[line:30] INFO: test url:http://192.168.1.168:7006/care/ncs/shops/getShopDetail?uid=2247&timestamp=1576139615000&nonce=277285&sign=dc122d1364a086427afba6d176caa8d7[0m
 [32m 2019-12-24 10:16:11,944 change_urltail.py[line:37] INFO: get headers[0m
 [32m 2019-12-24 10:16:11,945 change_requests.py[line:37] INFO: get login[0m
+[32m 2019-12-24 10:29:36,370 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:29:36,371 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:29:36,804 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:29:36,804 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 10:29:36,805 rebate_bill_member.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 10:29:36,805 rebate_bill_member.py[line:30] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member/chartdata?uid=4473&timestamp=1577154576000&nonce=755155&sign=0ce8f17470ff117069fc51eb780f2232[0m
+[32m 2019-12-24 10:29:51,328 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:29:51,329 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:29:51,731 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:29:51,732 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 10:29:51,732 rebate_bill_member.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 10:29:51,732 rebate_bill_member.py[line:30] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member/chartdata?uid=4473&timestamp=1577154591000&nonce=207205&sign=340dcbd9d4c37cbcc983aa1797786207[0m
+[32m 2019-12-24 10:32:03,443 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:32:03,443 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:32:04,333 change_requests.py[line:55] INFO: login url:http://192.168.1.168:7003/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:32:04,334 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 10:32:04,334 rebate_bill_member.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 10:32:04,334 rebate_bill_member.py[line:30] INFO: test url:http://192.168.1.168:7003/care/seller/rebate/rebate_bill_member/chartdata?uid=4473&timestamp=1577154723000&nonce=960359&sign=8ed61569c00cb9ee5c1715f0b9253a04[0m
+[32m 2019-12-24 10:33:25,480 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:33:25,481 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:33:25,763 change_requests.py[line:55] INFO: login url:http://192.168.1.168:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:33:25,763 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 10:33:25,764 rebate_bill_member.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 10:33:25,764 rebate_bill_member.py[line:30] INFO: test url:http://192.168.1.168:7003/care/seller/rebate/rebate_bill_member/chartdata?uid=5456&timestamp=1577154805000&nonce=365825&sign=f3db036a2e1072489c9303711992660d[0m
+[32m 2019-12-24 10:33:39,585 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:33:39,585 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:33:39,985 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:33:39,986 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 10:33:39,986 rebate_bill_member.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 10:33:39,986 rebate_bill_member.py[line:30] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member/chartdata?uid=5456&timestamp=1577154819000&nonce=348115&sign=e693b2a76d10f79437bc735e9112d5d1[0m
+[32m 2019-12-24 10:35:57,544 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:35:57,544 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:35:57,964 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:35:57,964 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 10:35:57,964 rebate_bill_member.py[line:46] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member/page?uid=4473&timestamp=1577154957000&nonce=638139&sign=ad884540bf69f2ab0e51994792d6e86f[0m
+[32m 2019-12-24 10:37:01,306 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:37:01,307 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:37:01,710 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:37:01,710 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 10:37:01,711 rebate_bill_member.py[line:46] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member/page?uid=4473&timestamp=1577155021000&nonce=222175&sign=a346061112c5271750bdf82895985188[0m
+[32m 2019-12-24 10:37:25,923 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:37:25,923 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:37:26,306 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:37:26,306 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 10:37:26,306 rebate_bill_member.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 10:37:26,307 rebate_bill_member.py[line:30] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member/chartdata?uid=5456&timestamp=1577155045000&nonce=510249&sign=63e201c1510e2150a558e4898b25b006[0m
+[32m 2019-12-24 10:47:41,862 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:47:41,863 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:47:42,111 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=1631234578&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:47:42,111 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2019-12-24 10:47:42,111 change_urltail.py[line:54] ERROR: not found access_token[0m
+[32m 2019-12-24 10:47:42,111 rebate_bill_member.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 10:47:42,111 rebate_bill_member.py[line:64] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member/1[0m
+[32m 2019-12-24 10:47:48,951 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:47:48,951 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:47:49,188 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=1631234578&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:47:49,188 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2019-12-24 10:47:49,188 change_urltail.py[line:54] ERROR: not found access_token[0m
+[32m 2019-12-24 10:47:49,190 rebate_bill_member.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 10:47:49,190 rebate_bill_member.py[line:64] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member/1[0m
+[32m 2019-12-24 10:54:24,121 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 10:54:24,122 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 10:54:24,528 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 10:54:24,529 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 10:54:24,529 rebate_bill_member.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 10:54:24,529 rebate_bill_member.py[line:64] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member/1?uid=4473&timestamp=1577156064000&nonce=763632&sign=fdd00d9f61ba03eb0843e88090932b02[0m
+[32m 2019-12-24 11:11:56,392 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 11:11:56,392 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 11:11:56,750 change_requests.py[line:55] INFO: login url:http://192.168.1.168:7003/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 11:11:56,750 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 11:11:56,750 rebate_bill_member.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 11:11:56,750 rebate_bill_member.py[line:64] INFO: test url:http://192.168.1.168:7003/care/seller/rebate/rebate_bill_member/1?uid=4473&timestamp=1577157116000&nonce=316772&sign=4e80b5286ee5ff6201649b10ba42d3c1[0m
+[32m 2019-12-24 11:13:29,384 change_urltail.py[line:37] INFO: get headers[0m
+[32m 2019-12-24 11:13:29,384 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-24 11:13:29,824 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-24 11:13:29,824 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-24 11:13:29,824 rebate_bill_member.py[line:80] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-24 11:13:29,824 rebate_bill_member.py[line:81] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_bill_member_total/getByMemberId?uid=4473&timestamp=1577157209000&nonce=365491&sign=fedac91f3fcc52c111d4eb4f17c63332[0m
