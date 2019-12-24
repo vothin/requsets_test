@@ -88,7 +88,11 @@ if __name__ == '__main__':
     r = Rebate_Bill_Member()
 
     get_data = {
-        'member_id' : '4473'
+        'member_id' : '4473',
+        'cycle_type' : 'MONTH',
+        'year' : '2019',
+        'month' : '10'
+
     }
 
 
@@ -97,9 +101,9 @@ if __name__ == '__main__':
         'page_size': '10'
     }
 
-    # result = r.get_rebate_bill_member_chartdata('16412345678', '123456', data=get_data, prod=4)
+    result = r.get_rebate_bill_member_chartdata('16412345678', '123456', data=get_data, prod=4)
     # result = r.post_rebate_bill_member_page('16312345678', '123456', post_data, prod=4)
     # result = r.get_rebate_bill_member_id(1, '16312345678', '123456', prod=4)
-    result = r.get_rebate_bill_member_total_getByMemberId('16312345678', '123456', get_data, prod=4)
+    # result = r.get_rebate_bill_member_total_getByMemberId('16312345678', '123456', get_data, prod=4)
     print(result)
     print(result.text)
