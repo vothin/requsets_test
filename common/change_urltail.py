@@ -3,19 +3,17 @@
 '''
     @author: Vothin
     @software: 自动化测试
-    @file: change_headers.py
+    @file: change_urltail.py
     @time: 2019/11/1 11:27
     @desc:
 '''
 # ********************************************************
 
 
-import json, uuid, time, random
+import time, random
 from common.change_md5 import get_md5
 from common.recordlog import logs
 from common.change_requests import Change_Requests
-from business.passport.passport_login_noCaptcha import Passport_LoginNo
-from business.device.ncs_login import Ncs_Login
 
 class Change_UrlTail():
 
