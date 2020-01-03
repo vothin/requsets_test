@@ -6083,3 +6083,52 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2019-12-24 17:45:25,800 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16312345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2019-12-24 17:45:25,801 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2019-12-24 17:45:25,802 rebate_account_record.py[line:63] INFO: test url:http://dev.seller.wdklian.com/care/seller/rebate/rebate_account_record/1?uid=4473&timestamp=1577180725000&nonce=705318&sign=9f4fc54b026ada7cb239357a409c64dc[0m
+[32m 2019-12-31 10:41:50,900 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2019-12-31 10:41:50,900 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-31 10:41:52,068 change_requests.py[line:55] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-31 10:41:52,068 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-31 10:41:52,068 care_vital_signs_log.py[line:117] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-31 10:41:52,068 care_vital_signs_log.py[line:118] INFO: test url:http://dev.buyer.wdklian.com/care/care_vital_signs_log/2790?uid=2247&timestamp=1577760110000&nonce=143551&sign=c6e784308bd509ca4667e7363e36ce27[0m
+[32m 2019-12-31 10:42:33,929 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2019-12-31 10:42:33,929 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-31 10:42:34,253 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-31 10:42:34,253 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-31 10:42:34,253 care_vital_signs_log.py[line:81] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-31 10:42:34,253 care_vital_signs_log.py[line:82] INFO: test url:http://api.buyer.wdklian.com/care/care_vital_signs_log/page?uid=2247&timestamp=1577760153000&nonce=524914&sign=c23d583225bf377db81d68cf1afb1b48[0m
+[32m 2019-12-31 10:44:34,582 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2019-12-31 10:44:34,582 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-31 10:44:34,885 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-31 10:44:34,886 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-31 10:44:34,886 care_vital_signs_log.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-31 10:44:34,887 care_vital_signs_log.py[line:31] INFO: test url:http://api.buyer.wdklian.com/care/care_vital_signs_log?uid=2247&timestamp=1577760274000&nonce=282357&sign=e04cf3f076b0e923858e7f9144712e14[0m
+[32m 2019-12-31 10:45:06,401 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2019-12-31 10:45:06,401 change_requests.py[line:39] INFO: get login[0m
+[32m 2019-12-31 10:45:06,715 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2019-12-31 10:45:06,715 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2019-12-31 10:45:06,715 care_vital_signs_log.py[line:81] INFO: test headers:{'uuid': '777'}[0m
+[32m 2019-12-31 10:45:06,715 care_vital_signs_log.py[line:82] INFO: test url:http://api.buyer.wdklian.com/care/care_vital_signs_log/page?uid=2247&timestamp=1577760306000&nonce=809697&sign=ad32a7009080f0b27873592bb99b486a[0m
+[32m 2020-01-03 11:06:06,651 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 11:06:06,651 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 11:06:07,011 change_requests.py[line:55] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 11:06:07,011 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 11:06:07,012 shop.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/shops/getByShopId?uid=2247&timestamp=1578020766000&nonce=172693&sign=58910064dea8d01a5f40721c95fea789[0m
+[32m 2020-01-03 11:08:45,774 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 11:08:45,775 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 11:08:46,119 change_requests.py[line:55] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 11:08:46,119 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 11:08:46,119 shop.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/shops/getByShopId?uid=2247&timestamp=1578020925000&nonce=260616&sign=0b4357b95a2f04b5f3d3f680c72cb4b5[0m
+[32m 2020-01-03 11:08:53,265 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 11:08:53,266 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 11:08:53,425 change_requests.py[line:55] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 11:08:53,425 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 11:08:53,425 shop.py[line:32] INFO: test url:http://dev.buyer.wdklian.com/shops/getByShopId?uid=2247&timestamp=1578020933000&nonce=843475&sign=0a24a69c7352e4ad97ce7714c622dbc5[0m
+[32m 2020-01-03 11:09:19,824 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 11:09:19,825 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 11:09:20,137 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 11:09:20,138 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 11:09:20,138 shop.py[line:32] INFO: test url:http://api.buyer.wdklian.com/shops/getByShopId?uid=2247&timestamp=1578020959000&nonce=452575&sign=377a4b894cdac2f9d09b1fd58893f300[0m
+[32m 2020-01-03 11:11:29,620 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 11:11:29,620 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 11:11:29,918 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 11:11:29,918 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 11:11:29,918 shop.py[line:32] INFO: test url:http://api.buyer.wdklian.com/shops/getByShopId?uid=2247&timestamp=1578021089000&nonce=799463&sign=6334d1fe06d40e312aecfcde0000e22e[0m
