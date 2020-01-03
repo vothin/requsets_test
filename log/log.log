@@ -6280,3 +6280,64 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2020-01-03 17:41:12,858 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2020-01-03 17:41:12,858 care_employee.py[line:100] INFO: test headers:{'uuid': '777'}[0m
 [32m 2020-01-03 17:41:12,858 care_employee.py[line:101] INFO: test url:http://dev.seller.wdklian.com/care/employee/2?uid=5456&timestamp=1578044472000&nonce=272199&sign=b29a209bd3b252f6bdffcbf9dddc233a[0m
+[32m 2020-01-03 17:47:32,721 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 17:47:32,722 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 17:47:33,116 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 17:47:33,116 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 17:47:33,117 care_nurse_config.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 17:47:33,117 care_nurse_config.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config?uid=5456&timestamp=1578044852000&nonce=497652&sign=8662a03b38e947ec26063018704ee4d3[0m
+[32m 2020-01-03 17:47:48,156 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 17:47:48,157 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 17:47:48,383 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 17:47:48,383 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 17:47:48,384 care_nurse_config.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 17:47:48,384 care_nurse_config.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config?uid=5456&timestamp=1578044868000&nonce=590456&sign=75a27960fa509133ce94195d87fab730[0m
+[32m 2020-01-03 17:47:53,215 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 17:47:53,216 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 17:47:53,453 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 17:47:53,453 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 17:47:53,454 care_nurse_config.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 17:47:53,454 care_nurse_config.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config?uid=5456&timestamp=1578044873000&nonce=757205&sign=71996bfa169936e0a191e40c802d375a[0m
+[32m 2020-01-03 17:48:19,483 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 17:48:19,483 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 17:48:19,857 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 17:48:19,857 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 17:48:19,857 care_nurse_config.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 17:48:19,857 care_nurse_config.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config?uid=5456&timestamp=1578044899000&nonce=200772&sign=5db489b160095fcc237a69525e116894[0m
+[32m 2020-01-03 17:48:27,492 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 17:48:27,492 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 17:48:27,865 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 17:48:27,866 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 17:48:27,866 care_nurse_config.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 17:48:27,866 care_nurse_config.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config?uid=5456&timestamp=1578044907000&nonce=357310&sign=03653c56c2b57ad80f9a974679f70b54[0m
+[32m 2020-01-03 18:12:11,890 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 18:12:11,891 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 18:12:12,504 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 18:12:12,505 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 18:12:12,505 care_nurse_config.py[line:45] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 18:12:12,505 care_nurse_config.py[line:46] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config/page?uid=5456&timestamp=1578046331000&nonce=405221&sign=03f47c7025c94b687c7174be8b125dc8[0m
+[32m 2020-01-03 18:15:22,352 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 18:15:22,352 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 18:15:22,739 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 18:15:22,740 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 18:15:22,740 care_nurse_config.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 18:15:22,740 care_nurse_config.py[line:64] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config/1?uid=5456&timestamp=1578046522000&nonce=355758&sign=be73bb465168d101e832ed19a441d485[0m
+[32m 2020-01-03 18:18:20,307 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 18:18:20,307 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 18:18:20,412 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=1612345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 18:18:20,412 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-01-03 18:18:20,412 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-01-03 18:18:20,412 care_nurse_config.py[line:81] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 18:18:20,413 care_nurse_config.py[line:82] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config/2[0m
+[32m 2020-01-03 18:18:29,414 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 18:18:29,415 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 18:18:29,651 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 18:18:29,651 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 18:18:29,652 care_nurse_config.py[line:81] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 18:18:29,652 care_nurse_config.py[line:82] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config/2?uid=5456&timestamp=1578046709000&nonce=209761&sign=6cc78e1033f50b49d52dbc5b6ca1f277[0m
+[32m 2020-01-03 18:25:40,200 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 18:25:40,200 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 18:25:40,587 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 18:25:40,587 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 18:25:40,588 care_nurse_config.py[line:99] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 18:25:40,588 care_nurse_config.py[line:100] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config/2?uid=5456&timestamp=1578047140000&nonce=234487&sign=be13f3c03548e329706b295096826529[0m
