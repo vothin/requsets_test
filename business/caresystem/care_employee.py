@@ -87,15 +87,15 @@ class Care_Employee(Requests_Test):
 
 
     # 修改工作人员
-    def put_care_employee_id(self, id, username=None, password=None, data=None, prod=None):
+    def put_care_employee_ids(self, ids, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
-        self.suffix = self.c.get_value('Care', 'care_employee_id')
-        self.suffix = self.suffix.format(id)
+        self.suffix = self.c.get_value('Care', 'care_employee_ids')
+        self.suffix = self.suffix.format(ids)
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test headers:%s' % gu[0])
         logs.info('test url:%s' % self.url)
@@ -107,13 +107,13 @@ if __name__ == '__main__':
     c = Care_Employee()
 
     post_data = {
-        'type' : '0',
+        'type' : '2',
         'name' : 'name',
         'create_time' : '1578042216',
         'update_time' : '1578042216',
         'sync_time' : '1578042216',
-        'part_id' : '1',
-        'sex' : '1',
+        'part_id' : '2',
+        'sex' : '0',
         'age' : '11',
         'device_id' : '11'
 
@@ -127,8 +127,8 @@ if __name__ == '__main__':
     # result = c.post_care_employee('16412345678', '123456', post_data, prod=4)
     # result = c.post_care_employee_page('16412345678', '123456', page, prod=4)
     # result = c.del_care_employee_ids('1', '16412345678', '123456', prod=4)
-    # result = c.get_care_employee_ids('1', '16412345678', '123456', prod=4)
-    result = c.put_care_employee_id('1', '16412345678', '123456', post_data, prod=4)
+    # result = c.get_care_employee_ids('2', '16412345678', '123456', prod=4)
+    result = c.put_care_employee_ids('2', '16412345678', '123456', post_data, prod=4)
 
     print(result)
     print(result.text)
