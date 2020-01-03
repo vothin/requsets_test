@@ -54,6 +54,26 @@ class Shop(Requests_Test):
 
 
 
+    # 获取店铺+店铺详情信息(未登录状态)
+    def get_shop_getShopAndDetailInfo_id(self, id, username=None, password=None, data=None, prod=None):
+        '''
+            相关参数有：  shopId          店铺id
+        '''
+
+        # 调用Change_Param类
+        cu = Change_Param(username, password, prod)
+        gu = cu.get_params()
+
+        # 拼接url
+        self.suffix = self.c.get_value('Shop', 'shop_getShopAndDetailInfo_id')
+        self.suffix = self.suffix.format(id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
+
+
+
 
 
     # H5申请o2o店铺
@@ -101,10 +121,11 @@ if __name__ == '__main__':
     }
 
     s = Shop()
-    result = s.get_shop_getByShopId('13412345678', '123456', get_data, prod=2)
+    # result = s.get_shop_getByShopId('13412345678', '123456', get_data, prod=2)
     # result = s.post_o2o_shop_apply('16312345678', '123456', data)
     # result = s.get_shop_getDoctorListByShopId('13412345678', '123456', shop_id)
     # result = s.get_shop_getDoctorListByShopId(data=shop_id)
+    result = s.get_shop_getShopAndDetailInfo_id('19', '13412345678', '123456', prod=2)
     print(result)
     print(result.text)
     print(result.url)
