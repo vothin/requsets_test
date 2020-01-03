@@ -6215,3 +6215,15 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2020-01-03 16:48:26,557 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2020-01-03 16:48:26,557 care_hospital_frame.py[line:99] INFO: test headers:{'uuid': '777'}[0m
 [32m 2020-01-03 16:48:26,557 care_hospital_frame.py[line:100] INFO: test url:http://dev.seller.wdklian.com/care/hospital_frame/2?uid=5456&timestamp=1578041306000&nonce=309160&sign=673f69b10a389ca78326631de44ae2e0[0m
+[32m 2020-01-03 17:05:41,434 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 17:05:41,434 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 17:05:41,850 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 17:05:41,850 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 17:05:41,850 care_employee.py[line:29] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 17:05:41,851 care_employee.py[line:30] INFO: test url:http://dev.seller.wdklian.com/care/employee?uid=5456&timestamp=1578042341000&nonce=524105&sign=bbc8ca2e15562a401ac687c5eac6cde2[0m
+[32m 2020-01-03 17:12:53,055 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 17:12:53,056 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 17:12:53,462 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 17:12:53,462 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 17:12:53,462 care_employee.py[line:46] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-03 17:12:53,462 care_employee.py[line:47] INFO: test url:http://dev.seller.wdklian.com/care/employee/page?uid=5456&timestamp=1578042773000&nonce=497600&sign=9851c314afdb9d09740d84e459174a78[0m
