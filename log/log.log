@@ -6152,3 +6152,13 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2020-01-03 14:20:54,071 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
 [32m 2020-01-03 14:20:54,071 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2020-01-03 14:20:54,072 shop.py[line:71] INFO: test url:http://api.buyer.wdklian.com/shops/getShopAndDetailInfo/19?uid=2247&timestamp=1578032453000&nonce=640570&sign=e24d071e4cde601cb3b320999074cd63[0m
+[32m 2020-01-03 14:44:26,091 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 14:44:26,091 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 14:44:26,398 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 14:44:26,399 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 14:44:26,400 shop_clerks.py[line:31] INFO: test url:http://api.buyer.wdklian.com/seller/shops/clerks/getDetail?uid=5456&timestamp=1578033866000&nonce=402514&sign=42299d8bc05ee9343661b9d7416ecd36[0m
+[32m 2020-01-03 14:45:04,136 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 14:45:04,136 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 14:45:04,496 change_requests.py[line:55] INFO: login url:http://api.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 14:45:04,496 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 14:45:04,496 shop_clerks.py[line:31] INFO: test url:http://api.seller.wdklian.com/seller/shops/clerks/getDetail?uid=5456&timestamp=1578033904000&nonce=252136&sign=c5e15a8e45c208da659c299abecf7a11[0m
