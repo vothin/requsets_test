@@ -16,7 +16,7 @@ from common.requests_test import Requests_Test
 
 class Care_Device_Info(Requests_Test):
 
-    # 添加病人信息
+    # 添加设备信息
     def post_care_device_info(self, username=None, password=None, data=None, prod=None, json=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -30,7 +30,9 @@ class Care_Device_Info(Requests_Test):
 
         return self.post_requests(self.url, gu[0], data, json)
 
-    # 查询护理配置列表
+
+
+    # 查询设备信息列表
     def post_care_device_info_page(self, username=None, password=None, data=None, prod=None, json=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -44,7 +46,9 @@ class Care_Device_Info(Requests_Test):
 
         return self.post_requests(self.url, gu[0], data, json)
 
-    # 删除护理配置
+
+
+    # 删除设备信息
     def del_care_device_info_ids(self, ids, username=None, password=None, data=None, prod=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -59,7 +63,9 @@ class Care_Device_Info(Requests_Test):
 
         return self.del_requests(self.url, gu[0], data)
 
-    # 查询一个护理配置
+
+
+    # 一个设备信息
     def get_care_device_info_ids(self, ids, username=None, password=None, data=None, prod=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -74,7 +80,9 @@ class Care_Device_Info(Requests_Test):
 
         return self.get_requests(self.url, gu[0], data)
 
-    # 修改护理配置
+
+
+    # 修改设备信息
     def put_care_device_info_ids(self, ids, username=None, password=None, data=None, prod=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
@@ -91,21 +99,33 @@ class Care_Device_Info(Requests_Test):
 
 
 if __name__ == '__main__':
-    c = Care_device_info()
+    c = Care_Device_Info()
 
     post_data = {
-        'his_phoc_id': '3',
-        'his_id': '3',
-        'card_id': '3',
-        'name_py': 'name',
-        'age': '13',
-        'age_unit': 'Y',
-        'birthday': '3',
-        'idcard': '3',
-        'address': '3',
-        'mobile': '16412345678',
-        'intimes': '2',
-        'illness_description': '3'
+        'sync_time': '3',
+        'code': '3',
+        'model': '3',
+        'soft_ver': '3',
+        'hard_ver': '3',
+        'name': 'name',
+        'eth_mac': '3',
+        'eth_ip': '3',
+        'wifi_mac': '3',
+        'wifi_ip': '3',
+        'wifi_hostname': '3',
+        'room_num': '3',
+        'room_id' : '3',
+        'bed_num' : '3',
+        'bed_name' : '3',
+        'user_type' : '3',
+        'user_id' : '3',
+        'sip_ip' : '3',
+        'sip_id' : '3',
+        'sip_password' : '3',
+        'sip_online' : '3',
+        'sip_call_list' : '3',
+        'sip_hosting_id' : '3',
+        'ir_config' : '3'
     }
 
     page = {
