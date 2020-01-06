@@ -6341,3 +6341,13 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2020-01-03 18:25:40,587 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2020-01-03 18:25:40,588 care_nurse_config.py[line:99] INFO: test headers:{'uuid': '777'}[0m
 [32m 2020-01-03 18:25:40,588 care_nurse_config.py[line:100] INFO: test url:http://dev.seller.wdklian.com/care/nurse_config/2?uid=5456&timestamp=1578047140000&nonce=234487&sign=be13f3c03548e329706b295096826529[0m
+[32m 2020-01-03 18:28:14,551 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 18:28:14,552 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 18:28:15,821 change_requests.py[line:55] INFO: login url:http://192.168.1.168:7003/seller/login/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 18:28:15,821 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 18:28:15,822 goods_search.py[line:69] INFO: test url:http://192.168.1.168:7003/goods/search/searchAllGoods?uid=2247&timestamp=1578047294000&nonce=885782&sign=f66e7a8d990e302d6a13bd022a91a137[0m
+[32m 2020-01-03 18:28:29,592 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-03 18:28:29,592 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-03 18:28:29,775 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-03 18:28:29,776 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-03 18:28:29,776 goods_search.py[line:69] INFO: test url:http://api.buyer.wdklian.com/goods/search/searchAllGoods?uid=2247&timestamp=1578047309000&nonce=531931&sign=284fadcfbb7cee5cbbc8ba7fd32848c1[0m
