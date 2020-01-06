@@ -32,7 +32,7 @@ class Care_Patient_Info(Requests_Test):
 
 
 
-    # 查询护理配置列表
+    # 查询病人信息列表
     def post_care_patient_info_page(self, username=None, password=None, data=None, prod=None, json=None):
 
         # 调用Change_Param类
@@ -49,7 +49,7 @@ class Care_Patient_Info(Requests_Test):
 
 
 
-    # 删除护理配置
+    # 删除病人信息
     def del_care_patient_info_ids(self, ids, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
@@ -67,7 +67,7 @@ class Care_Patient_Info(Requests_Test):
 
 
 
-    # 查询一个护理配置
+    # 查询一个病人信息
     def get_care_patient_info_ids(self, ids, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
@@ -85,7 +85,7 @@ class Care_Patient_Info(Requests_Test):
 
 
 
-    # 修改护理配置
+    # 修改病人信息
     def put_care_patient_info_ids(self, ids, username=None, password=None, data=None, prod=None):
 
         # 调用Change_Param类
