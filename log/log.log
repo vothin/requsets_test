@@ -6447,3 +6447,104 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2020-01-06 18:05:58,126 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2020-01-06 18:05:58,126 care_device_info.py[line:95] INFO: test headers:{'uuid': '777'}[0m
 [32m 2020-01-06 18:05:58,127 care_device_info.py[line:96] INFO: test url:http://dev.seller.wdklian.com/care/device_info/2?uid=5456&timestamp=1578305157000&nonce=737702&sign=ce64a1bedbdcdf05644bac4909a9203a[0m
+[32m 2020-01-07 16:28:24,679 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:28:24,680 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:28:25,885 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:28:25,885 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:28:25,886 care_device_info.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:28:25,886 care_device_info.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/device_info?uid=5456&timestamp=1578385704000&nonce=298385&sign=d1f8f518753addc47ad6535152139f21[0m
+[32m 2020-01-07 16:29:34,939 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:29:34,939 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:29:35,344 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:29:35,344 change_requests.py[line:56] INFO: <Response [200]>[0m
+[31m 2020-01-07 16:29:35,344 config.py[line:33] ERROR: No option 'care_ncs_device_info' in section: 'Care'[0m
+[32m 2020-01-07 16:30:04,923 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:30:04,923 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:30:05,326 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:30:05,327 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:30:05,327 care_device_info.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:30:05,327 care_device_info.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info?uid=5456&timestamp=1578385804000&nonce=289867&sign=042374882394a3b1e367bd0f2fa8093e[0m
+[32m 2020-01-07 16:30:11,272 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:30:11,272 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:30:11,509 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:30:11,509 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:30:11,510 care_device_info.py[line:44] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:30:11,510 care_device_info.py[line:45] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/page?uid=5456&timestamp=1578385811000&nonce=822906&sign=f1de540a3923110dfcf8ec3f62e565fd[0m
+[32m 2020-01-07 16:30:15,748 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:30:15,748 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:30:16,001 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:30:16,002 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:30:16,002 care_device_info.py[line:61] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:30:16,002 care_device_info.py[line:62] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/1?uid=5456&timestamp=1578385815000&nonce=326764&sign=179e2dc9d091d7ad3d39ac9ec903e0b0[0m
+[32m 2020-01-07 16:30:19,421 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:30:19,421 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:30:19,677 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:30:19,678 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:30:19,678 care_device_info.py[line:78] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:30:19,678 care_device_info.py[line:79] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/2?uid=5456&timestamp=1578385819000&nonce=973343&sign=c860b3cfea034a5d16936d2f3a7d5850[0m
+[32m 2020-01-07 16:30:28,167 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:30:28,167 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:30:28,400 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:30:28,400 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:30:28,400 care_device_info.py[line:78] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:30:28,400 care_device_info.py[line:79] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/3?uid=5456&timestamp=1578385828000&nonce=959348&sign=cfd360666d0aa976e7c9e2dda3b41316[0m
+[32m 2020-01-07 16:30:45,184 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:30:45,184 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:30:45,577 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:30:45,577 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:30:45,577 care_device_info.py[line:44] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:30:45,577 care_device_info.py[line:45] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/page?uid=5456&timestamp=1578385845000&nonce=312209&sign=31b2867002bddac0e7610e2c40d82406[0m
+[32m 2020-01-07 16:31:29,387 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:31:29,388 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:31:29,772 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:31:29,773 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:31:29,773 care_device_info.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:31:29,773 care_device_info.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info?uid=5456&timestamp=1578385889000&nonce=342898&sign=a10f05be231eaa5bd1fd441d6a363b95[0m
+[32m 2020-01-07 16:31:45,411 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:31:45,412 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:31:45,792 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:31:45,792 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:31:45,792 care_device_info.py[line:44] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:31:45,792 care_device_info.py[line:45] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/page?uid=5456&timestamp=1578385905000&nonce=798036&sign=a4eec70b167c65544ce4ef15e6a84ba8[0m
+[32m 2020-01-07 16:31:58,171 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:31:58,172 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:31:58,396 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:31:58,396 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:31:58,396 care_device_info.py[line:61] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:31:58,396 care_device_info.py[line:62] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/1?uid=5456&timestamp=1578385918000&nonce=671006&sign=f872e7ba97ca6100de1bb5b58c638772[0m
+[32m 2020-01-07 16:32:02,323 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:32:02,324 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:32:02,561 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:32:02,561 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:32:02,561 care_device_info.py[line:78] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:32:02,561 care_device_info.py[line:79] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/3?uid=5456&timestamp=1578385922000&nonce=359767&sign=d36172e029a4936ad19be061a8bb5223[0m
+[32m 2020-01-07 16:32:09,154 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:32:09,154 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:32:09,380 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:32:09,380 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:32:09,380 care_device_info.py[line:44] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:32:09,380 care_device_info.py[line:45] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/page?uid=5456&timestamp=1578385929000&nonce=267906&sign=8a538cd81ed5e0336bbbc2d73e53ea4a[0m
+[32m 2020-01-07 16:32:27,483 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:32:27,484 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:32:27,724 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:32:27,724 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:32:27,725 care_device_info.py[line:78] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:32:27,725 care_device_info.py[line:79] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/2?uid=5456&timestamp=1578385947000&nonce=591444&sign=1080f57aff2d1ed77fee92a4ecf61938[0m
+[32m 2020-01-07 16:32:32,325 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:32:32,325 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:32:32,553 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:32:32,553 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:32:32,554 care_device_info.py[line:95] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:32:32,554 care_device_info.py[line:96] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/2?uid=5456&timestamp=1578385952000&nonce=922654&sign=9325c2678f64e675896d25081a425860[0m
+[32m 2020-01-07 16:32:54,539 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:32:54,539 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:32:54,913 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:32:54,913 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:32:54,914 care_device_info.py[line:28] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:32:54,914 care_device_info.py[line:29] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info?uid=5456&timestamp=1578385974000&nonce=892859&sign=2295887a6a5eddd172d62121287f5bbf[0m
+[32m 2020-01-07 16:32:58,015 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-07 16:32:58,015 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-07 16:32:58,238 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-07 16:32:58,238 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-07 16:32:58,239 care_device_info.py[line:44] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-07 16:32:58,239 care_device_info.py[line:45] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/page?uid=5456&timestamp=1578385978000&nonce=633069&sign=95ea97103e0673a492384b5250f5a86d[0m

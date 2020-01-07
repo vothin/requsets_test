@@ -3,7 +3,7 @@
 '''
     @author: Vothin
     @software: 自动化测试
-    @file: care_device_info.py
+    @file: care_ncs_device_info.py
     @time: 2020/1/6 17:52
     @desc:
 '''
@@ -14,16 +14,16 @@ from common.recordlog import logs
 from common.change_param import Change_Param
 from common.requests_test import Requests_Test
 
-class Care_Device_Info(Requests_Test):
+class Care_Ncs_Nevice_Info(Requests_Test):
 
     # 添加设备信息
-    def post_care_device_info(self, username=None, password=None, data=None, prod=None, json=None):
+    def post_care_ncs_device_info(self, username=None, password=None, data=None, prod=None, json=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
-        self.suffix = self.c.get_value('Care', 'care_device_info')
+        self.suffix = self.c.get_value('Care', 'care_ncs_device_info')
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test headers:%s' % gu[0])
         logs.info('test url:%s' % self.url)
@@ -33,13 +33,13 @@ class Care_Device_Info(Requests_Test):
 
 
     # 查询设备信息列表
-    def post_care_device_info_page(self, username=None, password=None, data=None, prod=None, json=None):
+    def post_care_ncs_device_info_page(self, username=None, password=None, data=None, prod=None, json=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
-        self.suffix = self.c.get_value('Care', 'care_device_info_page')
+        self.suffix = self.c.get_value('Care', 'care_ncs_device_info_page')
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test headers:%s' % gu[0])
         logs.info('test url:%s' % self.url)
@@ -49,13 +49,13 @@ class Care_Device_Info(Requests_Test):
 
 
     # 删除设备信息
-    def del_care_device_info_ids(self, ids, username=None, password=None, data=None, prod=None):
+    def del_care_ncs_device_info_ids(self, ids, username=None, password=None, data=None, prod=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
-        self.suffix = self.c.get_value('Care', 'care_device_info_ids')
+        self.suffix = self.c.get_value('Care', 'care_ncs_device_info_ids')
         self.suffix = self.suffix.format(ids)
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test headers:%s' % gu[0])
@@ -66,13 +66,13 @@ class Care_Device_Info(Requests_Test):
 
 
     # 一个设备信息
-    def get_care_device_info_ids(self, ids, username=None, password=None, data=None, prod=None):
+    def get_care_ncs_device_info_ids(self, ids, username=None, password=None, data=None, prod=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
-        self.suffix = self.c.get_value('Care', 'care_device_info_ids')
+        self.suffix = self.c.get_value('Care', 'care_ncs_device_info_ids')
         self.suffix = self.suffix.format(ids)
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test headers:%s' % gu[0])
@@ -83,13 +83,13 @@ class Care_Device_Info(Requests_Test):
 
 
     # 修改设备信息
-    def put_care_device_info_ids(self, ids, username=None, password=None, data=None, prod=None):
+    def put_care_ncs_device_info_ids(self, ids, username=None, password=None, data=None, prod=None):
         # 调用Change_Param类
         cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
         # 拼接url
-        self.suffix = self.c.get_value('Care', 'care_device_info_ids')
+        self.suffix = self.c.get_value('Care', 'care_ncs_device_info_ids')
         self.suffix = self.suffix.format(ids)
         self.url = self.url_joint(prod) + gu[1]
         logs.info('test headers:%s' % gu[0])
@@ -99,7 +99,7 @@ class Care_Device_Info(Requests_Test):
 
 
 if __name__ == '__main__':
-    c = Care_Device_Info()
+    c = Care_Ncs_Nevice_Info()
 
     post_data = {
         'sync_time': '3',
@@ -133,11 +133,11 @@ if __name__ == '__main__':
         'page_size': '10'
     }
 
-    # result = c.post_care_device_info('16412345678', '123456', post_data, prod=4)
-    # result = c.post_care_device_info_page('16412345678', '123456', page, prod=4)
-    # result = c.del_care_device_info_ids('1', '16412345678', '123456', prod=4)
-    # result = c.get_care_device_info_ids('2', '16412345678', '123456', prod=4)
-    result = c.put_care_device_info_ids('2', '16412345678', '123456', prod=4)
+    # result = c.post_care_ncs_device_info('16412345678', '123456', post_data, prod=4)
+    result = c.post_care_ncs_device_info_page('16412345678', '123456', page, prod=4)
+    # result = c.del_care_ncs_device_info_ids('1', '16412345678', '123456', prod=4)
+    # result = c.get_care_ncs_device_info_ids('2', '16412345678', '123456', prod=4)
+    # result = c.put_care_ncs_device_info_ids('2', '16412345678', '123456', prod=4)
 
     print(result)
     print(result.text)
