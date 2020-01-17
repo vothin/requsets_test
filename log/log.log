@@ -6548,3 +6548,9 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2020-01-07 16:32:58,238 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2020-01-07 16:32:58,239 care_device_info.py[line:44] INFO: test headers:{'uuid': '777'}[0m
 [32m 2020-01-07 16:32:58,239 care_device_info.py[line:45] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/page?uid=5456&timestamp=1578385978000&nonce=633069&sign=95ea97103e0673a492384b5250f5a86d[0m
+[32m 2020-01-10 09:52:29,153 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-01-10 09:52:29,153 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-01-10 09:52:29,908 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-01-10 09:52:29,908 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-01-10 09:52:29,909 care_doctor_advice_template.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-01-10 09:52:29,909 care_doctor_advice_template.py[line:31] INFO: test url:http://dev.seller.wdklian.com/care/care_doctor_advice_template?uid=5456&timestamp=1578621149000&nonce=881106&sign=920e7354a294194e88b7444eb167ae2f[0m
