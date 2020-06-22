@@ -15,7 +15,7 @@ import os, sys
 BIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BIR)
 
-url_path = os.path.join(BIR, r'config\url.ini')
-log_path = os.path.join(BIR, r'log\log.log')
-image_path = os.path.join(BIR, r'image\code\code.png')
+url_path = os.path.join(BIR, r'config/url.ini')
+log_path = os.path.join(BIR, r'log/log.log')
+image_path = os.path.join(BIR, r'image/code/code.png')
 
