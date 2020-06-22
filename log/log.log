@@ -6556,3 +6556,17 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2020-01-10 09:52:29,909 care_doctor_advice_template.py[line:31] INFO: test url:http://dev.seller.wdklian.com/care/care_doctor_advice_template?uid=5456&timestamp=1578621149000&nonce=881106&sign=920e7354a294194e88b7444eb167ae2f[0m
 [32m 2020-05-15 16:46:51,345 recordlog.py[line:63] INFO: English[0m
 [32m 2020-05-15 16:46:51,345 recordlog.py[line:64] INFO: 中文[0m
+[32m 2020-06-22 15:06:24,811 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-06-22 15:06:24,811 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-06-22 15:07:42,281 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-06-22 15:07:42,281 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-06-22 15:07:43,011 change_requests.py[line:55] INFO: login url:http://dev.buyer.wdklian.com/passport/login/noCaptcha?username=13412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-06-22 15:07:43,011 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-06-22 15:07:43,011 care_health_advert.py[line:30] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-06-22 15:07:43,011 care_health_advert.py[line:31] INFO: test url:http://dev.buyer.wdklian.com/care/health_advert/page?uid=2247&timestamp=1592809662000&nonce=132669&sign=6a4c37ca8f88b5e155a1ae1ae16b5b71[0m
+[32m 2020-06-22 15:08:48,311 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-06-22 15:08:48,311 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-06-22 15:09:00,571 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13119003021&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-06-22 15:09:00,571 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-06-22 15:09:00,571 care_emergency_contact.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-06-22 15:09:00,571 care_emergency_contact.py[line:32] INFO: test url:http://api.buyer.wdklian.com/care/care_emergency_contact?uid=50216&timestamp=1592809728000&nonce=216883&sign=e309412cb14a51ad6d1d64c18ebf6d56[0m

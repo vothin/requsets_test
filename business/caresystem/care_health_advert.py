@@ -59,7 +59,7 @@ if __name__ == '__main__':
         'page_size' : '10'
     }
 
-    # result = c.post_care_health_advert_page('13412345678', '123456', post_data)
-    result = c.get_care_health_advert('88', '13412345678', '123456')
+    result = c.post_care_health_advert_page('13412345678', '123456', post_data)
+    # result = c.get_care_health_advert('88', '13412345678', '123456')
     print(result)
     print(result.text)
