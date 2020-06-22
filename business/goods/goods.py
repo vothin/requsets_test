@@ -18,78 +18,86 @@ from common.change_param import Change_Param
 class Goods(Requests_Test):
 
     # 查询商品
-    def get_goods(self, goods_id, username=None, password=None, prod=False):
-        self.suffix = self.c.get_value('Goods', 'goods')
-        self.suffix = self.suffix.format(goods_id)
+    def get_goods(self, goods_id, username=None, password=None, data=None, prod=None):
 
-        self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
-
-        cu = Change_Param(username, password)
+        # 调用Change_Param类
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Goods', 'goods')
+        self.suffix = self.suffix.format(goods_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
+
 
 
 
     # 查询商品是否有货
-    def get_goods_area(self, goods_id, area_id, username=None, password=None, prod=False):
-        self.suffix = self.c.get_value('Goods', 'goods_area')
-        self.suffix = self.suffix.format(goods_id, area_id)
-
-        self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
-
-        cu = Change_Param(username, password)
+    def get_goods_area(self, goods_id, area_id, username=None, password=None, data=None, prod=None):
+        # 调用Change_Param类
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Goods', 'goods_area')
+        self.suffix = self.suffix.format(goods_id, area_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
 
+        return self.get_requests(self.url, gu[0], data)
 
 
     # 获取sku信息
-    def get_goods_skus(self, goods_id, username=None, password=None, prod=False):
-        self.suffix = self.c.get_value('Goods', 'goods_skus')
-        self.suffix = self.suffix.format(goods_id)
+    def get_goods_skus(self, goods_id, username=None, password=None, data=None, prod=None):
 
-        self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
-
-        cu = Change_Param(username, password)
+        # 调用Change_Param类
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Goods', 'goods_skus')
+        self.suffix = self.suffix.format(goods_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
 
 
 
     # 获取商品浏览次数
-    def get_goods_visit(self, goods_id, username=None, password=None, prod=False):
-        self.suffix = self.c.get_value('Goods', 'goods_visit')
-        self.suffix = self.suffix.format(goods_id)
+    def get_goods_visit(self, goods_id, username=None, password=None, data=None, prod=None):
 
-        self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
-
-        cu = Change_Param(username, password)
+        # 调用Change_Param类
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Goods', 'goods_visit')
+        self.suffix = self.suffix.format(goods_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
 
 
 
 if __name__ == '__main__':
     g = Goods()
     # result = g.get_goods(456)
-    # result = g.get_goods(456, username='13412345678', password='123456')
+    # result = g.get_goods(456, '13412345678', '123456')
     # result = g.get_goods_area(345, 123129)
-    result = g.get_goods_area(345, 123129, username='13412345678', password='123456')
+    # result = g.get_goods_area(345, 123129, username='13412345678', password='123456')
     # result = g.get_goods_skus(345, prod=True)
     # result = g.get_goods_skus(345)
-    # result = g.get_goods_skus(345, username='13412345678', password='123456', prod=True)
-    # result = g.get_goods_skus(345, username='13412345678', password='123456', prod=False)
+    # result = g.get_goods_skus(345, '13412345678', '123456', prod=True)
+    result = g.get_goods_skus(345, username='13412345678', password='123456', prod=None)
     # result = g.get_goods_visit(345, username='13412345678', password='123456')
     # result = g.get_goods_visit(1)
     # result2 = g.get_goods_visit(1, prod=True)
     print(result.text)
+    # print(result.url)
     # print(result2.text)
 

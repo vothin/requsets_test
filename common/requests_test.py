@@ -18,31 +18,46 @@ from common.config import Config
 
 class Requests_Test(Base):
 
+    def requests_alt(self):
+        return requests
+
     # get请求
     def get_requests(self, url, headers=None, get_data=None):
         self.headers = headers
         r = requests.get(url, headers=self.headers, params=get_data)
         return r
 
-    # post请求
-    def post_requests(self, url, headers=None, post_data=None):
-        self.headers = headers
 
-        r = requests.post(url, headers=self.headers, data=post_data)
+
+    # post请求
+    def post_requests(self, url, headers=None, post_data=None, json_data=None):
+        self.headers = headers
+        r = requests.post(url, headers=self.headers, data=post_data, json=json_data)
         return r
 
-    def del_requests(self, url, headers=None):
-        self.headers = headers
-        r = requests.delete(url, headers=self.headers)
 
+
+    # delete请求
+    def del_requests(self, url, headers=None, del_data=None):
+        self.headers = headers
+        r = requests.delete(url, headers=self.headers, params=del_data)
+        return r
+
+
+    # put请求
+    def put_requests(self, url, headers=None, put_data=None):
+        self.headers = headers
+        r = requests.put(url, headers=self.headers, data=put_data)
+        return r
 
 
 if __name__ == '__main__':
     r = Requests_Test()
     data = {'seller_id' : '16'}
     # data = '16'
-    # r.get_requests('http://dev.buyer.wdklian.com/goods/345')
-    result = r.post_requests('http://dev.buyer.wdklian.com/trade/carts/o2o/seller/0', data)
+    # result = r.get_requests('http://dev.buyer.wdklian.com/trade/carts/o2o/all')
+    result = r.get_requests('http://dev.buyer.wdklian.com/goods/345/area/123129')
+    # result = r.post_requests('http://dev.buyer.wdklian.com/trade/carts/o2o/seller/0', data)
     print(result)
     print(result.text)
 

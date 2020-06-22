@@ -11,83 +11,40 @@
 
 
 from common.recordlog import logs
-from common.change_headers import Change_Headers
-from common.change_data import Change_Data
+from common.change_urltail import Change_UrlTail
+from common.requests_test import Requests_Test
 
 class Change_Param():
 
-    def __init__(self, username=None, password=None, data=None):
+    def __init__(self, username=None, password=None, prod=None):
         self.username = username
         self.password = password
-        self.data     = data
         self.headers  = None
+        self.url_tail = ''
+        self.prod = prod
+
 
     def get_params(self):
-        # 判断是否需要token
+
+        # 判断是否登录
         if self.username:
-            if self.data:
-                ch = Change_Headers(self.username, self.password)
-                gh = ch.get_headers()
-                self.headers = gh[0]
+            ch = Change_UrlTail(self.username, self.password, self.prod)
+            gh = ch.get_urlTail()
+            self.headers = gh[0]
+            self.url_tail = gh[1]
 
-                ck = Change_Data(self.data, gh[1])
-                self.data = ck.get_data()
-
-                logs.info('Test data:%s' % self.data)
-                return self.headers, self.data
-
-            else:
-                ch = Change_Headers(self.username, self.password)
-                gh = ch.get_headers()
-                self.headers = gh[0]
-
-                return self.headers, self.data
+            return self.headers, self.url_tail
 
         else:
-            if self.data:
-                logs.info('Test data:%s' % self.data)
-                return self.headers, self.data
-
-            else:
-                logs.info('Not Parameter')
-                return self.headers, self.data
-
-
-
-
-
-
-
-        # if data:
-        #     ck = Change_Kwargs(data)
-        #     gk = ck.get_kwargs()
-        #
-        #     # 判断是否需要token
-        #     if username != None:
-        #         ch = Change_Headers(username, password, prod)
-        #         gh = ch.get_headers()
-        #         self.headers = gh[0]
-        #
-        #         self.url = self.url_joint(prod) + '?' + gk + gh[1]
-        #     else:
-        #         self.url = self.url_joint(prod) + '?' + gk[:-1]
-        #
-        # else:
-        #     # 判断是否需要token
-        #     if username != None:
-        #         ch = Change_Headers(username, password, prod)
-        #         gh = ch.get_headers()
-        #         self.headers = gh[0]
-        #
-        #         self.url = self.url_joint(prod) + '?' + gh[1]
-        #     else:
-        #         self.url = self.url_joint(prod)
-        #
-        # logs.info('Test interface:%s' % self.url)
-        # return self.url, self.headers
+            logs.info('Not Parameter')
+            return self.headers, self.url_tail
 
 
 if __name__ == '__main__':
-    pass
+    c = Change_Param('13412345678', '123456')
+    result = c.get_params()
+    print(result)
+
+
 
 

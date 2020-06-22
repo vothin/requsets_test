@@ -16,17 +16,19 @@ from common.change_param import Change_Param
 class Goods_Categories(Requests_Test):
 
     # 首页等商品分类数据
-    def get_goods_categories(self, parent_id, username=None, password=None, prod=False):
-        self.suffix = self.c.get_value('Goods', 'goods_categories')
-        self.suffix = self.suffix.format(parent_id)
+    def get_goods_categories(self, parent_id, username=None, password=None, data=None, prod=None):
 
-        self.url = self.url_joint(prod)
-        logs.info('Test interface:%s' % self.url)
-
-        cu = Change_Param(username, password)
+        # 调用Change_Param类
+        cu = Change_Param(username, password, prod)
         gu = cu.get_params()
 
-        return self.get_requests(self.url, gu[0], gu[1])
+        # 拼接url
+        self.suffix = self.c.get_value('Goods', 'goods_categories')
+        self.suffix = self.suffix.format(parent_id)
+        self.url = self.url_joint(prod) + gu[1]
+        logs.info('test url:%s' % self.url)
+
+        return self.get_requests(self.url, gu[0], data)
 
 
 if __name__ == '__main__':

@@ -17,18 +17,21 @@ from common.change_md5 import get_md5
 class Passport_LoginNo(Requests_Test):
 
     # 无验证登录
-    def get_passport_loginno(self, username, password, prod=False):
+    def get_passport_loginno(self, username, password, headers, prod=None):
         self.suffix = self.c.get_value('Passport', 'passport_login_noCaptcha')
+        self.url = self.url_joint(prod)
 
         password = get_md5(str(password))
 
-        self.url = self.url_joint(prod) + '?username=' + str(username) + '&password=' + str(password)
+        data = {
+            'username' : str(username),
+            'password' : str(password)
+        }
 
-        logs.info('Test interface:%s' % self.url)
-        return self.get_requests(self.url)
+        return self.get_requests(self.url, headers, data)
 
 if __name__ == '__main__':
     p = Passport_LoginNo()
-    result = p.get_passport_loginno('13412345678', '123456', prod=True)
+    result = p.get_passport_loginno('13412345678', '123456')
     print(result)
     print(result.text)
