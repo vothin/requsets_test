@@ -6554,3 +6554,5 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2020-01-10 09:52:29,908 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2020-01-10 09:52:29,909 care_doctor_advice_template.py[line:30] INFO: test headers:{'uuid': '777'}[0m
 [32m 2020-01-10 09:52:29,909 care_doctor_advice_template.py[line:31] INFO: test url:http://dev.seller.wdklian.com/care/care_doctor_advice_template?uid=5456&timestamp=1578621149000&nonce=881106&sign=920e7354a294194e88b7444eb167ae2f[0m
+[32m 2020-05-15 16:46:51,345 recordlog.py[line:63] INFO: English[0m
+[32m 2020-05-15 16:46:51,345 recordlog.py[line:64] INFO: 中文[0m
