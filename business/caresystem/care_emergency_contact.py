@@ -44,3 +44,7 @@ if __name__ == '__main__':
 
     c = Care_Emergency_contact()
     result = c.post_care_emergency_contact('13119003021', '123456', post_data, prod=2)
+
+
+    print(result)
+    print(result.text)

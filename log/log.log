@@ -6570,3 +6570,15 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2020-06-22 15:09:00,571 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2020-06-22 15:09:00,571 care_emergency_contact.py[line:31] INFO: test headers:{'uuid': '777'}[0m
 [32m 2020-06-22 15:09:00,571 care_emergency_contact.py[line:32] INFO: test url:http://api.buyer.wdklian.com/care/care_emergency_contact?uid=50216&timestamp=1592809728000&nonce=216883&sign=e309412cb14a51ad6d1d64c18ebf6d56[0m
+[32m 2020-06-22 15:31:23,258 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-06-22 15:31:23,258 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-06-22 15:31:34,548 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13119003021&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-06-22 15:31:34,548 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-06-22 15:31:34,548 care_emergency_contact.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-06-22 15:31:34,548 care_emergency_contact.py[line:32] INFO: test url:http://api.buyer.wdklian.com/care/care_emergency_contact?uid=50216&timestamp=1592811083000&nonce=283684&sign=8bab951258cff311dec1044338394e2a[0m
+[32m 2020-06-22 15:32:06,798 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-06-22 15:32:06,798 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-06-22 15:32:18,098 change_requests.py[line:55] INFO: login url:http://api.buyer.wdklian.com/passport/login/noCaptcha?username=13119003021&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-06-22 15:32:18,098 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-06-22 15:32:18,098 care_emergency_contact.py[line:31] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-06-22 15:32:18,098 care_emergency_contact.py[line:32] INFO: test url:http://api.buyer.wdklian.com/care/care_emergency_contact?uid=50216&timestamp=1592811126000&nonce=432217&sign=3c5a038c511ef5c0e8b63edf40949b04[0m
