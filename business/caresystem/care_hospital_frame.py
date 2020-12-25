@@ -125,8 +125,8 @@ if __name__ == '__main__':
 
     # result = c.post_care_hospital_frame('16412345678', '123456', post_data, prod=4)
     # result = c.post_care_hospital_frame_page('16412345678', '123456', page, prod=4)
-    # result = c.del_care_hospital_frame_ids('3', '16412345678', '123456', prod=4)
+    result = c.del_care_hospital_frame_ids('112', '16412345678', '123456', prod=6)
     # result = c.get_care_hospital_frame_id('2', '16412345678', '123456', prod=4)
-    result = c.put_care_hospital_frame_id('2', '16412345678', '123456', post_data, prod=4)
+    # result = c.put_care_hospital_frame_id('2', '16412345678', '123456', post_data, prod=4)
     print(result)
     print(result.text)

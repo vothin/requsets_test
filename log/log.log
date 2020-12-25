@@ -6582,3 +6582,100 @@ K�A��` 3ǩ�-58��#�Pi��5ZW���z0�� ��>��
 [32m 2020-06-22 15:32:18,098 change_requests.py[line:56] INFO: <Response [200]>[0m
 [32m 2020-06-22 15:32:18,098 care_emergency_contact.py[line:31] INFO: test headers:{'uuid': '777'}[0m
 [32m 2020-06-22 15:32:18,098 care_emergency_contact.py[line:32] INFO: test url:http://api.buyer.wdklian.com/care/care_emergency_contact?uid=50216&timestamp=1592811126000&nonce=432217&sign=3c5a038c511ef5c0e8b63edf40949b04[0m
+[32m 2020-12-16 15:15:04,506 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-16 15:15:04,506 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-16 15:15:39,020 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-16 15:15:39,022 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-16 15:15:39,022 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-16 15:15:39,023 care_ncs_device_info.py[line:95] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-16 15:15:39,023 care_ncs_device_info.py[line:96] INFO: test url:http://192.168.1.26:7003/care/ncs_device_info/164[0m
+[32m 2020-12-16 15:17:24,151 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-16 15:17:24,151 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-16 15:17:26,121 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-16 15:17:26,121 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-16 15:17:26,121 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-16 15:17:26,122 care_ncs_device_info.py[line:61] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-16 15:17:26,122 care_ncs_device_info.py[line:62] INFO: test url:http://192.168.1.26:7003/care/ncs_device_info/164[0m
+[32m 2020-12-16 16:12:03,903 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-16 16:12:03,903 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-16 16:12:04,985 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-16 16:12:04,985 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-12-16 16:12:04,986 care_ncs_device_info.py[line:61] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-16 16:12:04,986 care_ncs_device_info.py[line:62] INFO: test url:http://dev.seller.wdklian.com/care/ncs_device_info/164?uid=5456&timestamp=1608106323000&nonce=118756&sign=9084befbacff6b95319f04b9e3ba87f6[0m
+[32m 2020-12-17 16:55:42,493 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 16:55:42,533 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 16:55:43,767 change_requests.py[line:55] INFO: login url:http://dev.seller.wdklian.com/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-17 16:55:43,768 change_requests.py[line:56] INFO: <Response [200]>[0m
+[32m 2020-12-17 16:55:43,768 care_hospital_frame.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-17 16:55:43,768 care_hospital_frame.py[line:64] INFO: test url:http://dev.seller.wdklian.com/care/hospital_frame/112?uid=5456&timestamp=1608195342000&nonce=112699&sign=9371d3b650a8f891ab74f22373e04700[0m
+[32m 2020-12-17 16:56:50,048 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 16:56:50,049 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 16:56:52,938 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-17 16:56:52,939 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-17 16:56:52,939 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-17 16:56:52,939 care_hospital_frame.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-17 16:56:52,939 care_hospital_frame.py[line:64] INFO: test url:http://192.168.1.26:7003/care/hospital_frame/112[0m
+[32m 2020-12-17 17:03:20,012 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 17:03:20,013 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 17:03:21,208 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-17 17:03:21,208 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-17 17:03:21,209 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-17 17:03:21,209 care_hospital_frame.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-17 17:03:21,209 care_hospital_frame.py[line:64] INFO: test url:http://192.168.1.26:7003/care/hospital_frame/112[0m
+[32m 2020-12-17 17:06:14,358 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 17:06:14,359 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 17:07:40,773 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 17:07:40,774 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 17:15:00,840 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 17:15:00,847 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 17:15:02,460 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-17 17:15:02,460 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-17 17:15:02,461 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-17 17:15:02,461 care_hospital_frame.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-17 17:15:02,461 care_hospital_frame.py[line:64] INFO: test url:http://192.168.1.26:7003/care/hospital_frame/112[0m
+[32m 2020-12-17 17:29:07,763 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 17:29:07,764 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 17:29:08,413 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-17 17:29:08,414 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-17 17:29:08,414 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-17 17:29:08,414 care_hospital_frame.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-17 17:29:08,414 care_hospital_frame.py[line:64] INFO: test url:http://192.168.1.26:7003/care/hospital_frame/112[0m
+[32m 2020-12-17 17:42:49,448 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 17:42:49,449 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 17:42:50,701 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-17 17:42:50,702 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-17 17:42:50,702 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-17 17:42:50,702 care_hospital_frame.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-17 17:42:50,703 care_hospital_frame.py[line:64] INFO: test url:http://192.168.1.26:7003/care/hospital_frame/112[0m
+[32m 2020-12-17 17:52:41,968 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 17:52:41,969 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 17:52:42,861 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-17 17:52:42,862 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-17 17:52:42,862 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-17 17:52:42,863 care_hospital_frame.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-17 17:52:42,863 care_hospital_frame.py[line:64] INFO: test url:http://192.168.1.26:7003/care/hospital_frame/112[0m
+[32m 2020-12-17 17:58:05,616 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 17:58:05,616 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 17:58:06,343 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-17 17:58:06,343 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-17 17:58:06,343 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-17 17:58:06,344 care_hospital_frame.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-17 17:58:06,344 care_hospital_frame.py[line:64] INFO: test url:http://192.168.1.26:7003/care/hospital_frame/112[0m
+[32m 2020-12-17 18:00:59,241 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 18:00:59,242 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 18:01:57,015 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 18:01:57,015 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 18:01:57,662 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-17 18:01:57,663 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-17 18:01:57,663 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-17 18:01:57,663 care_hospital_frame.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-17 18:01:57,664 care_hospital_frame.py[line:64] INFO: test url:http://192.168.1.26:7003/care/hospital_frame/112[0m
+[32m 2020-12-17 18:02:30,625 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-17 18:02:30,626 change_requests.py[line:39] INFO: get login[0m
+[32m 2020-12-17 18:02:30,810 change_requests.py[line:55] INFO: login url:http://192.168.1.26:7003/seller/login/login/noCaptcha?username=16412345678&password=e10adc3949ba59abbe56e057f20f883e[0m
+[32m 2020-12-17 18:02:30,810 change_requests.py[line:56] INFO: <Response [500]>[0m
+[31m 2020-12-17 18:02:30,811 change_urltail.py[line:52] ERROR: not found access_token[0m
+[32m 2020-12-17 18:02:30,811 care_hospital_frame.py[line:63] INFO: test headers:{'uuid': '777'}[0m
+[32m 2020-12-17 18:02:30,811 care_hospital_frame.py[line:64] INFO: test url:http://192.168.1.26:7003/care/hospital_frame/112[0m
+[32m 2020-12-25 11:56:16,312 change_urltail.py[line:35] INFO: get headers[0m
+[32m 2020-12-25 11:56:16,313 change_requests.py[line:39] INFO: get login[0m

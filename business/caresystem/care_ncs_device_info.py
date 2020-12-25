@@ -134,10 +134,11 @@ if __name__ == '__main__':
     }
 
     # result = c.post_care_ncs_device_info('16412345678', '123456', post_data, prod=4)
-    result = c.post_care_ncs_device_info_page('16412345678', '123456', page, prod=4)
+    # result = c.post_care_ncs_device_info_page('16412345678', '123456', page, prod=4)
     # result = c.del_care_ncs_device_info_ids('1', '16412345678', '123456', prod=4)
     # result = c.get_care_ncs_device_info_ids('2', '16412345678', '123456', prod=4)
     # result = c.put_care_ncs_device_info_ids('2', '16412345678', '123456', prod=4)
+    result = c.del_care_ncs_device_info_ids('164', '16412345678', '123456', prod=4)
 
     print(result)
     print(result.text)
